@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body{
+           background-color: #f0f0f0;
+        }
+        #headimg{
+            height: auto;
+            width: 100%;
+        }
+        #aftrhead{
+            height: 90px;
+            width: 1320px;
+            border: 1px solid red;
+            margin: auto;
+            display: flex;
+        }
+        #aftrhead > a{
+            display: block;
+            padding-left: 100px;
+            padding-top: 25px;
+            display: flex;
+        }
+        #search{
+            font-size: 16px; 
+            margin: 30px;
+            margin-left: 280px;
+            padding: 8px 65px 8px 65px;
+        }
+        .usercontainer{
+            display: flex;
+            margin: auto;
+        }
+        #user{
+            height: 90px;
+            width: 90px;
+            margin: auto;
+            margin-top: -18px;
+        }
+        .user{
+            display: block;
+            margin: auto;
+            margin-top: -35px;
+            margin-left: 29px;
+        }
+        #imgsearch{
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            margin-top: 25px;
+        }
+        .selecctBox{
+            height: 50px;
+            width: 1520px;
+            border: 1px solid red;
+            margin: auto;
+            display: flex;
+            margin-top: 10px;
+        }
+        .selecctBox > div{
+            margin-left: 90px;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        #selectBox{
+            display: block;
+            margin-top: 100px;
+            margin-top: 60px;
+            margin: auto;
+        }
+        .bigimg{
+            height: 450px;
+            width: 1520px;
+            border: 1px solid red;
+            margin: auto;
+        }
+        .bigimg > img{
+            height: 100%;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        #saledetails{
+            height: 300px;
+            width: 1400px;
+            border: 1px solid red;
+            margin: auto;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 30px;
+        }
+        #saledetails > div{
+            border: 1px solid red;
+        }
+        #saleimg{
+            border-radius: 120px;
+        }
+        .salepara{
+            text-align: center;
+            font-weight: bold;
+            margin-top: -2px;
+        }
+        #endcontainer{
+            height: 470px;
+            width: 1500px;
+            border: 1px solid red;
+            margin: auto;
+            margin-top: 2000px;
+            display: flex;
+        }
+        #endcompconta{
+            display: flex;
+            width: 95%;
+            margin: auto;
+            gap: 10px;
+            margin-top: 190px;
+        }
+        #endcompanydetail{
+            height: 250px;
+            width: 300px;
+            border: 1px solid red;
+            margin-top: 190px;
+            margin: auto;
+        }
+        #endcompanydetail>a{
+            color: grey;
+            text-decoration: none;
+        }
+        .imgendbox{
+            width: 1500px;
+            height: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #imgendbox{
+            height: 130px;
+            width: 1400px;
+            border: 1px solid red;
+            display: flex;
+            gap: 5px;
+            margin: auto;
+        }
+        #imgendbox>img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- heading -->
+    <div>
+        <img src="https://img.tttcdn.com/advertising/2022/3/24/YSKA1z-488097435.jpg" alt="headimg" id="headimg">
+    </div>
+
+    <!-- after heading -->
+    <div id="aftrhead">
+        <a href="https://www.tomtop.com/"><img src="https://static.tomtop.com/tomtop/icon/logo.png?v=3" alt=""></a>
+        <div>
+            <input type="text" name="" id="search" placeholder="What are you looking">
+            <img id="imgsearch" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8ZlESEgQKxPvO45X1X9IUwHUtFhoM5JQZg&usqp=CAU" alt="">
+        </div>
+        <div class="usercontainer">
+            <div>
+                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
+                <a class="user" href="">name</a>
+            </div>
+            <div>
+                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
+                <a class="user" href="">name</a>
+            </div>
+            <div>
+                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
+                <a class="user" href="">name</a>
+            </div>
+        </div>
+
+    </div>
+
+<!-- select tags -->
+    <div class ="selecctBox">
+        <div>
+            <select name="" id="selecctBox">
+                <option value="">Select By Departments</option>
+            </select>
+
+            <select name="" id="selecctBox">
+                <option value="">New Arrivals</option>
+            </select>
+
+            <select name="" id="selecctBox">
+                <option value="">Flash Deals</option>
+            </select>
+
+            <select name="" id="selecctBox">
+                <option value="">Coupons</option>
+            </select>
+
+            <select name="" id="selecctBox">
+                <option value="">Social Saving</option>
+            </select>
+
+            <select name="" id="selecctBox">
+                <option value="">Clearence</option>
+            </select>
+        </div>
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- img box -->
+    <div class="bigimg">
+        <img src="https://deal.tomtop.com/img/20220301ss_banner02.jpg" alt="">
+    </div>
+
+    <!-- Flash sale Dtail -->
+    <div id="saledetails">
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/f72G2U46734060.png" alt=""></a>
+            <p class="salepara">Flash Sale</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/JpWty5-714956459.png" alt=""></a>
+            <p class="salepara">Extra 50% Off Coupon</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/vDIKeM1121392672.png" alt=""></a>
+            <p class="salepara">Get Free Gift</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/LH98XG1967782958.png" alt=""></a>
+            <p class="salepara">New Arrivals</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/HNpfEm1068098003.png" alt=""></a>
+            <p class="salepara">New Buyers Only</p>
+        </div>
+    </div>
+
+    <!-- end BIG Box -->
+    <div id="endcontainer">
+        <div></div>
+
+        <div id="endcompconta">
+            <div id="endcompanydetail">
+                <p>Company Info</p>
+                <a href=""><p>About TOPTOP</p></a>
+                <a href=""><p>About TOPTOP</p></a>
+                <a href=""><p>About TOPTOP</p></a>
+                <a href=""><p>About TOPTOP</p></a>
+                <a href=""><p>About TOPTOP</p></a>
+            </div>
+            <div id="endcompanydetail">
+                <p>Payment & Shipping</p>
+                <a href=""><p>How To Pay</p></a>
+                <a href=""><p>Shipping FAQ</p></a>
+                <a href=""><p>Ordering FAQ</p></a>
+            </div>
+            <div id="endcompanydetail">
+                <p>Policies & Service</p>
+                <a href=""><p>Terms & Conditions</p></a>
+                <a href=""><p>Return Policies & Guarantess</p></a>
+                <a href=""><p>Support FAQ</p></a>
+                <a href=""><p>Privacy Policy</p></a>
+                <a href=""><p>Reseller Ratings</p></a>
+                <a href=""><p>Second-Hand Rules</p></a>
+                <a href=""><p>Intellectual Property Rights</p></a>
+            </div>
+            <div id="endcompanydetail">
+                <p>Partner Program</p>
+                <a href=""><p>Get It Free</p></a>
+                <a href=""><p>Affilliate Program</p></a>
+                <a href=""><p>Wholesale Program</p></a>
+                <a href=""><p>Super User Program</p></a>
+                <a href=""><p>Studemts Exclusive</p></a>
+                <a href=""><p>See all</p></a>
+            </div>
+            <div id="endcompanydetail">
+                <p>Subscribe To Our Newsletter</p>
+                <input type="email" name="" id="" placeholder="Enter E-mail to Get $50 Cash Coupon">
+                <p>You will receive our latest updates,news,and promotions from TompTop.</p>
+                <button>Subscribe</button><br><br><span><a href="">Privacy Policy</a></span>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="imgendbox">
+        <div id="imgendbox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZpiwwd1IOpjqPXLBVxJ-lI-fBPAzenfBzXw&usqp=CAU" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
