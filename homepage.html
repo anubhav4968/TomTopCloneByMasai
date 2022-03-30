@@ -400,9 +400,9 @@
         .strkpara{
             text-decoration: line-through;
         }
-        #TopBrandContainer{
+        /* #TopBrandContainer{
             margin-top: 1000px;
-        }
+        } */
         #TopBrands{
             display: grid;
             grid-template-columns: repeat(7, 1fr);
@@ -420,10 +420,99 @@
             height: 100%;
             width: 100%;
         }
-        #TopBrandContainer>p{
+        .SocialSavingContainer{
+            margin-top: 40px;
+        }
+        .SocialSaving{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .SocialSaving>div{
+            background-color: white;
+            padding: 2px;
+        }
+        .SocialSaving>div>p{
+            margin-left: 15px;
+            color: gray;
+        }
+        .SocialSaving>div>h3{
+            margin-left: 15px;
+            color: #ff661d;
+            margin-top: -10px;
+            margin-bottom: -8px;
+        }
+        .paraHeading{
             font-size: 20px;
             margin-left: 150px;
-            /* margin-bottom: -0px; */
+            font-weight: bold;
+        }
+        .smallparaHeading{
+            margin-left: 150px;
+            margin-top: -16px;
+            font-size: 14px;
+            color: grey;
+        }
+        .picBox>img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .picBox>div>p{
+            color: grey;
+        }
+        .picBox>div>p:nth-child(2)
+        {
+            font-size: 12px;
+        }
+        .picBox>div>p:nth-child(3)
+        {
+            color: #ff661d;
+        }
+        .picBox>div>h3
+        {
+            color: #ff661d;
+            margin-top: 80px;
+        }
+        .picBox>div>button{
+            background-color: #ff661d;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            padding: 13px;
+            padding-left: 55px;
+            padding-right: 55px;
+            font-size: 18px;
+        }
+        #SocialSaving2{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-areas:  
+             "a a c d e" ;
+             margin-top: -9px;
+        }
+        #SocialSaving2>div:nth-child(1){
+            grid-area: a;
+        }
+        #SocialSaving2>div:nth-child(2){
+            grid-area: c;
+        }
+        #SocialSaving2>div:nth-child(3){
+            grid-area: d;
+        }
+        #SocialSaving2>div:nth-child(4){
+            grid-area: e;
+        }
+        .picBox{
+            display: flex;
+        }
+        #nextotarget{
+           margin-top: -35px;
+           margin-left: 100px;
         }
     </style>
 </head>
@@ -589,14 +678,186 @@
         </div>
     </div>
 
+    <!-- Social Saving -->
+    <div class="SocialSavingContainer">
+        <p class="paraHeading">Social Saving</p>
+        <p class="smallparaHeading">Save With Friends</p>
+        <div class="SocialSaving">
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/V/B/V3790B/V3790B-1-a784-gbRI.jpg" alt="">
+                <p>E30 2.4GHz Wirless QWERTYE Keyboard...</p>
+                <h3>1609</h3>
+                <p class="strkpara">2038</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/5/L1505/L1505-1-e1be-ejRK.jpg" alt="">
+                <p>Ultra Thin Solar Charger Panel With...</p>
+                <h3>1329</h3>
+                <p class="strkpara">1679</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/C/B/C11569B/C11569B-1-2242-HXs5.jpg" alt="">
+                <p>AJAZZ PBT Pudding KeyCap 108...</p>
+                <h3>1049</h3>
+                <p class="strkpara">1480</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/B/K19610B/K19610B-1-b56e-FTUf.jpg" alt="">
+                <p>Rear View Interior Mirror Replacem...</p>
+                <h3>979</h3>
+                <p class="strkpara">1259</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/H/K19643-ENGLISH/K19643-ENGLISH-1-8e8c-vflc.jpg" alt="">
+                <p>Konnwei KW480 Full System Diagn...</p>
+                <h3>5599</h3>
+                <p class="strkpara">6439</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Clearance Sale -->
+    <div class="SocialSavingContainer">
+        <p class="paraHeading">Clearance Sale</p>
+        <div class="SocialSaving" id="SocialSaving2">
+            <div class="picBox">
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PB0152B/PB0152B-1-1a6d-JIn9.jpg" alt="">
+                <div>
+                    <p>HONOR Band 5 0.95inch Large AMOLED Color Display Smart</p>
+                    <p>240*120 Pixels Wristwatch Sleep...</p>
+                    <p><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>(132)</p>
+                    <h3>1329</h3>
+                    <p class="strkpara">1679</p> 
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/I/8/I3498/I3498-1-6c18-SUfv.jpg" alt="">
+                <p>23" Acuoustic Concert Ukulele Ukul...</p>
+                <h3>10430</h3>
+                <p class="strkpara">13930</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/5/D8155/D8155-1-5eec-YZxT.jpg" alt="">
+                <p>2 * 3m /6.6 * 10ft Professional Gre...</p>
+                <h3>2099</h3>
+                <p class="strkpara">2454</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/8/D10478/D10478-1-8989-rg1N.jpg" alt="">
+                <p>Ander TTT -009 168CM /66.14 inch...</p>
+                <h3>4899</h3>
+                <p class="strkpara">10500</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Hot Deals -->
+    <div class="SocialSavingContainer">
+        <p class="paraHeading">Social Saving</p>
+        <p class="smallparaHeading">Save With Friends</p>
+        <div class="SocialSaving">
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/R/S/RM5060B-US/RM5060B-US-1-44ce-3JxD.jpg" alt="">
+                <p>Hubsan H5015 X4 5.939G FPV 1090OP...</p>
+                <h3>11480</h3>
+                <p class="strkpara">23030</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/I/9/I1429/I1429-1-e263-oA6Q.jpg" alt="">
+                <p>Worlde Panda 25-Key USB Keyboar...</p>
+                <h3>8112</h3>
+                <p class="strkpara"></p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/K1867/K1867-2-b802.JPG" alt="">
+                <p>2pcs 30LEDs Car Daytime Running...</p>
+                <h3>1649</h3>
+                <p class="strkpara"></p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0144/L0144-8-af20.JPG" alt="">
+                <p>AC 1010V/220V to DC 24V 20A 48...</p>
+                <h3>1552</h3>
+                <p class="strkpara"></p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0374UK/L0374UK-1-31ec-CgoC.jpg" alt="">
+                <p>Lixada 15W RGBW LED Stage PAR L...</p>
+                <h3>2169</h3>
+                <p class="strkpara"></p>
+                
+            </div>
+        </div>
+    </div>
 
 
 
 
+
+
+    <!-- Slash Price -->
+    <div class="SocialSavingContainer">
+        <p class="paraHeading">Slash Price</p>
+        <p class="smallparaHeading">Slash To Get Super Discount</p>
+        <div class="SocialSaving">
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/6/D6226/D6226-1-90eb-TDb7.jpg" alt="">
+                <p>Andoer Mini Tabletop Tripod Phon...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">2169</h3>
+                <p></p>
+                <p>0 Slashed</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/9/D10769/D10769-1-13eb-d5gl.jpg" alt="">
+                <p>Smart Tracking Phone Holder 360"...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">2239</h3>
+                <p>2996</p>
+                <p>168 Slashed</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/E/0/E20300/E20300-1-746c-Zt64.jpg" alt="">
+                <p>Electronic Digital Vernier Caliper M...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">761</h3>
+                <p>1050</p>
+                <p>80 Slashed</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/3/K19753/K19753-1-b073-PtbW.jpg" alt="">
+                <p>USB Dash Camera Car DVR HD720...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">1329</h3>
+                <p>1539</p>
+                <p>81 Slashed</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/B/K19758B/K19758B-1-6db1-AQtx.jpg" alt="">
+                <p>65W Car Charger Adapter Alluminu...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">1259</h3>
+                <p>1377</p>
+                <p>80 Slashed</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Top Brands  -->
     <div id="TopBrandContainer">
-        <p>Top Brands</p>
+        <p class="paraHeading">Top Brands</p>
     <div id="TopBrands">
        <div><img src="https://img.tttcdn.com/file/attach/2018/0/8/CNF814-Zeblaze.jpg" alt=""></div>
        <div><img src="https://img.tttcdn.com/product/brand/2020/11/23/5Eh0lK46728356.jpg" alt=""></div>
@@ -614,9 +875,6 @@
        <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/Woa2e51079989138.jpg" alt=""></div>
     </div>
     </div>
-
-
-
 
     <!-- Products You May Like -->
     <div id="ProductULikeContainer">
