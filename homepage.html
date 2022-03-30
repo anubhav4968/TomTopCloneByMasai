@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <title>Homepage</title>
+
     <style>
         body{
            background-color: #f0f0f0;
@@ -16,7 +18,7 @@
         #aftrhead{
             height: 90px;
             width: 1320px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             margin: auto;
             display: flex;
         }
@@ -27,14 +29,19 @@
             display: flex;
         }
         #search{
-            font-size: 16px; 
-            margin: 30px;
-            margin-left: 280px;
-            padding: 8px 65px 8px 65px;
+            margin-left: 20px; 
+            /* margin-top: 6px; */
+            padding: 8px 70px 15px 65px;
+            border: none;
+
         }
         .usercontainer{
             display: flex;
             margin: auto;
+            font-size: 30px;
+        }
+        .usercontainer>div{
+            margin-left: 60px;
         }
         #user{
             height: 90px;
@@ -57,26 +64,37 @@
         .selecctBox{
             height: 50px;
             width: 1520px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             margin: auto;
             display: flex;
             margin-top: 10px;
+            /* font-size: 25px; */
+            background-color: white;
         }
-        .selecctBox > div{
-            margin-left: 90px;
-            margin-top: 20px;
-            justify-content: space-between;
+        #belowslectBox{
+            margin-left: 10%;
+            margin-right: 5%;
+            
         }
-        #selectBox{
-            display: block;
-            margin-top: 100px;
-            margin-top: 60px;
-            margin: auto;
+        #belowslectBox>select{
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            border: none;
+            width: 200px;
+        }
+        #belowslectBox2>select{
+            margin-left: 40px;
+            margin-top: 15px;
+            border: none;
+        }
+        #belowimg{
+            margin-left: 100px;
         }
         .bigimg{
             height: 450px;
             width: 1520px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             margin: auto;
         }
         .bigimg > img{
@@ -87,18 +105,18 @@
         }
         #saledetails{
             height: 300px;
-            width: 1400px;
-            border: 1px solid red;
+            width: 80%;
             margin: auto;
-            margin-top: 10px;
+            /* border: 1px solid red; */
+            margin-top: 35px;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(1, auto);
-            gap: 30px;
+            gap: 10px;
         }
-        #saledetails > div{
+        /* #saledetails > div{
             border: 1px solid red;
-        }
+        } */
         #saleimg{
             border-radius: 120px;
         }
@@ -172,7 +190,8 @@
            /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
            /* background-color: white; */
            margin: auto;
-           margin-top: 2000px;
+           /* margin-top: 2000px; */
+           margin-top: 30px;
            display: flex;   
        }
        #followus>div{
@@ -243,6 +262,15 @@
            width: px;
        } */
        /* You Might Like CSS START */
+       #ProductULikeContainer{
+            /* border: 1px solid red; */
+            margin-top: -30px;
+            height: auto;
+        }
+        #prodLike{
+            margin-left: 150px;
+            font-size: 20px;
+        }
        #ProdYouLike{
            display: grid;
            grid-template-columns: repeat(5, 1fr);
@@ -251,10 +279,11 @@
            margin: auto;
            padding: 5px;
            border: 1px solid red;
-           width: 1300px;
+           /* width: 1400px; */
+           width: 80%;
        }
        #ProdYouLike>div{
-           height: 400px;
+           height: 480px;
            width: 100%;
            margin: auto;
            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -273,7 +302,7 @@
             border-radius: 5px;
         }
         .name{
-            width: 85%;
+            width: 90%;
             text-align: center;
             padding-left: 20px;
             color: grey;
@@ -281,14 +310,120 @@
         }
         .price{
             padding-left: 30px;
+            margin-top: 20px;
         }
         .strkprice{
             padding-right: 40px;
             text-decoration: line-through;
+            margin-left: 35px;
         }
-        #prodLike{
-            margin-left: 90px;
-            margin-top: 90px;
+       #box{
+           display: flex;
+           margin-left: 45px;
+           margin-top: 35px;
+       }
+       #lang{
+           height: 25px;   
+           margin-left: 8px;
+           background-color: #f0f0f0;
+           border: none;
+       }
+       #box>span{
+           margin-left: 8px;
+           font-weight: bold;
+       }
+       #box>i{
+           margin-top: 5px;
+           color: rgb(240, 61, 61);
+       }
+       #lang:hover{
+           background-color: white;
+           cursor: pointer;
+       }
+       #ser{
+            background-color: #4d82b8;
+            color: white;
+            padding: 10px;
+            height: 95%;
+            border: none;
+            padding-right: 20px;
+            font-size: 18px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #searchBox{
+            display: flex;
+            margin-left: 50px;
+            background-color: white;
+            height: 50%;
+            /* width: auto; */
+            /* border: 1px solid red; */
+            margin-top: 25px;
+            padding-left: 10px;
+        }
+        #searchBox>div:nth-child(2){
+            margin-top: 15px;
+            margin-left: 14px;
+        }
+        #belowslectBox+i{
+            margin-top: 100px;
+        }
+        #FlashContainer{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+        }
+        #FlashContainer>div{
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+        #FlashContainer>div>img{
+            width: 100%;
+        }
+        #FlashContainer>div>p{
+            margin-left: 15px;
+            color: gray;
+        }
+        #FlashContainer>div>h3{
+            margin-left: 15px;
+            color: #ff661d;
+            margin-top: -10px;
+            margin-bottom: -8px;
+        }
+        .flashimg{
+            height: 100%;
+        }
+        .strkpara{
+            text-decoration: line-through;
+        }
+        #TopBrandContainer{
+            margin-top: 1000px;
+        }
+        #TopBrands{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2,39%);
+            gap: 1px;
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+        }
+        #TopBrands>div{
+            /* border: 1px solid red; */
+            margin-top: -10px;
+        }
+        #TopBrands>div>img{
+            height: 100%;
+            width: 100%;
+        }
+        #TopBrandContainer>p{
+            font-size: 20px;
+            margin-left: 150px;
+            /* margin-bottom: -0px; */
         }
     </style>
 </head>
@@ -300,14 +435,38 @@
 
     <!-- after heading -->
     <div id="aftrhead">
-        <a href="https://www.tomtop.com/"><img src="https://static.tomtop.com/tomtop/icon/logo.png?v=3" alt=""></a>
-        <div>
-            <input type="text" name="" id="search" placeholder="What are you looking">
-            <img id="imgsearch" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8ZlESEgQKxPvO45X1X9IUwHUtFhoM5JQZg&usqp=CAU" alt="">
+        <a href="homepage.html"><img src="https://static.tomtop.com/tomtop/icon/logo.png?v=3" alt=""></a>
+        <div id="box">
+            <!-- <span> -->
+             <i class="fa-regular fa-flag"></i>
+            <!-- </span> -->
+            <span>|</span>
+            <!-- <span> -->
+             <select name="" id="lang">
+             <option value="eng">Country</option>
+             <option value="">USA</option>
+             <option value="">India</option>
+             <option value="">UK</option>
+             <option value="">UAE</option>
+        </select>
+     <!-- </span> -->
+         </div>
+         
+        <div id="searchBox">
+           <div> <p>All</p></div>
+            <div><i class="fa-solid fa-caret-down"></i></div>
+            <div><input type="search" name="" id="search" placeholder="What are you looking"></div>
+            <!-- <img id="imgsearch" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8ZlESEgQKxPvO45X1X9IUwHUtFhoM5JQZg&usqp=CAU" alt=""> -->
+            <div>
+                <button id="ser">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
         </div>
         <div class="usercontainer">
-            <div>
+            <!-- <div>
                 <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
+                <div id="user"><i class="fa-regular fa-user"></i></div>
                 <a class="user" href="">name</a>
             </div>
             <div>
@@ -317,38 +476,59 @@
             <div>
                 <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
                 <a class="user" href="">name</a>
-            </div>
+            </div> -->
+                <div><i class="fa-regular fa-user"></i></div>
+                <div> <i class="fa-regular fa-heart"></i></div>
+               <div><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
 
     </div>
 
 <!-- select tags -->
     <div class ="selecctBox">
-        <div>
-            <select name="" id="selecctBox">
+        <div id="belowslectBox">
+            <i class="fa-solid fa-grip-lines"></i>
+            <select name="" >
                 <option value="">Select By Departments</option>
+                <option value="">Local Warehouse</option>
+                <option value="">Cellphone & Accessories</option>
+                <option value="">Camera & Photo Accessories</option>
+                <option value="">Toys & Hobbies</option>
+                <option value="">Sports & Outdoor</option>
+                <option value="">Smart Device & Safety</option>
+                <option value="">Apparel & Jewelry</option>
+                <option value="">Computer & Stationery</option>
+                <option value="">Video & Audio</option>
+                <option value="">Home & Garden</option>
+                <option value="">Health & Beauty</option>
+                <option value="">Car Accessories</option>
+                <option value="">Test Equipment & Tools</option>
             </select>
 
-            <select name="" id="selecctBox">
+        </div>
+        
+        <div id="belowslectBox2">
+            <select name="">
                 <option value="">New Arrivals</option>
             </select>
 
-            <select name="" id="selecctBox">
+            <select name="">
                 <option value="">Flash Deals</option>
             </select>
 
-            <select name="" id="selecctBox">
+            <select name="">
                 <option value="">Coupons</option>
             </select>
 
-            <select name="" id="selecctBox">
+            <select name="">
                 <option value="">Social Saving</option>
             </select>
 
-            <select name="" id="selecctBox">
+            <select name="">
                 <option value="">Clearence</option>
             </select>
         </div>
+        <img id="belowimg" src="https://img.tttcdn.com/advertising/2021/12/21/uo0byU1874985519.jpg" alt="">
     </div>
 
     <!-- img box -->
@@ -380,19 +560,69 @@
         </div>
     </div>
 
+    <!-- Flash Deals -->
+    <div id="FlashContainer">
+        <div><img class="flashimg" src="https://img.tttcdn.com/home/page/2019/12/5/CKMzEk268110122.jpg" alt=""></div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/E/R/E21203GR/E21203GR-1-b93f-qCsZ.jpg" alt="">
+            <p>Emergency Radio Hand Crank..</p>
+            <h3>1448</h3>
+            <p class="strkpara">2246</p>
+        </div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTYSY-B14W-EU/RTYSY-B14W-EU-1-cfac-2OWB.jpg" alt="">
+            <p>Niubility B14 14 Inch Folding..</p>
+            <h3>43610</h3>
+            <p class="strkpara">76930</p>
+        </div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA2597B/PAA2597B-1-5527-PS4j.jpg" alt="">
+            <p>Xiaomi 55 Wirless Charge..</p>
+            <h3>2799</h3>
+            <p class="strkpara">6720</p>
+        </div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/V/6/V10076/V10076-1-bbe1-qhxm.jpg" alt="">
+            <p>PowKiddy X18S HandHeld Game..</p>
+            <h3>13020</h3>
+            <p class="strkpara">21000</p>
+        </div>
+    </div>
 
 
 
 
+
+
+    <!-- Top Brands  -->
+    <div id="TopBrandContainer">
+        <p>Top Brands</p>
+    <div id="TopBrands">
+       <div><img src="https://img.tttcdn.com/file/attach/2018/0/8/CNF814-Zeblaze.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/11/23/5Eh0lK46728356.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/Gm0toG548617673.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/9/19/v7G4af46728356.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/6/3/X0MPuW1068267905.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/d703Jf-1834503252.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/5/30/SVhmcT-1529418360.png" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/qpLeD31431755671.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/Epa2dc-932118670.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/zdYTSR346553119.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/5/30/prP3Ss-290551226.png" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/x1fyZm-717839356.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/FgnmpU-1635887911.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/Woa2e51079989138.jpg" alt=""></div>
+    </div>
+    </div>
 
 
 
 
     <!-- Products You May Like -->
-    <h2 id="prodLike">Products You Might Like</h2>
+    <div id="ProductULikeContainer">
+        <p id="prodLike">Products You Might Like</p>
     <div id="ProdYouLike"></div>
-
-
+    </div>
 
     <!-- end BIG Box -->
     <div id="endBIGBox">
@@ -1188,8 +1418,8 @@ var TomTopData=[
         strkprice.innerText = elem.strikeofprice;
         strkprice.setAttribute("class","strkprice")
 
-        box2.append(price,strkprice);
-        box.append(img,name,box2);
+        // box2.append(price,strkprice);
+        box.append(img,name,price,strkprice);
         document.querySelector("#ProdYouLike").append(box);
         });
 
