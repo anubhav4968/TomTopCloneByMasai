@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: rgb(240,240,240);
+        }
+         #nav{
+             height: 60px;
+             display: flex;
+        /* border: 1px solid red; */
+            align-items: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            margin: 10px;
+            background-color: rgb(255,255,255);
+            width: 100%;
+    }
+    #nav button{
+        border: 0;
+        background-color: white;
+        font-size: 18px;
+    }
+    #nav select{
+        border: 0;
+    }
+    .a{
+        grid-area: a;
+    }
+    .b{
+        grid-area: b;
+        
+       
+    }
+    .c{
+        grid-area: c;
+        
+    }
+    #box{
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        /* border: 1px solid blue; */
+        grid-template-areas: 
+       "a b b b"
+       "a c c c";
+       width: 90%;
+       margin: auto;
+       
+       
+    }
+   #box a{
+        
+        color: gray;
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+     
+    }
+    #box>div{
+        background-color: rgb(255,255,255);
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        color: black;
+        margin-left: 10px;
+        margin: 10px;
+        
+        
+   
+    }
+    #box b{
+        margin: 7px;
+    }
+    hr{
+        width: 90%;
+        margin-top: -10px;
+    }
+    #box p{
+        margin: 10px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+
+b{
+    color:rgb(92, 91, 91);
+}
+    #cat{
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-end;
+        align-content: center;
+        /* margin-top: 10px; */
+        margin-bottom: -30px;
+        
+    }
+    #ser{
+        margin-top: 10px;
+        height: 20px;;
+    }
+    
+  
+   
+    
+    th {
+  /* border: 1px solid #ddd; */
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 96%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+    
+   
+  padding: 15px;
+  ;
+}
+
+tr > th {
+  background-color: rgb(245,245,245);
+  color: rgb(75, 72, 72);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#pr>p:nth-child(1){
+    color: orange;
+    font-size: 20px;
+
+}
+#pr>p:nth-child(2){
+    text-decoration: line-through;
+}
+
+
+    
+
+tr{
+    border: 2px solid rgb(221,221,221);
+    
+}
+tr div{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+label button{
+    height: 5px;
+}
+#search{
+    height: 26px;
+    align-items: center;
+    background-color: rgb(77,130,184);
+    color: white;
+    border: 0px;
+   
+}
+/*    
+.a{
+    height: 50px;
+    width: 10px;
+    color: white;
+    background-color: orange;
+} */
+#page{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    margin: 25px;
+}
+#page button{
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 0px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;}
+#page>div{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border: 0px;
+    margin-right: 7px;
+    margin-left: 7px;
+        border-radius: 3px;
+
+
+}
+td button{
+    background-color: white;
+    border: 0;
+    
+}
+select{
+    height: 30px;
+    border: 1px solid gray;
+}
+#rec p:nth-child(3){
+    color:orange;
+    font-size: 20px;
+    font: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#rec p:nth-child(4){
+    color: gray;
+    text-decoration: line-through;
+}
+#RecG{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+#RecG img{
+    width: 70%;
+    /* border: 1px solid blue; */
+}
+h3{
+    padding-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(51,51,51);
+}
+
+
+    
+    </style>
+
+</head>
+<body>
+    <div id="nav">
+        <div> <b> <span><i class="fa-solid fa-bars"></i></span> Shop Department</b> </div>
+        <div>
+            <button>New Arrival <span>   <select name="" id=""></select></span></button> 
+         <button>Flash Deals <span> <select name="" id=""></select></span></button>
+           <button> Coupons<span>  <select name="" id=""></select></span></button>
+          <button>Social Savings<span><select name="" id="">
+                <option value=""></option>
+            </select></span></button>
+            <button>Clearance<span> <select name="" id=""></select></span></button>
+           
+        </div>
+        <div>
+            <img src="https://img.tttcdn.com/advertising/2021/12/21/uo0byU1874985519.jpg" alt="">
+        </div>
+    </div>
+    <div id="box">
+        <div id="one" class="a">
+            <p><b>Account</b></p>
+            <hr>
+            <a href="">My Profile</a>
+            <a href="">Address Book</a>
+            <a href="">My Message</a>
+            <a href="">My Coupons</a>
+            <a href="">My Points</a>
+           
+            <p><b>Tomtom Member</b></p>
+             <hr>
+             <a href="">My Tomtop</a>
+             <a href="">My Membership</a>
+             <p><b>Order</b></p>
+             <hr>
+             <a href="">My Orders</a><a href=""></a>
+             <a href="">My Group Buying Order</a>
+             <a href="">My Slashes</a>
+             <p><b>Shopping</b></p>
+             <a href="">My Wishlist</a>
+             <p><b>Community</b></p>
+             <a href="">My Reviews</a>
+             <a href="">My Posts</a>
+             <p><b>Make Money</b></p>
+
+             <a href="">Affiliate</a>
+             <a href="">Dropship</a>
+             <a href="">Review Program</a>
+             <a href="">Share To Get Free Gift</a>
+        </div>
+        <div id="two"class="b" >
+            <p><b>My Wishlist</b></p>
+            <p>Add as many products as you wish to your list. If you currently don't have any items, just click and add from the product page now. <br>
+
+                At the same time you could share the Wish List to your friends and family anytime, anywhere.</p>
+            
+           <div id="cat">
+                 <p>Categories: <span><select name="" id="">
+                <option value="">All Categories</option>
+                <option value="">Cellphone & Accessories</option>
+               <option value="">Cameras & Photo Accessories</option>
+               <option value="">Toys & Hobbies</option>
+               <option value="">Sports & Outdoors</option>
+               <option value="">Smart Device & Safety</option>
+               <option value="">Apperal & Jwellery</option>
+               <option value="">Computer & Stationary</option>
+               <option value="">Video & Audio</option>
+               <option value="">Home & Garden</option>
+               <option value="">Health & Beauty</option>
+               <option value="">Car Accessories</option>
+               <option value="">Test Equipment & Tools</option>
+            
+            
+            </select>
+                </span></p>
+
+                <p>Sort By: <span><select onchange="handlesortprice()"
+                    id="sortprice">
+                <option value="">Sort By Price</option>
+                <option value="htl">Price:High to Low</option>
+                <option value="lth">Price:Low to High</option>
+                 </select></span></p>
+                <label for=""><input type="text" placeholder="Product name" id="ser"></label>
+                 <button id="search">Search</button>
+
+                 <p>Note</p>
+                 <a href="">10</a><a href="">20</a><a href="">40</a>
+           </div>
+           
+               <table id="table">
+              <thead>
+                  <tr>
+                      <th>Items</th>
+                      <th>Description</th>
+                      <th>price</th>
+                      <th>Options</th>
+                  </tr>
+                  <thead>
+                      <tbody>
+                          <!-- <tr> -->
+                              <!-- <td id="check">
+                                  <div>
+                                                                             <input type="checkbox" name="" id="">
+
+                                    <img src="https://img.tttcdn.com/product/xy/60/60/p/gu1/P/B/PB0152B/PB0152B-1-1a6d-JIn9.jpg" alt="">                                      
+                                         
+                                        </div>                           
+                                </td> -->
+                                <!-- <td>
+                                   <p> HONOR Band 5 0.95 Large AMOLED Color Display Smart Watch</p>
+                                   <p>SKU:PB0152B <span> Rating : 4 </span>(132Reviews)</p>
+                                   <p>added:March 29,2022</p>
+                                </td>
+                                <td id="pr">
+                                    <p>Rs2,336</p>
+                                    <p>Rs3,894</p>
+
+                                </td>
+                                <td>
+                                    <a href="">View details</details></a>
+                                    
+                                     <button><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                                </td>
+                                 -->
+                          <!-- </tr> -->
+                          <!-- <tr> -->
+                            <!-- <td>
+                               <div> <input type="checkbox" name="" id="">
+                                <img src="https://img.tttcdn.com/product/xy/60/60/p/gu1/P/B/PB0152B/PB0152B-1-1a6d-JIn9.jpg" alt="">
+                                </div>
+                              </td>
+                              <td>
+                                 <p> HONOR Band 5 0.95 Large AMOLED Color Display Smart Watch</p>
+                                 <p>SKU:PB0152B <span> Rating : 4.1 </span>(132Reviews)</p>
+                                 <p>added:March 29,2022</p>
+                              </td>
+                              <td id="pr">
+                                  <p>Rs2,336</p>
+                                  <p>Rs3,894</p>
+
+                              </td> -->
+                              <!-- <td>
+                                  <a href="">View details</details></a>
+                              
+                             <button> <i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                              </td> -->
+                              
+                        <!-- </tr> -->
+                      </tbody>
+                  </thead>
+              </thead> 
+           </table>
+           <br>
+           <label for=""><a id="remove" href=""><input type="checkbox"></span> Remove All </a><span></span> Your Wishlish has <span id="index"></span> Products</label>
+                <div id="page">
+                    <button> <span><i class="fa-solid fa-angle-left"></i></span> Privous page</button>
+                    <div>1</div>
+                    <button>Next page <span><i class="fa-solid fa-angle-right"></i></span></button>
+                </div>
+            </div>
+        <div class="c" id="rec">
+            <h3>Your Recently Viewed Items and Featured Recommendation</h3>
+
+         <div id="RecG">
+             <div>
+             <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PB0300B/PB0300B-1-dd99-grZw.jpg" alt="">
+             <p>116plus Smart Sports Bracelet</p>
+             <p>Rs778</p>
+             <p>Rs1570</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/C/6/C-PW0036/C-PW0036-1-c1ef-ptlk.jpg" alt="">
+                <p>Global Version Lenovo S2 Pro Smartwatch</p>
+                <p>Rs3,583</p>
+               <p>Rs7,570</p>
+             </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA4657B/PAA4657B-1-d026-sKAV.jpg" alt="">
+                <p>2022 Newest Global Version Smartband</p>
+                <p>Rs3,972</p>
+                <p>Rs5,799</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/C/B/C-PAE0023B/C-PAE0023B-1-460c-8zdT.jpg" alt="">
+                <p>Lenovo XT90 Wireless Earphones + Lenovo S2 Smart Watch</p>
+                <p>Rs3,115</p>
+                <p>Rs6,799</p>
+            </div>
+           
+        
+         </div>
+    </div>
+</body>
+</html>
+<script>
+    var TomTopData=[
+         { image_url:"https://img.tttcdn.com/advertising/2019/4/3/Vh3wae-930368998.jpg",
+          name:"samsung",
+          price: 9999,
+          strikeofprice: "11,999"
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
+          name:"Fingertip Pulse Oximeter Mini SpO2 Monitor ",
+          price: 593,
+          strikeofprice: 1540
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
+          name:"Head Mount Magnifier with LED",
+          price:1190 ,
+          strikeofprice: 3216
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/4/E15564/E15564-1-0a75-u57H.jpg",
+          name:"FNIRSI-1014D 7 Inch TFT LCD Display",
+          price: 11830,
+          strikeofprice: 19950
+        },
+    ]
+
+//  localStorage.setItem("favorite",JSON.stringify(TomTopData));
+
+var favoriteData=JSON.parse(localStorage.getItem("favorite"))||[]
+    console.log(favoriteData)
+    sortByPrice(favoriteData);
+// document.querySelector("#sortprice").addEventListener("change",funsortprice)
+// document.querySelector("#sortprice").addEventListener("change",sortprice)
+document.querySelector("#remove").addEventListener("click",removeAll)
+    function removeAll(){
+       localStorage.clear();
+    }
+
+function handlesortprice(){
+    var selected=document.querySelector("#sortprice").value;
+    if(selected=="htl"){
+        favoriteData.sort(function(a,b){
+            return b.price-a.price;
+        })
+
+        sortByPrice(favoriteData);
+        console.log(favoriteData)
+    }
+    if(selected=="lth"){
+        favoriteData.sort(function(a,b){
+            return a.price-b.price;
+        })
+
+        sortByPrice(favoriteData);
+        console.log(favoriteData)
+    }
+}
+    function sortByPrice(favoriteData){
+        
+        document.querySelector("tbody").innerHTML="";
+        favoriteData.map(function(elem,index){
+
+
+var tr=document.createElement("tr")
+  var inn=document.createElement("input")
+inn.type="checkbox"
+ var img=document.createElement("img")
+img.src=elem.image_url
+img.style.height="70px"
+img.style.marginLeft ="-28px"
+var div=document.createElement("div")
+div.append(inn,img)
+
+
+var td=document.createElement("td")
+td.append(div)
+tr.append(td)
+
+var td2=document.createElement("td")
+
+var nam=document.createElement("p")
+nam.innerText=elem.name
+var review=document.createElement("p")
+review.innerText="Rating : 4"
+var date=document.createElement("p")
+date.innerText="added:March 29,2022"
+
+td2.append(nam,review,date)
+tr.append(td2)
+
+var td3=document.createElement("td")
+
+td3.setAttribute("id","pr")
+var price=document.createElement("p")
+price.innerText= elem.price
+var strikeofprice=document.createElement("p")
+strikeofprice.innerText=elem.strikeofprice
+
+td3.append(price,strikeofprice)
+tr.append(td3)
+
+var td4=document.createElement("td")
+td4.style="display:grid;"
+
+var RemBtn=document.createElement("a")
+RemBtn.href=""
+RemBtn.innerText="View Details"
+
+var btn=document.createElement("button")
+btn.style="color:white;background-color:red;margin:auto;height:40px;border-radius:5px;    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+
+btn.innerText="Remove"
+btn.addEventListener("click",function(){
+removeItem(elem,index)
+
+
+}
+
+
+)
+
+
+td4.append(RemBtn,btn)
+tr.append(td4)
+
+document.querySelector("tbody").append(tr)
+
+})
+    }
+
+
+function removeItem(elem,index){
+    favoriteData.splice(index,1)
+    console.log(favoriteData)
+    localStorage.setItem("favorite",JSON.stringify(favoriteData))
+    console.log("favorite")
+   
+    window.location.reload();
+
+}
+
+
+
+var len=favoriteData.length
+console.log(len)
+document.querySelector("#index").append(len)
+
+</script>
