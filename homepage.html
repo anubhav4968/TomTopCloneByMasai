@@ -63,7 +63,8 @@
         }
         .selecctBox{
             height: 50px;
-            width: 1520px;
+            /* width: 1520px; */
+            width: 100%;
             /* border: 1px solid red; */
             margin: auto;
             display: flex;
@@ -114,11 +115,14 @@
             grid-template-rows: repeat(1, auto);
             gap: 10px;
         }
-        /* #saledetails > div{
-            border: 1px solid red;
-        } */
+        #saledetails > div{
+            /* border: 1px solid red; */
+            width: 100%;
+        }
         #saleimg{
             border-radius: 120px;
+            /* border: 1px solid red; */
+            width: 100%;
         }
         .salepara{
             text-align: center;
@@ -403,6 +407,7 @@
             /* border: 1px solid red; */
             width: 80%;
             margin: auto;
+            margin-top: -20px;
         }
         #FlashContainer>div{
             /* border: 1px solid red; */
@@ -724,20 +729,33 @@
             border-radius: 15px;
             height: 80%;
         }
+        #brand>div>img:hover{
+            cursor: pointer;
+        }
         #Featured{
             width: 80%;
             margin: auto;
             margin-top: -50px;
             margin-bottom: 10px;
         }
-        #brand>div>p{
+        /* #brand>div>p{
             margin-top: -1px;
-        }
+        } */
         #brand>div>p:last-child{
             margin-top: -10px;
         }
         #Featured>h3{
             margin-bottom: -10px;
+        }
+        .feutbra{
+            text-decoration: none;
+            color: black;
+        }
+        .feutbra>p{
+            margin-top: -1px;
+        }
+        .aftrfeut{
+            color: grey;
         }
        .signin{
            font-size: 15px;
@@ -752,6 +770,61 @@
        .usercont{
            text-decoration: none;
            color: gray;
+       }
+       #bigConta{
+           height:480px;
+           width: 100%;
+           /* border: 1px solid red; */
+       }
+       #bigimg{
+           height: 100%;
+           width: 100%;
+           overflow: hidden;
+           margin: auto;
+       }
+       #bigimg+img{
+           width: 100%;
+           height: 100%;
+       }
+       #bigimg figure{
+           position: relative;
+           width: 500%;
+           margin: 0;
+           left: 0;
+           animation: 25s bigimg infinite;
+       }
+       #bigimg figure img{
+           float: left;
+           width: 20%;
+       }
+       @keyframes bigimg {
+           0% {
+               left: 0;
+           }
+           20% {
+                left: 0;
+           }
+           25%{
+               left: -100%;
+           }
+           45%{
+               left: -100%;
+           }
+           50%{
+               left: -200%;
+           }
+           70%{
+               left: -200%;
+           }
+           75%{
+               left: -300%;
+           }
+           95%{
+               left: -300%;
+           }
+           100%{
+               left: -400%;
+           }
        }
     </style>
 </head>
@@ -869,8 +942,16 @@
     </div>
 
     <!-- img box -->
-    <div class="bigimg">
-        <img src="https://img.tttcdn.com/advertising/2022/3/2/3ng0oM1558715690.jpg" alt="">
+    <div id="bigConta">
+        <div id="bigimg">
+            <figure>
+                <img src="https://img.tttcdn.com/advertising/2022/3/2/3ng0oM1558715690.jpg" alt="">
+                <img src="https://pbs.twimg.com/media/FD08bJHUUAAUNjF?format=jpg&name=900x900" alt="">
+                <img src="https://pbs.twimg.com/media/EmdDeTqVkAEd2ms.jpg" alt="">
+                <img src="https://pbs.twimg.com/media/FFBxpsUVUAAXfrj?format=jpg&name=900x900" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcx3eyY2Ilwzq2vWsFE31PDPvoWfWcBiF3Gw&usqp=CAU" alt="">
+            </figure>
+        </div>
     </div>
 
     <!-- Flash sale Dtail -->
@@ -1216,18 +1297,18 @@
     <div id="brand">
         <div>
            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAjisEx73HmqXvZ8MWCZYAGWLNJLhUw88fQ&usqp=CAU" alt="">
-           <p>Lenovo</p>
-           <p>View More>></p>
+           <a href="" class="feutbra"><p>Lenovo</p></a>
+           <p class="aftrfeut">View More>></p>
         </div>
         <div>
            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDOQg3SjnKfnPpErAOd7EdiEku1XMpDjZ1uQ&usqp=CAU" alt="">
-           <p>Creality</p> 
-           <p>View More>></p>
+           <a href="" class="feutbra"><p>Creality</p> </a>
+           <p class="aftrfeut">View More>></p>
        </div>
         <div>
            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE-9oHqz0XDjJmEx8UQjbLfoRjdGNwvracQ&usqp=CAU" alt="">
-         <p>BEZIOR</p>
-         <p>View More>></p>
+         <a href="" class="feutbra"><p>BEZIOR</p></a>
+         <p class="aftrfeut">View More>></p>
        </div>
     </div>
  </div>
