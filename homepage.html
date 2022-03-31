@@ -315,10 +315,29 @@
             color: #ff661d;
             font-size: 18px;
             margin-top: -5px;
+            margin-left: -30px;
+        }
+        #priceBox{
+            display: flex;
+        }
+        .pprice{
+            padding-left: 30px;
+            margin-top: 20px;
+            color: #ff661d;
+            font-size: 18px;
+            margin-top: -5px;
         }
         .strkprice{
             padding-right: 40px;
             text-decoration: line-through;
+            margin-left: 35px;
+            color: grey;
+            font-size: 13px;
+            margin-top: -15px;
+            margin-left: -37px;
+        }
+        .sprice{
+            padding-right: 40px;
             margin-left: 35px;
             color: grey;
             font-size: 13px;
@@ -719,6 +738,7 @@
         #Featured>h3{
             margin-bottom: -10px;
         }
+       
     </style>
 </head>
 <body>
@@ -2059,8 +2079,26 @@ var TomTopData=[
         strkprice.innerText = elem.strikeofprice;
         strkprice.setAttribute("class","strkprice")
 
-        // box2.append(price,strkprice);
-        box.append(img,name,price,strkprice);
+        var pprice = document.createElement("p");
+        pprice.innerText = "Price:";
+        pprice.setAttribute("class", "pprice")
+
+        var sprice = document.createElement("p");
+        sprice.innerText= "Price:";
+        sprice.setAttribute("class","sprice")
+
+        var pricebox = document.createElement("div");
+        pricebox.setAttribute("id","priceBox");
+
+
+
+        spricebox = document.createElement("div");
+        spricebox.setAttribute("id","priceBox");
+
+        pricebox.append(pprice,price);
+        spricebox.append(sprice,strkprice);
+
+        box.append(img,name,pricebox,spricebox);
         document.querySelector("#ProdYouLike").append(box);
         });
 
