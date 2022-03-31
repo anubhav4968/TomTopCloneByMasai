@@ -2092,8 +2092,10 @@ var TomTopData=[
 
         var pricebox = document.createElement("div");
         pricebox.setAttribute("id","priceBox");
-
-
+          
+        box.addEventListener("click",function (){
+            databyanu(elem)
+        })
 
         spricebox = document.createElement("div");
         spricebox.setAttribute("id","priceBox");
@@ -2104,5 +2106,12 @@ var TomTopData=[
         box.append(img,name,pricebox,spricebox);
         document.querySelector("#ProdYouLike").append(box);
         });
-
+        var ak=[]
+        function databyanu(elem)
+        {
+            ak.push(elem)
+            localStorage.setItem("databyak",JSON.stringify(ak))
+            window.location.href="signinpage.html"
+            ak=[];
+        }
 </script>
