@@ -278,7 +278,7 @@
            gap: 10px;
            margin: auto;
            padding: 5px;
-           border: 1px solid red;
+           /* border: 1px solid red; */
            /* width: 1400px; */
            width: 80%;
        }
@@ -288,6 +288,7 @@
            margin: auto;
            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
            background-color: white;
+           border-radius: 3px;
        }
        #ProdYouLike>div:hover{
           cursor: pointer;
@@ -738,7 +739,20 @@
         #Featured>h3{
             margin-bottom: -10px;
         }
-       
+       .signin{
+           font-size: 15px;
+           margin-left: -35px;
+           margin-top: 30px;
+       }
+       .fav{
+           font-size: 15px;
+           margin-left: -29px;
+           margin-top: 30px;
+       }
+       .usercont{
+           text-decoration: none;
+           color: gray;
+       }
     </style>
 </head>
 <body>
@@ -792,8 +806,11 @@
                 <a class="user" href="">name</a>
             </div> -->
                 <div><a href="signuppage.html"><i class="fa-regular fa-user"></i></a></div>
+                <a href="" class="usercont"><p class="signin">Sign In</p></a>
                 <div> <a href=""><i class="fa-regular fa-heart"></i></a></div>
+                <a href="" class="usercont"><p class="signin">Favorits</p></a>
                <div><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+               <a href="" class="usercont"><p class="fav">Cart</p></a>
         </div>
 
     </div>
@@ -828,18 +845,24 @@
 
             <select name="">
                 <option value="">Flash Deals</option>
+                <option value="">Top Sellers</option>
             </select>
 
             <select name="">
                 <option value="">Coupons</option>
+                <option value="">New Buyer Zone</option>
             </select>
 
             <select name="">
                 <option value="">Social Saving</option>
+                <option value="">Slash Price</option>
+                <option value="">Get Free Gift</option>
             </select>
 
             <select name="">
                 <option value="">Clearence</option>
+                <option value="">Seccond Hand</option>
+                <option value="">Forum</option>
             </select>
         </div>
         <img id="belowimg" src="https://img.tttcdn.com/advertising/2021/12/21/uo0byU1874985519.jpg" alt="">
