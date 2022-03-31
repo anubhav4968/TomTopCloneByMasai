@@ -274,7 +274,7 @@
        #ProdYouLike{
            display: grid;
            grid-template-columns: repeat(5, 1fr);
-           grid-template-rows: repeat(1,200px);
+           grid-template-rows: repeat(auto);
            gap: 10px;
            margin: auto;
            padding: 5px;
@@ -283,7 +283,7 @@
            width: 80%;
        }
        #ProdYouLike>div{
-           height: 480px;
+           height: 100%;
            width: 100%;
            margin: auto;
            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -306,16 +306,23 @@
             text-align: center;
             padding-left: 20px;
             color: grey;
+            font-size: 13px;
 
         }
         .price{
             padding-left: 30px;
             margin-top: 20px;
+            color: #ff661d;
+            font-size: 18px;
+            margin-top: -5px;
         }
         .strkprice{
             padding-right: 40px;
             text-decoration: line-through;
             margin-left: 35px;
+            color: grey;
+            font-size: 13px;
+            margin-top: -15px;
         }
        #box{
            display: flex;
