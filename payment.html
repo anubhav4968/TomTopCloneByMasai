@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - tomtop</title>
+    <link rel="icon" src="favicon.ico" alt=""/>
+    <style>
+        #box{
+            /* border: 1px solid red; */
+            width: 100%;
+            height:100%;
+            
+        }
+        #container1{
+            width: 90%;
+            height:100px;
+            margin: auto;
+            /* border: 1px solid black; */
+        }
+        #rupay{
+            margin-left: 400px;
+            margin-bottom: 150px;
+            /* border:1px solid blue; */
+            margin-top: -40px;
+        }
+        nav li{
+            display: inline-block;
+            margin-right: 4px;
+        }
+        nav a{
+            color: #968c84;
+            display: inline-block;
+            padding:6px 70px 6px 70px;
+            background-color: #f5f5f5;
+            text-decoration: none;
+            margin-left: px;
+            font-size:12px;
+            font-family: sans-serif;
+
+        }
+        .current{
+            background-color: #ffad33;
+            color: white;
+           border-radius: 14px;
+            
+        } 
+        #middle{
+            background-color: #ffad33;
+            color:white;
+            border-radius: 14px;
+            
+            
+        }
+        #last{
+            border-radius: 14px;
+           
+            background-color:#ff9900;
+            color: white;
+        }
+        
+        
+        #payment{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            /* border: 1px solid black;  */
+            height: 900px;
+            width: 45%;
+            display:grid;
+            margin: auto;
+            background-color: #ffffff;
+        }
+        #card1{
+            height: 50px;
+            width: 65%;
+            margin-left: 100px;
+            margin-top: 45px;
+            margin-bottom: -35px;
+            
+        }
+        #expire1{
+            height: 55px;
+            width: 26%;
+            margin-left: 100px;
+        }
+        #cvv{
+            height: 55px;
+            width: 27%;
+            margin-left: 40px;
+        }
+        #bill{
+            margin: auto;
+            margin-top: -35px;
+        }
+        #first1{
+            width:350px;
+            height:35px ;
+            margin-top: 25px;
+        }
+        #first2{
+            width:350px;
+            height:35px ;
+            margin-top: 25px;
+        }
+        #first3{
+            width:350px;
+            height:35px ;
+            margin-top: 25px;
+        }
+        #first4{
+            width:350px;
+            height:35px ;
+            margin-top: 25px;
+        }
+        #first5{
+            width:350px;
+            height:35px ;
+            margin-top: 25px;
+        }
+        #btn6{
+            width:360px;
+            height:55px ;
+            margin-left: 90px;
+            background-color: #0070ba;
+           border: none;
+           border-radius: 35px;
+           color: #f5f5f5;
+           font-size: 25px;
+           cursor: pointer;
+           text-align: center;
+           text-decoration: none;
+        }
+        a:hover #btn6{
+          text-decoration: underline;
+        }
+        h5{
+            text-align: center;
+            font-size:14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: #666666;
+            margin-left:12px;
+        }
+        #h2{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: #666666;
+        }
+        
+        
+        
+
+    </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="container1">
+                <a href="https://www.tomtop.com/?_ga=2.237323782.788968680.1648550972-0468695835.3169893251"> 
+                    <img id="logo1" src="https://static.tomtop.com/tomtop/cart/images/logo.png?4.1.31" alt=""/>
+                 </a>
+                <div id="rupay">
+                  <nav>
+                   <ul>
+                    <li><a class="current">SHOPPING CART</a></li>
+                    <li><a id="middle" class="middle">SHIPPING & PLACE ORDER</a></li>
+                    <li><a id="last">PAYMENT</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+            <div id="payment">
+                <div id="card">
+                    <input type="textbox" placeholder="Card number" id="card1">
+
+                </div>
+                <div id="expires">
+                    <input type="date" placeholder="Expires" id="expire1">
+                    <input type="password" placeholder="CVV" id="cvv">
+                </div>
+                <div id="bill">
+                    <h2 id="h2">Billing address</h2>
+                    
+                    <input type="text" placeholder="First name" id="first1"><br>
+                    <input type="text" placeholder="Last name" id="first2"><br>
+                    <input type="text" placeholder="ZIP code" id="first3"><br>
+
+                    <input type="text" placeholder="Mobile" id="first4"><br>
+                    <input type="email" placeholder="Email" id="first5">
+                    
+                </div>
+                 <h5>By continuing, you confirm you re 18 years or older.</h5>
+                <a href="final.html" ><button id="btn6">Pay Now</button></a>
+            </div>
+
+    </body>
+    </html>
+    <script>
+    
+    </script>
