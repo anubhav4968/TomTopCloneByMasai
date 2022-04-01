@@ -26,7 +26,10 @@ function checkbox()
         for(let elem of arr){
             sum += elem;
         }
-        console.log(sum)  
+        console.log(sum)
+        var x=localStorage.setItem("subtotal",JSON.stringify(sum))
+        console.log(x)
+       
         count++;
         document.querySelector("#ware").style.color = "#ffad33"
        document.querySelector("#sum-price").innerText = sum
@@ -64,9 +67,10 @@ function discount()
       document.querySelector("#dis").innerText = (sum*30)/100;
      let discount_price = document.querySelector("#sum-price")
      discount_price.innerText = sum - ((sum*30)/100)
-     console.log(discount_price)
-     localStorage.setItem("dis price",JSON.stringify(discount_price))
-    
+    //  console.log(discount_price)
+    //  localStorage.setItem("dis price",JSON.stringify(discount_price))
+   var y= localStorage.setItem("total",JSON.stringify(+(discount_price.innerText)))
+   console.log(y)
   }
 } 
 // promo code ends
@@ -192,3 +196,5 @@ cartData.map(function(elem,index){
     tr.append(img,td2,td3,td4,td5)
     document.querySelector("#tbody").append(tr)
 })
+
+// console.log(tdata)
