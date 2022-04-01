@@ -373,7 +373,7 @@
     <div id="box">
     <div id="container1">
         
-           <img id="logo" src="https://static.tomtop.com/tomtop/cart/images/logo.png?4.1.31" alt=""/>
+          <a href="homepage2.html"><img id="logo" src="https://static.tomtop.com/tomtop/cart/images/logo.png?4.1.31" alt=""/></a> 
         </a>
         
         <div id="ship">
@@ -538,6 +538,7 @@
                
 }  
 var sub=JSON.parse(localStorage.getItem("subtotal"))
+var dicount=JSON.parse(localStorage.getItem("discount"))
 var tot=JSON.parse(localStorage.getItem("total"))
 if(tot==null)
 {
@@ -547,6 +548,7 @@ if(tot==null)
 else
 {
     document.querySelector("#sub").innerText=sub
+    document.querySelector("#dis").innerText=dicount
     document.querySelector("#to").innerText=(tot+30)
 }
 console.log(sub,tot)
