@@ -39,9 +39,16 @@
             display: flex;
             margin: auto;
             font-size: 30px;
+            /* border: 1px solid red; */
+            margin-top: 18px;
         }
         .usercontainer>div{
             margin-left: 60px;
+            /* border: 1px solid red; */
+        }
+        .usercontainer>div+div{
+            margin-left: 60px;
+            /* border: 1px solid red; */
         }
         #user{
             height: 90px;
@@ -762,10 +769,17 @@
            margin-left: -35px;
            margin-top: 30px;
        }
+       #signin{
+        overflow: hidden;
+        width: 28%;
+        margin-top: 16px;
+        /* border: 1px solid red; */
+       }
        .fav{
            font-size: 15px;
            margin-left: -29px;
            margin-top: 30px;
+           /* border: 1px solid red; */
        }
        .usercont{
            text-decoration: none;
@@ -826,6 +840,10 @@
                left: -400%;
            }
        }
+       #favlogo{
+           margin-left: -90px;
+           /* border: 1px solid red; */
+       }
     </style>
 </head>
 <body>
@@ -865,25 +883,12 @@
             </div>
         </div>
         <div class="usercontainer">
-            <!-- <div>
-                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
-                <div id="user"><i class="fa-regular fa-user"></i></div>
-                <a class="user" href="">name</a>
-            </div>
-            <div>
-                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
-                <a class="user" href="">name</a>
-            </div>
-            <div>
-                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
-                <a class="user" href="">name</a>
-            </div> -->
-                <div><a href="signuppage.html"><i class="fa-regular fa-user"></i></a></div>
-                <a href="signuppage.html" class="usercont"><p class="signin">Sign In</p></a>
-                <div> <a href="Favorits.html"><i class="fa-regular fa-heart"></i></a></div>
-                <a href="Favorits.html" class="usercont"><p class="signin">Favorits</p></a>
+                <div><a href="homepage2.html"><i class="fa-regular fa-user"></i></a></div>
+                    <a href="homepage2.html" class="usercont"><p class="signin" id="signin"></p></a>
+                <div id="favlogo"> <a href="Favorits.html"><i class="fa-regular fa-heart"></i></a></div>
+                    <a href="Favorits.html" class="usercont"><p class="signin">Favorits</p></a>
                <div><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
-               <a href="" class="usercont"><p class="fav">Cart</p></a>
+                    <a href="" class="usercont"><p class="fav">Cart</p></a>
         </div>
 
     </div>
@@ -2162,7 +2167,10 @@ var TomTopData=[
         }
     ]
 
-
+    var sign =  document.createElement("p");
+      sign.innerText = JSON.parse(localStorage.getItem("userhome"));
+      document.querySelector(".signin").append(sign)
+      console.log(sign);
 
     TomTopData.map(function(elem){
         var box = document.createElement("div");
