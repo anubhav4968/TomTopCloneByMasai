@@ -4,7 +4,7 @@ Clone for the website
 
 ## 🚀 About Me
 
-This is my first attempt at cloning a website...
+This is our first attempt at cloning a website...
 
 ## 🛠 Languages Used
 
