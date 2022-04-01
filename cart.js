@@ -1,35 +1,4 @@
-let data = [
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
-      name:"Fingertip Pulse Oximeter Mini SpO2 Monitor ",
-      price: 593,
-      strikeofprice: 1540
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
-      name:"Fingertip Pulse Oximeter Mini SpO2 Monitor ",
-      price: 593,
-      strikeofprice: 1540
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-      name:"Head Mount Magnifier with LED",
-      price:1190 ,
-      strikeofprice: 3216
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-      name:"Head Mount Magnifier with LED",
-      price:1190 ,
-      strikeofprice: 3216
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-      name:"Head Mount Magnifier with LED",
-      price:1190 ,
-      strikeofprice: 3216
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/4/E15564/E15564-1-0a75-u57H.jpg",
-      name:"FNIRSI-1014D 7 Inch TFT LCD Display",
-      price: 11830,
-      strikeofprice: 19950
-    },
-]
+
 
   // localStorage.setItem("cart",JSON.stringify(data))
 
@@ -57,7 +26,10 @@ function checkbox()
         for(let elem of arr){
             sum += elem;
         }
-        console.log(sum)  
+        console.log(sum)
+        var x=localStorage.setItem("subtotal",JSON.stringify(sum))
+        console.log(x)
+       
         count++;
         document.querySelector("#ware").style.color = "#ffad33"
        document.querySelector("#sum-price").innerText = sum
@@ -95,9 +67,11 @@ function discount()
       document.querySelector("#dis").innerText = (sum*30)/100;
      let discount_price = document.querySelector("#sum-price")
      discount_price.innerText = sum - ((sum*30)/100)
-     console.log(discount_price)
-     localStorage.setItem("dis price",JSON.stringify(discount_price))
-    
+    //  console.log(discount_price)
+    //  localStorage.setItem("dis price",JSON.stringify(discount_price))
+   var y= localStorage.setItem("total",JSON.stringify(+(discount_price.innerText)))
+   var z=localStorage.setItem("discount",JSON.stringify(+(sum*30)/100))
+  //  console.log(y,z)
   }
 } 
 // promo code ends
@@ -223,3 +197,5 @@ cartData.map(function(elem,index){
     tr.append(img,td2,td3,td4,td5)
     document.querySelector("#tbody").append(tr)
 })
+
+// console.log(tdata)

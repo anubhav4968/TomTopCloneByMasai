@@ -140,6 +140,8 @@ tr > th {
 }
 #pr>p:nth-child(2){
     text-decoration: line-through;
+    color: rgb(153,153,153);
+    font: bold;
 }
 
 
@@ -217,8 +219,9 @@ select{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #rec p:nth-child(4){
-    color: gray;
+    color: rgb(153,153,153);
     text-decoration: line-through;
+    font: bold;
 }
 #RecG{
     display: grid;
@@ -233,6 +236,12 @@ h3{
     padding-left: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(51,51,51);
+}
+#index{
+    color: orange;
+    font-size: 24px;
+    font:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -337,63 +346,13 @@ h3{
                   </tr>
                   <thead>
                       <tbody>
-                          <!-- <tr> -->
-                              <!-- <td id="check">
-                                  <div>
-                                                                             <input type="checkbox" name="" id="">
-
-                                    <img src="https://img.tttcdn.com/product/xy/60/60/p/gu1/P/B/PB0152B/PB0152B-1-1a6d-JIn9.jpg" alt="">                                      
-                                         
-                                        </div>                           
-                                </td> -->
-                                <!-- <td>
-                                   <p> HONOR Band 5 0.95 Large AMOLED Color Display Smart Watch</p>
-                                   <p>SKU:PB0152B <span> Rating : 4 </span>(132Reviews)</p>
-                                   <p>added:March 29,2022</p>
-                                </td>
-                                <td id="pr">
-                                    <p>Rs2,336</p>
-                                    <p>Rs3,894</p>
-
-                                </td>
-                                <td>
-                                    <a href="">View details</details></a>
-                                    
-                                     <button><i class="fa fa-trash" aria-hidden="true"></i></button>
-
-                                </td>
-                                 -->
-                          <!-- </tr> -->
-                          <!-- <tr> -->
-                            <!-- <td>
-                               <div> <input type="checkbox" name="" id="">
-                                <img src="https://img.tttcdn.com/product/xy/60/60/p/gu1/P/B/PB0152B/PB0152B-1-1a6d-JIn9.jpg" alt="">
-                                </div>
-                              </td>
-                              <td>
-                                 <p> HONOR Band 5 0.95 Large AMOLED Color Display Smart Watch</p>
-                                 <p>SKU:PB0152B <span> Rating : 4.1 </span>(132Reviews)</p>
-                                 <p>added:March 29,2022</p>
-                              </td>
-                              <td id="pr">
-                                  <p>Rs2,336</p>
-                                  <p>Rs3,894</p>
-
-                              </td> -->
-                              <!-- <td>
-                                  <a href="">View details</details></a>
-                              
-                             <button> <i class="fa fa-trash" aria-hidden="true"></i></button>
-
-                              </td> -->
-                              
-                        <!-- </tr> -->
+                          
                       </tbody>
                   </thead>
               </thead> 
            </table>
            <br>
-           <label for=""><a id="remove" href=""><input type="checkbox"></span> Remove All </a><span></span> Your Wishlish has <span id="index"></span> Products</label>
+           <label for=""><a id="remove" href=""><input id="checkall" type="checkbox"></span> Remove All </a><span></span> Your Wishlish has <span id="index"> </span> Products</label>
                 <div id="page">
                     <button> <span><i class="fa-solid fa-angle-left"></i></span> Privous page</button>
                     <div>1</div>
@@ -435,30 +394,8 @@ h3{
 </body>
 </html>
 <script>
-    var TomTopData=[
-         { image_url:"https://img.tttcdn.com/advertising/2019/4/3/Vh3wae-930368998.jpg",
-          name:"samsung",
-          price: 9999,
-          strikeofprice: "11,999"
-        },
-        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
-          name:"Fingertip Pulse Oximeter Mini SpO2 Monitor ",
-          price: 593,
-          strikeofprice: 1540
-        },
-        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-          name:"Head Mount Magnifier with LED",
-          price:1190 ,
-          strikeofprice: 3216
-        },
-        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/4/E15564/E15564-1-0a75-u57H.jpg",
-          name:"FNIRSI-1014D 7 Inch TFT LCD Display",
-          price: 11830,
-          strikeofprice: 19950
-        },
-    ]
-
-//  localStorage.setItem("favorite",JSON.stringify(TomTopData));
+   
+ //localStorage.setItem("favorite",JSON.stringify(TomTopData));
 
 var favoriteData=JSON.parse(localStorage.getItem("favorite"))||[]
     console.log(favoriteData)
@@ -466,6 +403,10 @@ var favoriteData=JSON.parse(localStorage.getItem("favorite"))||[]
 // document.querySelector("#sortprice").addEventListener("change",funsortprice)
 // document.querySelector("#sortprice").addEventListener("change",sortprice)
 document.querySelector("#remove").addEventListener("click",removeAll)
+var check=document.querySelector("#checkall").value;
+
+
+    
     function removeAll(){
        localStorage.clear();
     }
@@ -498,6 +439,7 @@ function handlesortprice(){
 var tr=document.createElement("tr")
   var inn=document.createElement("input")
 inn.type="checkbox"
+
  var img=document.createElement("img")
 img.src=elem.image_url
 img.style.height="70px"
@@ -526,9 +468,9 @@ var td3=document.createElement("td")
 
 td3.setAttribute("id","pr")
 var price=document.createElement("p")
-price.innerText= elem.price
+price.innerText="Rs"+elem.price
 var strikeofprice=document.createElement("p")
-strikeofprice.innerText=elem.strikeofprice
+strikeofprice.innerText="Rs"+elem.strikeofprice
 
 td3.append(price,strikeofprice)
 tr.append(td3)
@@ -536,12 +478,12 @@ tr.append(td3)
 var td4=document.createElement("td")
 td4.style="display:grid;"
 
-var RemBtn=document.createElement("a")
-RemBtn.href=""
-RemBtn.innerText="View Details"
+var viwBtn=document.createElement("a")
+viwBtn.href=""
+viwBtn.innerText="View Details"
 
 var btn=document.createElement("button")
-btn.style="color:white;background-color:red;margin:auto;height:40px;border-radius:5px;    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+btn.style="color:white;background-color:red;margin:auto;height:25px;border-radius:5px;    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
 
 btn.innerText="Remove"
 btn.addEventListener("click",function(){
@@ -554,7 +496,7 @@ removeItem(elem,index)
 )
 
 
-td4.append(RemBtn,btn)
+td4.append(viwBtn,btn)
 tr.append(td4)
 
 document.querySelector("tbody").append(tr)
