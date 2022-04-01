@@ -1,257 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/24c494a6b6.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <title>Homepage</title>
 
     <style>
-      body {
-        background-color: #f0f0f0;
-      }
-      #headimg {
-        height: auto;
-        width: 100%;
-      }
-      #aftrhead {
-        height: 90px;
-        width: 1320px;
-        /* border: 1px solid red; */
-        margin: auto;
-        display: flex;
-      }
-      #aftrhead > a {
-        display: block;
-        padding-left: 100px;
-        padding-top: 25px;
-        display: flex;
-      }
-      #search {
-        margin-left: 20px;
-        /* margin-top: 6px; */
-        padding: 8px 70px 15px 65px;
-        border: none;
-      }
-      .usercontainer {
-        display: flex;
-        margin: auto;
-        font-size: 30px;
-      }
-      .usercontainer > div {
-        margin-left: 60px;
-      }
-      #user {
-        height: 90px;
-        width: 90px;
-        margin: auto;
-        margin-top: -18px;
-      }
-      .user {
-        display: block;
-        margin: auto;
-        margin-top: -35px;
-        margin-left: 29px;
-      }
-      #imgsearch {
-        height: 30px;
-        width: 30px;
-        margin: auto;
-        margin-top: 25px;
-      }
-      .selecctBox {
-        height: 50px;
-        /* width: 1520px; */
-        width: 100%;
-        /* border: 1px solid red; */
-        margin: auto;
-        display: flex;
-        margin-top: 10px;
-        /* font-size: 25px; */
-        background-color: white;
-      }
-      #belowslectBox {
-        margin-left: 10%;
-        margin-right: 5%;
-      }
-      #belowslectBox > select {
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 15px;
-        border: none;
-        width: 200px;
-      }
-      #belowslectBox2 > select {
-        margin-left: 40px;
-        margin-top: 15px;
-        border: none;
-      }
-      #belowimg {
-        margin-left: 100px;
-      }
-      .bigimg {
-        height: 450px;
-        width: 1520px;
-        /* border: 1px solid red; */
-        margin: auto;
-      }
-      .bigimg > img {
-        height: 100%;
-        width: 100%;
-        display: block;
-        margin: auto;
-      }
-      #saledetails {
-        height: 300px;
-        width: 80%;
-        margin: auto;
-        /* border: 1px solid red; */
-        margin-top: 35px;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1, auto);
-        gap: 10px;
-      }
-      #saledetails > div {
-        /* border: 1px solid red; */
-        width: 100%;
-      }
-      #saleimg {
-        border-radius: 120px;
-        /* border: 1px solid red; */
-        width: 100%;
-      }
-      .salepara {
-        text-align: center;
-        font-weight: bold;
-        margin-top: -2px;
-      }
-      #endBIGBox {
-        height: 600px;
-        width: 1500px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        background-color: white;
-        margin: auto;
-      }
-      #endcontainer {
-        height: 300px;
-        width: 1500px;
-        /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-        /* background-color: white; */
-        margin: auto;
-        /* margin-top: 2000px; */
-        display: flex;
-        padding-bottom: 30px;
-      }
-      #endcompconta {
-        display: flex;
-        width: 95%;
-        margin: auto;
-        gap: 10px;
-      }
-      #endcompanydetail {
-        height: 250px;
-        width: 300px;
-        /* border: 1px solid red; */
-        margin-top: 190px;
-        margin: auto;
-      }
-      #endpara {
-        color: grey;
-        font-size: -15px;
-      }
-      #endcompanydetail > a {
-        color: grey;
-        text-decoration: none;
-      }
-      #endcompanydetail > p {
-        font-size: 20px;
-      }
-      .imgendbox {
-        width: 1500px;
-        height: 130px;
-        /* background-color: white; */
-        /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-      }
-      .imgendbox {
-        height: 130px;
-        width: 1500px;
-        /* border: 1px solid red; */
-        display: flex;
-        gap: 5px;
-        margin: auto;
-      }
-      #imgendbox > img {
-        height: 130px;
-        width: 1500px;
-      }
-      #followus {
-        height: 70px;
-        width: 1500px;
-        /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-        /* background-color: white; */
-        margin: auto;
-        /* margin-top: 2000px; */
-        margin-top: 30px;
-        display: flex;
-      }
-      #followus > div {
+        body{
+           background-color: #f0f0f0;
+        }
+        #headimg{
+            height: auto;
+            width: 100%;
+        }
+        #aftrhead{
+            height: 90px;
+            width: 1320px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+        }
+        #aftrhead > a{
+            display: block;
+            padding-left: 100px;
+            padding-top: 25px;
+            display: flex;
+        }
+        #search{
+            margin-left: 20px; 
+            /* margin-top: 6px; */
+            padding: 8px 70px 15px 65px;
+            border: none;
+
+        }
+        .usercontainer{
+            display: flex;
+            margin: auto;
+            font-size: 30px;
+        }
+        .usercontainer>div{
+            margin-left: 60px;
+        }
+        #user{
+            height: 90px;
+            width: 90px;
+            margin: auto;
+            margin-top: -18px;
+        }
+        .user{
+            display: block;
+            margin: auto;
+            margin-top: -35px;
+            margin-left: 29px;
+        }
+        #imgsearch{
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            margin-top: 25px;
+        }
+        .selecctBox{
+            height: 50px;
+            /* width: 1520px; */
+            width: 100%;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            margin-top: 10px;
+            /* font-size: 25px; */
+            background-color: white;
+        }
+        #belowslectBox{
+            margin-left: 10%;
+            margin-right: 5%;
+            
+        }
+        #belowslectBox>select{
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            border: none;
+            width: 200px;
+        }
+        #belowslectBox2>select{
+            margin-left: 40px;
+            margin-top: 15px;
+            border: none;
+        }
+        #belowimg{
+            margin-left: 100px;
+        }
+        .bigimg{
+            height: 450px;
+            width: 1520px;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+        .bigimg > img{
+            height: 100%;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        #saledetails{
+            height: 300px;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid red; */
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+        #saledetails > div{
+            /* border: 1px solid red; */
+            width: 100%;
+        }
+        #saleimg{
+            border-radius: 120px;
+            /* border: 1px solid red; */
+            width: 100%;
+        }
+        .salepara{
+            text-align: center;
+            font-weight: bold;
+            margin-top: -2px;
+        }
+        #endBIGBox{
+           height: 600px;
+           width: 1500px;
+           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+           background-color: white;
+           margin: auto;
+       }
+        #endcontainer{
+            height: 300px;
+            width: 1500px;
+            /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+            /* background-color: white; */
+            margin: auto;
+            /* margin-top: 2000px; */
+            display: flex;
+            padding-bottom: 30px;
+        }
+        #endcompconta{
+            display: flex;
+            width: 95%;
+            margin: auto;
+            gap: 10px;
+        }
+        #endcompanydetail{
+            height: 250px;
+            width: 300px;
+            /* border: 1px solid red; */
+            margin-top: 190px;
+            margin: auto;
+        }
+        #endpara{
+            color: grey;
+            font-size: -15px;
+       }
+        #endcompanydetail>a{
+            color: grey;
+            text-decoration: none;
+        }
+        #endcompanydetail>p{
+            font-size: 20px;
+        }
+        .imgendbox{
+            width: 1500px;
+            height: 130px;
+            /* background-color: white; */
+            /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+        }
+        .imgendbox{
+            height: 130px;
+            width: 1500px;
+            /* border: 1px solid red; */
+            display: flex;
+            gap: 5px;
+            margin: auto;
+        }
+        #imgendbox>img{
+            height: 130px;
+            width: 1500px;
+        }
+       #followus{
+           height: 70px;
+           width: 1500px;
+           /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+           /* background-color: white; */
+           margin: auto;
+           /* margin-top: 2000px; */
+           margin-top: 30px;
+           display: flex;   
+       }
+       #followus>div{
         height: 70px;
         width: 650px;
         /* border: 1px solid red; */
         margin: auto;
-      }
-      #follownext {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(1, 10px);
-        gap: 8px;
-        width: 60%;
-        margin-left: 90px;
-      }
-      #follownext > div {
-        /* border: 1px solid red; */
-        margin-top: -40px;
-      }
-      .folloimg {
-        height: 70%;
-        width: 100%;
-        /* background-color: white; */
-      }
-      .tomtopnext {
-        height: 40%;
-        width: 50%;
-        margin-left: 30px;
-        margin-top: 10px;
-      }
-      #tomtopline {
-        display: flex;
-      }
-      .btnend {
-        background-color: orange;
-        padding: 6px 15px 6px 15px;
-        border: transparent;
-      }
-      .btnend:hover {
-        cursor: pointer;
-        background-color: orangered;
-      }
-      #rewardcash {
-        height: 30px;
-        width: 200px;
-      }
-      .endprivacy {
-        text-decoration: none;
-        display: block;
-        margin-top: -40px;
-        margin-left: 100px;
-        color: blue;
-      }
-      /* #ProdYouLike{
+       }
+       #follownext{
+           display: grid;
+           grid-template-columns: repeat(7, 1fr);
+           grid-template-rows: repeat(1,10px);
+           gap: 8px;
+           width: 60%;
+           margin-left: 90px;
+       }
+       #follownext>div{
+           /* border: 1px solid red; */
+           margin-top: -40px;
+       }
+       .folloimg{
+           height: 70%;
+           width: 100%;
+           /* background-color: white; */
+       }
+       .tomtopnext{
+           height: 40%;
+           width: 50%;
+           margin-left: 30px;
+           margin-top: 10px;
+       }
+       #tomtopline{
+           display: flex;
+       }
+       .btnend{
+          background-color: orange;
+           padding: 6px 15px 6px 15px;
+           border: transparent;
+       }
+       .btnend:hover{
+           cursor: pointer;
+           background-color: orangered;
+       }
+       #rewardcash{
+           height: 30px;
+           width: 200px;
+       }
+       .endprivacy{
+           text-decoration: none;
+           display: block;
+           margin-top: -40px;
+           margin-left: 100px;
+           color: blue;
+       }
+       /* #ProdYouLike{
            display: flex;
            display: grid;
            grid-template-columns: repeat(5,1fr);
@@ -266,2444 +265,1976 @@
            height: auto;
            width: px;
        } */
-      /* You Might Like CSS START */
-      #ProductULikeContainer {
-        /* border: 1px solid red; */
-        margin-top: -30px;
-        height: auto;
-      }
-      #prodLike {
-        margin-left: 150px;
-        font-size: 20px;
-      }
-      #ProdYouLike {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(auto);
-        gap: 10px;
-        margin: auto;
-        padding: 5px;
-        /* border: 1px solid red; */
-        /* width: 1400px; */
-        width: 80%;
-      }
-      #ProdYouLike > div {
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        background-color: white;
-        border-radius: 3px;
-      }
-      #ProdYouLike > div:hover {
-        cursor: pointer;
-      }
-      .box2 {
-        display: flex;
-        justify-content: space-around;
-      }
-      .img {
-        display: block;
-        margin: auto;
-        border-radius: 5px;
-      }
-      .name {
-        width: 90%;
-        text-align: center;
-        padding-left: 20px;
-        color: grey;
-        font-size: 13px;
-      }
-      .price {
-        padding-left: 30px;
-        margin-top: 20px;
-        color: #ff661d;
-        font-size: 18px;
-        margin-top: -5px;
-        margin-left: -30px;
-      }
-      #priceBox {
-        display: flex;
-      }
-      .pprice {
-        padding-left: 30px;
-        margin-top: 20px;
-        color: #ff661d;
-        font-size: 18px;
-        margin-top: -5px;
-      }
-      .strkprice {
-        padding-right: 40px;
-        text-decoration: line-through;
-        margin-left: 35px;
-        color: grey;
-        font-size: 13px;
-        margin-top: -15px;
-        margin-left: -37px;
-      }
-      .sprice {
-        padding-right: 40px;
-        margin-left: 35px;
-        color: grey;
-        font-size: 13px;
-        margin-top: -15px;
-      }
-      #box {
-        display: flex;
-        margin-left: 45px;
-        margin-top: 35px;
-      }
-      #lang {
-        height: 25px;
-        margin-left: 8px;
-        background-color: #f0f0f0;
-        border: none;
-      }
-      #box > span {
-        margin-left: 8px;
-        font-weight: bold;
-      }
-      #box > i {
-        margin-top: 5px;
-        color: rgb(240, 61, 61);
-      }
-      #lang:hover {
-        background-color: white;
-        cursor: pointer;
-      }
-      #ser {
-        background-color: #4d82b8;
-        color: white;
-        padding: 10px;
-        height: 95%;
-        border: none;
-        padding-right: 20px;
-        font-size: 18px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-      }
-      #searchBox {
-        display: flex;
-        margin-left: 50px;
-        background-color: white;
-        height: 50%;
-        /* width: auto; */
-        /* border: 1px solid red; */
-        margin-top: 25px;
-        padding-left: 10px;
-      }
-      #searchBox > div:nth-child(2) {
-        margin-top: 15px;
-        margin-left: 14px;
-      }
-      #belowslectBox + i {
-        margin-top: 100px;
-      }
-      #FlashContainer {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: auto;
-        gap: 10px;
-        /* border: 1px solid red; */
-        width: 80%;
-        margin: auto;
-        margin-top: -20px;
-      }
-      #FlashContainer > div {
-        /* border: 1px solid red; */
-        background-color: white;
-      }
-      #FlashContainer > div > img {
-        width: 100%;
-      }
-      #FlashContainer > div > p {
-        margin-left: 15px;
-        color: gray;
-      }
-      #FlashContainer > div > h3 {
-        margin-left: 15px;
-        color: #ff661d;
-        margin-top: -10px;
-        margin-bottom: -8px;
-      }
-      .flashimg {
-        height: 100%;
-      }
-      .strkpara {
-        text-decoration: line-through;
-      }
-      /* #TopBrandContainer{
+       /* You Might Like CSS START */
+       #ProductULikeContainer{
+            /* border: 1px solid red; */
+            margin-top: -30px;
+            height: auto;
+        }
+        #prodLike{
+            margin-left: 150px;
+            font-size: 20px;
+        }
+       #ProdYouLike{
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(auto);
+           gap: 10px;
+           margin: auto;
+           padding: 5px;
+           /* border: 1px solid red; */
+           /* width: 1400px; */
+           width: 80%;
+       }
+       #ProdYouLike>div{
+           height: 100%;
+           width: 100%;
+           margin: auto;
+           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+           background-color: white;
+           border-radius: 3px;
+       }
+       #ProdYouLike>div:hover{
+          cursor: pointer;
+       }
+       .box2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .img{
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+        }
+        .name{
+            width: 90%;
+            text-align: center;
+            padding-left: 20px;
+            color: grey;
+            font-size: 13px;
+
+        }
+        .price{
+            padding-left: 30px;
+            margin-top: 20px;
+            color: #ff661d;
+            font-size: 18px;
+            margin-top: -5px;
+            margin-left: -30px;
+        }
+        #priceBox{
+            display: flex;
+        }
+        .pprice{
+            padding-left: 30px;
+            margin-top: 20px;
+            color: #ff661d;
+            font-size: 18px;
+            margin-top: -5px;
+        }
+        .strkprice{
+            padding-right: 40px;
+            text-decoration: line-through;
+            margin-left: 35px;
+            color: grey;
+            font-size: 13px;
+            margin-top: -15px;
+            margin-left: -37px;
+        }
+        .sprice{
+            padding-right: 40px;
+            margin-left: 35px;
+            color: grey;
+            font-size: 13px;
+            margin-top: -15px;
+        }
+       #box{
+           display: flex;
+           margin-left: 45px;
+           margin-top: 35px;
+       }
+       #lang{
+           height: 25px;   
+           margin-left: 8px;
+           background-color: #f0f0f0;
+           border: none;
+       }
+       #box>span{
+           margin-left: 8px;
+           font-weight: bold;
+       }
+       #box>i{
+           margin-top: 5px;
+           color: rgb(240, 61, 61);
+       }
+       #lang:hover{
+           background-color: white;
+           cursor: pointer;
+       }
+       #ser{
+            background-color: #4d82b8;
+            color: white;
+            padding: 10px;
+            height: 95%;
+            border: none;
+            padding-right: 20px;
+            font-size: 18px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #searchBox{
+            display: flex;
+            margin-left: 50px;
+            background-color: white;
+            height: 50%;
+            /* width: auto; */
+            /* border: 1px solid red; */
+            margin-top: 25px;
+            padding-left: 10px;
+        }
+        #searchBox>div:nth-child(2){
+            margin-top: 15px;
+            margin-left: 14px;
+        }
+        #belowslectBox+i{
+            margin-top: 100px;
+        }
+        #FlashContainer{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: -20px;
+        }
+        #FlashContainer>div{
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+        #FlashContainer>div>img{
+            width: 100%;
+        }
+        #FlashContainer>div>p{
+            margin-left: 15px;
+            color: gray;
+        }
+        #FlashContainer>div>h3{
+            margin-left: 15px;
+            color: #ff661d;
+            margin-top: -10px;
+            margin-bottom: -8px;
+        }
+        .flashimg{
+            height: 100%;
+        }
+        .strkpara{
+            text-decoration: line-through;
+        }
+        /* #TopBrandContainer{
             margin-top: 1000px;
         } */
-      #TopBrands {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(2, 39%);
-        gap: 1px;
-        /* border: 1px solid red; */
-        width: 80%;
-        margin: auto;
-      }
-      #TopBrands > div {
-        /* border: 1px solid red; */
-        margin-top: -10px;
-      }
-      #TopBrands > div > img {
-        height: 100%;
-        width: 100%;
-      }
-      .SocialSavingContainer {
-        margin-top: 40px;
-      }
-      .SocialSaving {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: auto;
-        gap: 10px;
-        /* border: 1px solid red; */
-        width: 80%;
-        margin: auto;
-        margin-top: 30px;
-      }
-      .SocialSaving > div {
-        background-color: white;
-        padding: 2px;
-      }
-      .SocialSaving > div > p {
-        margin-left: 15px;
-        color: gray;
-      }
-      .SocialSaving > div > h3 {
-        margin-left: 15px;
-        color: #ff661d;
-        margin-top: -10px;
-        margin-bottom: -8px;
-      }
-      .paraHeading {
-        font-size: 20px;
-        margin-left: 150px;
-        font-weight: bold;
-      }
-      .smallparaHeading {
-        margin-left: 150px;
-        margin-top: -16px;
-        font-size: 14px;
-        color: grey;
-      }
-      .picBox > img {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-      .picBox > div > p {
-        color: grey;
-      }
-      .picBox > div > p:nth-child(2) {
-        font-size: 12px;
-      }
-      .picBox > div > p:nth-child(3) {
-        color: #ff661d;
-      }
-      .picBox > div > h3 {
-        color: #ff661d;
-        margin-top: 80px;
-      }
-      .picBox > div > button {
-        background-color: #ff661d;
-        color: white;
-        border: transparent;
-        border-radius: 5px;
-        padding: 13px;
-        padding-left: 55px;
-        padding-right: 55px;
-        font-size: 18px;
-      }
-      #SocialSaving2 {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-areas: "a a c d e";
-        margin-top: -9px;
-      }
-      #SocialSaving2 > div:nth-child(1) {
-        grid-area: a;
-      }
-      #SocialSaving2 > div:nth-child(2) {
-        grid-area: c;
-      }
-      #SocialSaving2 > div:nth-child(3) {
-        grid-area: d;
-      }
-      #SocialSaving2 > div:nth-child(4) {
-        grid-area: e;
-      }
-      .picBox {
-        display: flex;
-      }
-      #nextotarget {
-        margin-top: -35px;
-        margin-left: 100px;
-      }
-      #cunsumerElec {
-        display: flex;
-        /* height: 550px; */
-        width: 80%;
-        /* border: 1px solid red; */
-        margin: auto;
-        gap: 10px;
-      }
-      /* #cunsumerElec>div{
+        #TopBrands{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2,39%);
+            gap: 1px;
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+        }
+        #TopBrands>div{
+            /* border: 1px solid red; */
+            margin-top: -10px;
+        }
+        #TopBrands>div>img{
+            height: 100%;
+            width: 100%;
+        }
+        .SocialSavingContainer{
+            margin-top: 40px;
+        }
+        .SocialSaving{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .SocialSaving>div{
+            background-color: white;
+            padding: 2px;
+        }
+        .SocialSaving>div>p{
+            margin-left: 15px;
+            color: gray;
+        }
+        .SocialSaving>div>h3{
+            margin-left: 15px;
+            color: #ff661d;
+            margin-top: -10px;
+            margin-bottom: -8px;
+        }
+        .paraHeading{
+            font-size: 20px;
+            margin-left: 150px;
+            font-weight: bold;
+        }
+        .smallparaHeading{
+            margin-left: 150px;
+            margin-top: -16px;
+            font-size: 14px;
+            color: grey;
+        }
+        .picBox>img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .picBox>div>p{
+            color: grey;
+        }
+        .picBox>div>p:nth-child(2)
+        {
+            font-size: 12px;
+        }
+        .picBox>div>p:nth-child(3)
+        {
+            color: #ff661d;
+        }
+        .picBox>div>h3
+        {
+            color: #ff661d;
+            margin-top: 80px;
+        }
+        .picBox>div>button{
+            background-color: #ff661d;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            padding: 13px;
+            padding-left: 55px;
+            padding-right: 55px;
+            font-size: 18px;
+        }
+        #SocialSaving2{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-areas:  
+             "a a c d e" ;
+             margin-top: -9px;
+        }
+        #SocialSaving2>div:nth-child(1){
+            grid-area: a;
+        }
+        #SocialSaving2>div:nth-child(2){
+            grid-area: c;
+        }
+        #SocialSaving2>div:nth-child(3){
+            grid-area: d;
+        }
+        #SocialSaving2>div:nth-child(4){
+            grid-area: e;
+        }
+        .picBox{
+            display: flex;
+        }
+        #nextotarget{
+           margin-top: -35px;
+           margin-left: 100px;
+        }
+        #cunsumerElec{
+            display: flex;
+            /* height: 550px; */
+            width: 80%;
+            /* border: 1px solid red; */
+            margin: auto;
+            gap: 10px;
+        }
+        /* #cunsumerElec>div{
             border: 1px solid red;
         } */
-      #cebox1 {
-        width: 37%;
-        background-color: #f3f7f8;
-      }
-      #cebox2 {
-        width: 42%;
-        /* border: 1px solid red; */
-        background-color: white;
-      }
-      #cebox3 {
-        width: 27%;
-      }
-
-      #cebox1 > img {
-        width: 100%;
-      }
-      #cebox1 > div > p {
-        text-align: center;
-        color: grey;
-        font-size: 19px;
-        margin-top: -14px;
-      }
-      .cebox1flex {
-        display: flex;
-        background-color: white;
-      }
-      .cebox1flex > div > img {
-        width: 100%;
-        height: 100%;
-      }
-      .cebox1flex > div > p:nth-child(2) {
-        color: grey;
-        margin-top: -10px;
-        margin-bottom: 45px;
-        /* margin-bottom: -15px; */
-      }
-      .cebox1flex > div > h3 {
-        color: #ff661d;
-        font-size: 25px;
-      }
-      .cebox1flex > div > p:nth-child(4) {
-        color: grey;
-        margin-top: -17px;
-        /* margin-bottom: 30px; */
-        text-decoration: line-through;
-      }
-      .cebox1flex > div > hr {
-        margin-top: 25px;
-      }
-      .cebox1flex > div:nth-child(2) {
-        /* border: 1px solid blue; */
-        height: 15%;
-        margin-bottom: -20%;
-      }
-      #cename {
-        margin-top: -95px;
-      }
-      .cebox1flex > div:nth-child(1) {
-        /* border: 1px solid blue; */
-        width: 30%;
-        margin-top: 28px;
-      }
-      #rulaoBox {
-        margin-top: 30px;
-      }
-      #rulaoBox > hr {
-        margin-top: 35px;
-        width: 104%;
-        margin-bottom: 105px;
-      }
-      .box3one {
-        display: flex;
-      }
-      .box3one > img {
-        width: 75px;
-        height: 75px;
-      }
-      .box3one > div > p:nth-child(2) {
-        color: #ff661d;
-        font-size: 17px;
-      }
-      .box3one > div > p:nth-child(1) {
-        font-size: 14px;
-      }
-      .box3one > div {
-        margin-left: 17px;
-      }
-      #cebox3 {
-        padding-left: 10px;
-        background-color: white;
-      }
-      #smartlifecontainer {
-        width: 80%;
-        margin: auto;
-        margin-top: 40px;
-      }
-      #smartlife {
-        display: flex;
-        gap: 10px;
-      }
-      #smartlife > div:nth-child(1) {
-        /* border: 1px solid red; */
-        text-align: center;
-      }
-      #smartbox1 {
-        display: flex;
-        gap: 10px;
-        /* border: 1px solid teal; */
-        height: 34%;
-        margin-bottom: 10px;
-      }
-      #smartlife > div > h2 {
-        margin-top: -20%;
-      }
-      .boxs {
-        display: flex;
-        /* border: 1px solid blue; */
-        background-color: white;
-      }
-      .boxs > img {
-        margin-top: 40px;
-        height: 70%;
-      }
-      .boxs > div > p {
-        color: black;
-      }
-      .boxs > div > p:nth-child(2) {
-        margin-top: -15px;
-      }
-      .boxs > div {
-        margin-left: 10px;
-      }
-      .boxs > div > h2 {
-        color: orange;
-        margin-top: 40px;
-      }
-      .line {
-        text-decoration: line-through;
-        margin-top: -17px;
-      }
-      #smartbox2 {
-        display: flex;
-        gap: 10px;
-        /* border: 1px solid teal; */
-        height: 48%;
-      }
-      .smartbox3 {
-        background-color: white;
-        padding-left: 10px;
-      }
-      .smartbox3 > img {
-        height: 50%;
-        margin-left: 20px;
-      }
-      .smartbox3 > h3 {
-        color: orange;
-      }
-      #smartlifecontainer > h3 {
-        margin-bottom: -10px;
-      }
-      #brand {
-        display: flex;
-        gap: 129px;
-      }
-      #brand > div > img {
-        border-radius: 15px;
-        height: 80%;
-      }
-      #brand > div > img:hover {
-        cursor: pointer;
-      }
-      #Featured {
-        width: 80%;
-        margin: auto;
-        margin-top: -50px;
-        margin-bottom: 10px;
-      }
-      /* #brand>div>p{
+        #cebox1{
+            width: 37%;
+            background-color: #f3f7f8;
+        }
+        #cebox2{
+            width: 42%;
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+        #cebox3{
+            width: 27%;
+        }
+        
+        #cebox1>img{
+            width: 100%;
+        }
+        #cebox1>div>p{
+            text-align: center;
+            color: grey;
+            font-size: 19px;
+            margin-top: -14px;
+        }
+        .cebox1flex{
+            display: flex;
+            background-color: white;
+        }
+        .cebox1flex>div>img{
+            width: 100%;
+            height: 100%;
+        }
+        .cebox1flex>div>p:nth-child(2){
+            color: grey;
+            margin-top: -10px;
+            margin-bottom: 45px;
+            /* margin-bottom: -15px; */
+        }
+        .cebox1flex>div>h3{
+            color: #ff661d;
+            font-size: 25px;
+        }
+        .cebox1flex>div>p:nth-child(4){
+            color: grey;
+            margin-top: -17px;
+            /* margin-bottom: 30px; */
+            text-decoration: line-through;
+        }
+        .cebox1flex>div>hr{
+            margin-top: 25px;
+        }
+        .cebox1flex>div:nth-child(2){
+            /* border: 1px solid blue; */
+            height: 15%;
+            margin-bottom: -20%
+        }
+        #cename{
+            margin-top: -95px;
+        }
+        .cebox1flex>div:nth-child(1){
+            /* border: 1px solid blue; */
+            width: 30%;
+            margin-top: 28px;
+        }
+        #rulaoBox{
+            margin-top: 30px;
+        }
+        #rulaoBox>hr{
+            margin-top: 35px;
+            width: 104%;
+            margin-bottom: 105px;
+        }
+        .box3one{
+            display: flex;
+        }
+        .box3one>img{
+            width: 75px;
+            height: 75px;
+        }
+        .box3one>div>p:nth-child(2)
+        {
+            color: #ff661d;
+            font-size: 17px;
+        }
+        .box3one>div>p:nth-child(1)
+        {
+            font-size: 14px;
+        }
+        .box3one>div{
+            margin-left: 17px;
+        }
+        #cebox3{
+            padding-left: 10px;
+            background-color: white;
+        }
+        #smartlifecontainer{
+            width: 80%;
+            margin: auto;
+           margin-top: 40px;
+        }
+        #smartlife{
+            display: flex;
+            gap: 10px;
+        }
+        #smartlife>div:nth-child(1){
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+        #smartbox1{
+            display: flex;
+            gap: 10px;
+            /* border: 1px solid teal; */
+            height: 34%;
+            margin-bottom: 10px;
+        }
+        #smartlife>div>h2{
+           margin-top: -20%;
+        }
+        .boxs{
+            display: flex;
+            /* border: 1px solid blue; */
+            background-color: white;
+          
+        } 
+        .boxs>img{
+            margin-top: 40px;
+            height: 70%;
+        }
+        .boxs>div>p{
+            color: black;
+        }
+        .boxs>div>p:nth-child(2){
+            margin-top: -15px;
+            
+        }
+        .boxs>div{
+            margin-left: 10px;
+        }
+        .boxs>div>h2{
+            color: orange;
+            margin-top: 40px;
+        }
+        .line{
+            text-decoration: line-through;
+            margin-top: -17px;
+        }
+        #smartbox2{
+            display: flex;
+            gap: 10px;
+            /* border: 1px solid teal; */
+            height: 48%;
+        }
+        .smartbox3{
+            background-color: white;
+            padding-left: 10px;
+        }
+        .smartbox3>img{
+           height: 50%;
+           margin-left: 20px;
+        }
+        .smartbox3>h3{
+            color: orange;
+        }
+       #smartlifecontainer>h3{
+           margin-bottom:-10px ;
+       }
+       #brand{
+            display: flex;
+            gap: 129px;
+        }
+        #brand>div>img{
+            border-radius: 15px;
+            height: 80%;
+        }
+        #brand>div>img:hover{
+            cursor: pointer;
+        }
+        #Featured{
+            width: 80%;
+            margin: auto;
+            margin-top: -50px;
+            margin-bottom: 10px;
+        }
+        /* #brand>div>p{
             margin-top: -1px;
         } */
-      #brand > div > p:last-child {
-        margin-top: -10px;
-      }
-      #Featured > h3 {
-        margin-bottom: -10px;
-      }
-      .feutbra {
-        text-decoration: none;
-        color: black;
-      }
-      .feutbra > p {
-        margin-top: -1px;
-      }
-      .aftrfeut {
-        color: grey;
-      }
-      .signin {
-        font-size: 15px;
-        margin-left: -35px;
-        margin-top: 30px;
-      }
-      .fav {
-        font-size: 15px;
-        margin-left: -29px;
-        margin-top: 30px;
-      }
-      .usercont {
-        text-decoration: none;
-        color: gray;
-      }
-      #bigConta {
-        height: 480px;
-        width: 100%;
-        /* border: 1px solid red; */
-      }
-      #bigimg {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        margin: auto;
-      }
-      #bigimg + img {
-        width: 100%;
-        height: 100%;
-      }
-      #bigimg figure {
-        position: relative;
-        width: 500%;
-        margin: 0;
-        left: 0;
-        animation: 25s bigimg infinite;
-      }
-      #bigimg figure img {
-        float: left;
-        width: 20%;
-      }
-      @keyframes bigimg {
-        0% {
-          left: 0;
+        #brand>div>p:last-child{
+            margin-top: -10px;
         }
-        20% {
-          left: 0;
+        #Featured>h3{
+            margin-bottom: -10px;
         }
-        25% {
-          left: -100%;
+        .feutbra{
+            text-decoration: none;
+            color: black;
         }
-        45% {
-          left: -100%;
+        .feutbra>p{
+            margin-top: -1px;
         }
-        50% {
-          left: -200%;
+        .aftrfeut{
+            color: grey;
         }
-        70% {
-          left: -200%;
-        }
-        75% {
-          left: -300%;
-        }
-        95% {
-          left: -300%;
-        }
-        100% {
-          left: -400%;
-        }
-      }
+       .signin{
+           font-size: 15px;
+           margin-left: -35px;
+           margin-top: 30px;
+       }
+       .fav{
+           font-size: 15px;
+           margin-left: -29px;
+           margin-top: 30px;
+       }
+       .usercont{
+           text-decoration: none;
+           color: gray;
+       }
+       #bigConta{
+           height:480px;
+           width: 100%;
+           /* border: 1px solid red; */
+       }
+       #bigimg{
+           height: 100%;
+           width: 100%;
+           overflow: hidden;
+           margin: auto;
+       }
+       #bigimg+img{
+           width: 100%;
+           height: 100%;
+       }
+       #bigimg figure{
+           position: relative;
+           width: 500%;
+           margin: 0;
+           left: 0;
+           animation: 25s bigimg infinite;
+       }
+       #bigimg figure img{
+           float: left;
+           width: 20%;
+       }
+       @keyframes bigimg {
+           0% {
+               left: 0;
+           }
+           20% {
+                left: 0;
+           }
+           25%{
+               left: -100%;
+           }
+           45%{
+               left: -100%;
+           }
+           50%{
+               left: -200%;
+           }
+           70%{
+               left: -200%;
+           }
+           75%{
+               left: -300%;
+           }
+           95%{
+               left: -300%;
+           }
+           100%{
+               left: -400%;
+           }
+       }
+       #FlashContainer>div:hover{
+           /* border: 1px solid red; */
+           margin-top: -5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       .SocialSaving>div:hover{
+           /* border: 1px solid red; */
+           margin-top: -5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       .cebox1flex>div>img:hover{
+           margin-left: -2px;
+       }
+       .boxs>img:hover{
+        margin-left: -2px;
+        
+       }
+       .smartbox3:hover{
+        margin-top: -5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #ProdYouLike>div:hover{
+        margin-top: -5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* border: 1px solid black; */
+       }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <!-- heading -->
     <div>
-      <img
-        src="https://img.tttcdn.com/advertising/2022/3/24/YSKA1z-488097435.jpg"
-        alt="headimg"
-        id="headimg"
-      />
+        <img src="https://img.tttcdn.com/advertising/2022/3/24/YSKA1z-488097435.jpg" alt="headimg" id="headimg">
     </div>
 
     <!-- after heading -->
     <div id="aftrhead">
-      <a href="homepage.html"
-        ><img src="https://static.tomtop.com/tomtop/icon/logo.png?v=3" alt=""
-      /></a>
-      <div id="box">
-        <!-- <span> -->
-        <i class="fa-regular fa-flag"></i>
-        <!-- </span> -->
-        <span>|</span>
-        <!-- <span> -->
-        <select name="" id="lang">
-          <option value="eng">Country</option>
-          <option value="">USA</option>
-          <option value="">India</option>
-          <option value="">UK</option>
-          <option value="">UAE</option>
+        <a href="homepage.html"><img src="https://static.tomtop.com/tomtop/icon/logo.png?v=3" alt=""></a>
+        <div id="box">
+            <!-- <span> -->
+             <i class="fa-regular fa-flag"></i>
+            <!-- </span> -->
+            <span>|</span>
+            <!-- <span> -->
+             <select name="" id="lang">
+             <option value="eng">Country</option>
+             <option value="">USA</option>
+             <option value="">India</option>
+             <option value="">UK</option>
+             <option value="">UAE</option>
         </select>
-        <!-- </span> -->
-      </div>
+     <!-- </span> -->
+         </div>
+         
+        <div id="searchBox">
+           <div> <p>All</p></div>
+            <div><i class="fa-solid fa-caret-down"></i></div>
+            <div><input type="search" name="" id="search" placeholder="What are you looking"></div>
+            <!-- <img id="imgsearch" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8ZlESEgQKxPvO45X1X9IUwHUtFhoM5JQZg&usqp=CAU" alt=""> -->
+            <div>
+                <button id="ser">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="usercontainer">
+                <div><a href="signuppage.html"><i class="fa-regular fa-user"></i></a></div>
+                <a href="signuppage.html" class="usercont"><p class="signin">Sign In</p></a>
+                <div> <a href="Favorits.html"><i class="fa-regular fa-heart"></i></a></div>
+                <a href="Favorits.html" class="usercont"><p class="signin">Favorits</p></a>
+               <div><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+               <a href="" class="usercont"><p class="fav">Cart</p></a>
+        </div>
 
-      <div id="searchBox">
-        <div><p>All</p></div>
-        <div><i class="fa-solid fa-caret-down"></i></div>
-        <div>
-          <input
-            type="search"
-            name=""
-            id="search"
-            placeholder="What are you looking"
-          />
-        </div>
-        <!-- <img id="imgsearch" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8ZlESEgQKxPvO45X1X9IUwHUtFhoM5JQZg&usqp=CAU" alt=""> -->
-        <div>
-          <button id="ser">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-      </div>
-      <div class="usercontainer">
-        <!-- <div>
-                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
-                <div id="user"><i class="fa-regular fa-user"></i></div>
-                <a class="user" href="">name</a>
-            </div>
-            <div>
-                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
-                <a class="user" href="">name</a>
-            </div>
-            <div>
-                <img id="user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR6Z2ISdysnwGsODbonCzco67EQN_kpdNBMhoPHuuFy_9YSox" alt="">
-                <a class="user" href="">name</a>
-            </div> -->
-        <div>
-          <a href="signuppage.html"><i class="fa-regular fa-user"></i></a>
-        </div>
-        <a href="signuppage.html" class="usercont"
-          ><p class="signin">Sign In</p></a
-        >
-        <div>
-          <a href="Favorits.html"><i class="fa-regular fa-heart"></i></a>
-        </div>
-        <a href="Favorits.html" class="usercont"
-          ><p class="signin">Favorits</p></a
-        >
-        <div>
-          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <a href="" class="usercont"><p class="fav">Cart</p></a>
-      </div>
     </div>
 
-    <!-- select tags -->
-    <div class="selecctBox">
-      <div id="belowslectBox">
-        <i class="fa-solid fa-grip-lines"></i>
-        <select name="">
-          <option value="">Select By Departments</option>
-          <option value="">Local Warehouse</option>
-          <option value="">Cellphone & Accessories</option>
-          <option value="">Camera & Photo Accessories</option>
-          <option value="">Toys & Hobbies</option>
-          <option value="">Sports & Outdoor</option>
-          <option value="">Smart Device & Safety</option>
-          <option value="">Apparel & Jewelry</option>
-          <option value="">Computer & Stationery</option>
-          <option value="">Video & Audio</option>
-          <option value="">Home & Garden</option>
-          <option value="">Health & Beauty</option>
-          <option value="">Car Accessories</option>
-          <option value="">Test Equipment & Tools</option>
-        </select>
-      </div>
+<!-- select tags -->
+    <div class ="selecctBox">
+        <div id="belowslectBox">
+            <i class="fa-solid fa-grip-lines"></i>
+            <select name="" >
+                <option value="">Select By Departments</option>
+                <option value="">Local Warehouse</option>
+                <option value="">Cellphone & Accessories</option>
+                <option value="">Camera & Photo Accessories</option>
+                <option value="">Toys & Hobbies</option>
+                <option value="">Sports & Outdoor</option>
+                <option value="">Smart Device & Safety</option>
+                <option value="">Apparel & Jewelry</option>
+                <option value="">Computer & Stationery</option>
+                <option value="">Video & Audio</option>
+                <option value="">Home & Garden</option>
+                <option value="">Health & Beauty</option>
+                <option value="">Car Accessories</option>
+                <option value="">Test Equipment & Tools</option>
+            </select>
 
-      <div id="belowslectBox2">
-        <select name="">
-          <option value="">New Arrivals</option>
-        </select>
+        </div>
+        
+        <div id="belowslectBox2">
+            <select name="">
+                <option value="">New Arrivals</option>
+            </select>
 
-        <select name="">
-          <option value="">Flash Deals</option>
-          <option value="">Top Sellers</option>
-        </select>
+            <select name="">
+                <option value="">Flash Deals</option>
+                <option value="">Top Sellers</option>
+            </select>
 
-        <select name="">
-          <option value="">Coupons</option>
-          <option value="">New Buyer Zone</option>
-        </select>
+            <select name="">
+                <option value="">Coupons</option>
+                <option value="">New Buyer Zone</option>
+            </select>
 
-        <select name="">
-          <option value="">Social Saving</option>
-          <option value="">Slash Price</option>
-          <option value="">Get Free Gift</option>
-        </select>
+            <select name="">
+                <option value="">Social Saving</option>
+                <option value="">Slash Price</option>
+                <option value="">Get Free Gift</option>
+            </select>
 
-        <select name="">
-          <option value="">Clearence</option>
-          <option value="">Seccond Hand</option>
-          <option value="">Forum</option>
-        </select>
-      </div>
-      <img
-        id="belowimg"
-        src="https://img.tttcdn.com/advertising/2021/12/21/uo0byU1874985519.jpg"
-        alt=""
-      />
+            <select name="">
+                <option value="">Clearence</option>
+                <option value="">Seccond Hand</option>
+                <option value="">Forum</option>
+            </select>
+        </div>
+        <img id="belowimg" src="https://img.tttcdn.com/advertising/2021/12/21/uo0byU1874985519.jpg" alt="">
     </div>
 
     <!-- img box -->
     <div id="bigConta">
-      <div id="bigimg">
-        <figure>
-          <img
-            src="https://img.tttcdn.com/advertising/2022/3/2/3ng0oM1558715690.jpg"
-            alt=""
-          />
-          <img
-            src="https://pbs.twimg.com/media/FD08bJHUUAAUNjF?format=jpg&name=900x900"
-            alt=""
-          />
-          <img src="https://pbs.twimg.com/media/EmdDeTqVkAEd2ms.jpg" alt="" />
-          <img
-            src="https://pbs.twimg.com/media/FFBxpsUVUAAXfrj?format=jpg&name=900x900"
-            alt=""
-          />
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcx3eyY2Ilwzq2vWsFE31PDPvoWfWcBiF3Gw&usqp=CAU"
-            alt=""
-          />
-        </figure>
-      </div>
+        <div id="bigimg">
+            <figure>
+                <img src="https://img.tttcdn.com/advertising/2022/3/2/3ng0oM1558715690.jpg" alt="">
+                <img src="https://pbs.twimg.com/media/FD08bJHUUAAUNjF?format=jpg&name=900x900" alt="">
+                <img src="https://pbs.twimg.com/media/EmdDeTqVkAEd2ms.jpg" alt="">
+                <img src="https://pbs.twimg.com/media/FFBxpsUVUAAXfrj?format=jpg&name=900x900" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcx3eyY2Ilwzq2vWsFE31PDPvoWfWcBiF3Gw&usqp=CAU" alt="">
+            </figure>
+        </div>
     </div>
 
     <!-- Flash sale Dtail -->
     <div id="saledetails">
-      <div>
-        <a href=""
-          ><img
-            id="saleimg"
-            src="https://img.tttcdn.com/home/page/2021/12/30/f72G2U46734060.png"
-            alt=""
-        /></a>
-        <p class="salepara">Flash Sale</p>
-      </div>
-      <div>
-        <a href=""
-          ><img
-            id="saleimg"
-            src="https://img.tttcdn.com/home/page/2021/12/30/JpWty5-714956459.png"
-            alt=""
-        /></a>
-        <p class="salepara">Extra 50% Off Coupon</p>
-      </div>
-      <div>
-        <a href=""
-          ><img
-            id="saleimg"
-            src="https://img.tttcdn.com/home/page/2021/12/30/vDIKeM1121392672.png"
-            alt=""
-        /></a>
-        <p class="salepara">Get Free Gift</p>
-      </div>
-      <div>
-        <a href=""
-          ><img
-            id="saleimg"
-            src="https://img.tttcdn.com/home/page/2021/12/30/LH98XG1967782958.png"
-            alt=""
-        /></a>
-        <p class="salepara">New Arrivals</p>
-      </div>
-      <div>
-        <a href=""
-          ><img
-            id="saleimg"
-            src="https://img.tttcdn.com/home/page/2021/12/30/HNpfEm1068098003.png"
-            alt=""
-        /></a>
-        <p class="salepara">New Buyers Only</p>
-      </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/f72G2U46734060.png" alt=""></a>
+            <p class="salepara">Flash Sale</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/JpWty5-714956459.png" alt=""></a>
+            <p class="salepara">Extra 50% Off Coupon</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/vDIKeM1121392672.png" alt=""></a>
+            <p class="salepara">Get Free Gift</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/LH98XG1967782958.png" alt=""></a>
+            <p class="salepara">New Arrivals</p>
+        </div>
+        <div>
+            <a href=""><img id="saleimg" src="https://img.tttcdn.com/home/page/2021/12/30/HNpfEm1068098003.png" alt=""></a>
+            <p class="salepara">New Buyers Only</p>
+        </div>
     </div>
 
     <!-- Flash Deals -->
     <div id="FlashContainer">
-      <div>
-        <img
-          class="flashimg"
-          src="https://img.tttcdn.com/home/page/2019/12/5/CKMzEk268110122.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://img.tttcdn.com/product/xy/220/220/p/gu1/E/R/E21203GR/E21203GR-1-b93f-qCsZ.jpg"
-          alt=""
-        />
-        <p>Emergency Radio Hand Crank..</p>
-        <h3>1448</h3>
-        <p class="strkpara">2246</p>
-      </div>
-      <div>
-        <img
-          src="https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTYSY-B14W-EU/RTYSY-B14W-EU-1-cfac-2OWB.jpg"
-          alt=""
-        />
-        <p>Niubility B14 14 Inch Folding..</p>
-        <h3>43610</h3>
-        <p class="strkpara">76930</p>
-      </div>
-      <div>
-        <img
-          src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA2597B/PAA2597B-1-5527-PS4j.jpg"
-          alt=""
-        />
-        <p>Xiaomi 55 Wirless Charge..</p>
-        <h3>2799</h3>
-        <p class="strkpara">6720</p>
-      </div>
-      <div>
-        <img
-          src="https://img.tttcdn.com/product/xy/220/220/p/gu1/V/6/V10076/V10076-1-bbe1-qhxm.jpg"
-          alt=""
-        />
-        <p>PowKiddy X18S HandHeld Game..</p>
-        <h3>13020</h3>
-        <p class="strkpara">21000</p>
-      </div>
+        <div><img class="flashimg" src="https://img.tttcdn.com/home/page/2019/12/5/CKMzEk268110122.jpg" alt=""></div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/E/R/E21203GR/E21203GR-1-b93f-qCsZ.jpg" alt="">
+            <p>Emergency Radio Hand Crank..</p>
+            <h3>1448</h3>
+            <p class="strkpara">2246</p>
+        </div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTYSY-B14W-EU/RTYSY-B14W-EU-1-cfac-2OWB.jpg" alt="">
+            <p>Niubility B14 14 Inch Folding..</p>
+            <h3>43610</h3>
+            <p class="strkpara">76930</p>
+        </div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA2597B/PAA2597B-1-5527-PS4j.jpg" alt="">
+            <p>Xiaomi 55 Wirless Charge..</p>
+            <h3>2799</h3>
+            <p class="strkpara">6720</p>
+        </div>
+        <div>
+            <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/V/6/V10076/V10076-1-bbe1-qhxm.jpg" alt="">
+            <p>PowKiddy X18S HandHeld Game..</p>
+            <h3>13020</h3>
+            <p class="strkpara">21000</p>
+        </div>
     </div>
 
     <!-- Social Saving -->
     <div class="SocialSavingContainer">
-      <p class="paraHeading">Social Saving</p>
-      <p class="smallparaHeading">Save With Friends</p>
-      <div class="SocialSaving">
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/V/B/V3790B/V3790B-1-a784-gbRI.jpg"
-            alt=""
-          />
-          <p>E30 2.4GHz Wirless QWERTYE Keyboard...</p>
-          <h3>1609</h3>
-          <p class="strkpara">2038</p>
+        <p class="paraHeading">Social Saving</p>
+        <p class="smallparaHeading">Save With Friends</p>
+        <div class="SocialSaving">
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/V/B/V3790B/V3790B-1-a784-gbRI.jpg" alt="">
+                <p>E30 2.4GHz Wirless QWERTYE Keyboard...</p>
+                <h3>1609</h3>
+                <p class="strkpara">2038</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/5/L1505/L1505-1-e1be-ejRK.jpg" alt="">
+                <p>Ultra Thin Solar Charger Panel With...</p>
+                <h3>1329</h3>
+                <p class="strkpara">1679</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/C/B/C11569B/C11569B-1-2242-HXs5.jpg" alt="">
+                <p>AJAZZ PBT Pudding KeyCap 108...</p>
+                <h3>1049</h3>
+                <p class="strkpara">1480</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/B/K19610B/K19610B-1-b56e-FTUf.jpg" alt="">
+                <p>Rear View Interior Mirror Replacem...</p>
+                <h3>979</h3>
+                <p class="strkpara">1259</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/H/K19643-ENGLISH/K19643-ENGLISH-1-8e8c-vflc.jpg" alt="">
+                <p>Konnwei KW480 Full System Diagn...</p>
+                <h3>5599</h3>
+                <p class="strkpara">6439</p>
+                
+            </div>
         </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/5/L1505/L1505-1-e1be-ejRK.jpg"
-            alt=""
-          />
-          <p>Ultra Thin Solar Charger Panel With...</p>
-          <h3>1329</h3>
-          <p class="strkpara">1679</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/C/B/C11569B/C11569B-1-2242-HXs5.jpg"
-            alt=""
-          />
-          <p>AJAZZ PBT Pudding KeyCap 108...</p>
-          <h3>1049</h3>
-          <p class="strkpara">1480</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/B/K19610B/K19610B-1-b56e-FTUf.jpg"
-            alt=""
-          />
-          <p>Rear View Interior Mirror Replacem...</p>
-          <h3>979</h3>
-          <p class="strkpara">1259</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/H/K19643-ENGLISH/K19643-ENGLISH-1-8e8c-vflc.jpg"
-            alt=""
-          />
-          <p>Konnwei KW480 Full System Diagn...</p>
-          <h3>5599</h3>
-          <p class="strkpara">6439</p>
-        </div>
-      </div>
     </div>
 
     <!-- Clearance Sale -->
     <div class="SocialSavingContainer">
-      <p class="paraHeading">Clearance Sale</p>
-      <div class="SocialSaving" id="SocialSaving2">
-        <div class="picBox">
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PB0152B/PB0152B-1-1a6d-JIn9.jpg"
-            alt=""
-          />
-          <div>
-            <p>HONOR Band 5 0.95inch Large AMOLED Color Display Smart</p>
-            <p>240*120 Pixels Wristwatch Sleep...</p>
-            <p>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>(132)
-            </p>
-            <h3>1329</h3>
-            <p class="strkpara">1679</p>
-            <button>Buy Now</button>
-          </div>
+        <p class="paraHeading">Clearance Sale</p>
+        <div class="SocialSaving" id="SocialSaving2">
+            <div class="picBox">
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PB0152B/PB0152B-1-1a6d-JIn9.jpg" alt="">
+                <div>
+                    <p>HONOR Band 5 0.95inch Large AMOLED Color Display Smart</p>
+                    <p>240*120 Pixels Wristwatch Sleep...</p>
+                    <p><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>(132)</p>
+                    <h3>1329</h3>
+                    <p class="strkpara">1679</p> 
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/I/8/I3498/I3498-1-6c18-SUfv.jpg" alt="">
+                <p>23" Acuoustic Concert Ukulele Ukul...</p>
+                <h3>10430</h3>
+                <p class="strkpara">13930</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/5/D8155/D8155-1-5eec-YZxT.jpg" alt="">
+                <p>2 * 3m /6.6 * 10ft Professional Gre...</p>
+                <h3>2099</h3>
+                <p class="strkpara">2454</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/8/D10478/D10478-1-8989-rg1N.jpg" alt="">
+                <p>Ander TTT -009 168CM /66.14 inch...</p>
+                <h3>4899</h3>
+                <p class="strkpara">10500</p>
+                
+            </div>
         </div>
-
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/I/8/I3498/I3498-1-6c18-SUfv.jpg"
-            alt=""
-          />
-          <p>23" Acuoustic Concert Ukulele Ukul...</p>
-          <h3>10430</h3>
-          <p class="strkpara">13930</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/5/D8155/D8155-1-5eec-YZxT.jpg"
-            alt=""
-          />
-          <p>2 * 3m /6.6 * 10ft Professional Gre...</p>
-          <h3>2099</h3>
-          <p class="strkpara">2454</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/8/D10478/D10478-1-8989-rg1N.jpg"
-            alt=""
-          />
-          <p>Ander TTT -009 168CM /66.14 inch...</p>
-          <h3>4899</h3>
-          <p class="strkpara">10500</p>
-        </div>
-      </div>
     </div>
 
     <!-- Hot Deals -->
     <div class="SocialSavingContainer">
-      <p class="paraHeading">Hot Deals</p>
-      <p class="smallparaHeading">More Items to Consider</p>
-      <div class="SocialSaving">
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/R/S/RM5060B-US/RM5060B-US-1-44ce-3JxD.jpg"
-            alt=""
-          />
-          <p>Hubsan H5015 X4 5.939G FPV 1090OP...</p>
-          <h3>11480</h3>
-          <p class="strkpara">23030</p>
+        <p class="paraHeading">Hot Deals</p>
+        <p class="smallparaHeading">More Items to Consider</p>
+        <div class="SocialSaving">
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/R/S/RM5060B-US/RM5060B-US-1-44ce-3JxD.jpg" alt="">
+                <p>Hubsan H5015 X4 5.939G FPV 1090OP...</p>
+                <h3>11480</h3>
+                <p class="strkpara">23030</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/I/9/I1429/I1429-1-e263-oA6Q.jpg" alt="">
+                <p>Worlde Panda 25-Key USB Keyboar...</p>
+                <h3>8112</h3>
+                <p class="strkpara"></p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/K1867/K1867-2-b802.JPG" alt="">
+                <p>2pcs 30LEDs Car Daytime Running...</p>
+                <h3>1649</h3>
+                <p class="strkpara"></p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0144/L0144-8-af20.JPG" alt="">
+                <p>AC 1010V/220V to DC 24V 20A 48...</p>
+                <h3>1552</h3>
+                <p class="strkpara"></p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0374UK/L0374UK-1-31ec-CgoC.jpg" alt="">
+                <p>Lixada 15W RGBW LED Stage PAR L...</p>
+                <h3>2169</h3>
+                <p class="strkpara"></p>
+                
+            </div>
         </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/I/9/I1429/I1429-1-e263-oA6Q.jpg"
-            alt=""
-          />
-          <p>Worlde Panda 25-Key USB Keyboar...</p>
-          <h3>8112</h3>
-          <p class="strkpara"></p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/K1867/K1867-2-b802.JPG"
-            alt=""
-          />
-          <p>2pcs 30LEDs Car Daytime Running...</p>
-          <h3>1649</h3>
-          <p class="strkpara"></p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0144/L0144-8-af20.JPG"
-            alt=""
-          />
-          <p>AC 1010V/220V to DC 24V 20A 48...</p>
-          <h3>1552</h3>
-          <p class="strkpara"></p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0374UK/L0374UK-1-31ec-CgoC.jpg"
-            alt=""
-          />
-          <p>Lixada 15W RGBW LED Stage PAR L...</p>
-          <h3>2169</h3>
-          <p class="strkpara"></p>
-        </div>
-      </div>
     </div>
 
     <!-- Consumer Electronics -->
     <div id="ConsElecMainCont">
-      <p class="paraHeading">Consumer Electronics</p>
-      <p class="smallparaHeading">The Latest Gadgets</p>
-      <div id="cunsumerElec">
-        <div id="cebox1">
-          <img
-            src="https://img.tttcdn.com/home/page/2022/1/27/DpyFWn-1859986533.jpg"
-            alt=""
-          />
-          <div id="cename">
-            <h2>Lenovo XiaoXin Pad WiFi Tablet 11...</h2>
-            <p>Flash Sale: 13999</p>
-          </div>
+        <p class="paraHeading">Consumer Electronics</p>
+        <p class="smallparaHeading">The Latest Gadgets</p>
+        <div id="cunsumerElec">
+            <div id="cebox1">
+                <img src="https://img.tttcdn.com/home/page/2022/1/27/DpyFWn-1859986533.jpg" alt="">
+                <div id="cename">
+                    <h2>Lenovo XiaoXin Pad WiFi Tablet 11...</h2>
+                    <p>Flash Sale: 13999</p>
+                </div>
+            </div>
+            <div id="cebox2">
+                <div class="cebox1flex">
+                    <div><img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/W/PAE1046W/PAE1046W-1-b32b-yUd4.jpg" alt=""></div>
+                    <div>
+                        <p>Lenovo Thinkplus Pods XT95 True Wireless Ste</p>
+                        <p>Waterproof BT5.0 Headphones with 28hrs Music Ti</p>
+                        <h3>1259</h3>
+                        <p>2317</p>
+                        <hr>
+                    </div>
+                </div>
+    
+                <div class="cebox1flex">
+                    <div><img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/3/D10643/D10643-1-c4ce-JaXV.jpg" alt=""></div>
+                    <div id="rulaoBox">
+                        <p>Feiyu Pocket 2 Handheld Stabilized Camera 3-A</p>
+                        <p>Feiyu Pocket 2 Handheld Stabilized Camera 3-A</p>
+                        <h3>25199</h3>
+                        <p></p>
+                        <hr>
+                    </div>
+                </div>
+    
+                <div class="cebox1flex">
+                    <div><img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/U/PAS0876W-EU/PAS0876W-EU-1-5380-Oqrk.jpg" alt=""></div>
+                    <div>
+                        <p>Global Version Wanbo Projector T2 Free 1080</p>
+                        <p>40-120inch Projection Vertical Keystone Correctio</p>
+                        <h3>8399</h3>
+                        <p>19319</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="cebox3">
+                <p>Smart Devices</p>
+                <hr>
+                <div class="box3one">
+                    <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/W/PAS0296W/PAS0296W-1-377b-kvb9.jpg" alt="">
+                    <div>
+                        <p>Xiaomi Mi Smart Weight Scale Mi </p>
+                        <p>4193</p>
+                        <hr>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="box3one">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/J/R/J4533B-DGR/J4533B-DGR-1-3af9-9POH.jpg" alt="">
+                        <div>
+                            <p>Kospet MAGIC 2 Smart Watch with</p>
+                            <p>2659</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="box3one">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/tomtopsite/C/C3224/C3224-15235038503801.jpg" alt="">
+                        <div>
+                            <p>USB 3.0 Portable Ultra Slim Externa</p>
+                            <p>1994</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="box3one">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/C/C1783/C1783-3-6bc4.jpg" alt="">
+                        <div>
+                            <p>Rii mini X1 Handheld 2.4G Wireles</p>
+                            <p>1881</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="box3one">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/tt/d/1/d1088-3-602d.jpg" alt="">
+                        <div>
+                            <p>Yongnuo RF-603C II Wireless Rem</p>
+                            <p>2517</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="cebox2">
-          <div class="cebox1flex">
-            <div>
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/W/PAE1046W/PAE1046W-1-b32b-yUd4.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <p>Lenovo Thinkplus Pods XT95 True Wireless Ste</p>
-              <p>Waterproof BT5.0 Headphones with 28hrs Music Ti</p>
-              <h3>1259</h3>
-              <p>2317</p>
-              <hr />
-            </div>
-          </div>
-
-          <div class="cebox1flex">
-            <div>
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/3/D10643/D10643-1-c4ce-JaXV.jpg"
-                alt=""
-              />
-            </div>
-            <div id="rulaoBox">
-              <p>Feiyu Pocket 2 Handheld Stabilized Camera 3-A</p>
-              <p>Feiyu Pocket 2 Handheld Stabilized Camera 3-A</p>
-              <h3>25199</h3>
-              <p></p>
-              <hr />
-            </div>
-          </div>
-
-          <div class="cebox1flex">
-            <div>
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/U/PAS0876W-EU/PAS0876W-EU-1-5380-Oqrk.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <p>Global Version Wanbo Projector T2 Free 1080</p>
-              <p>40-120inch Projection Vertical Keystone Correctio</p>
-              <h3>8399</h3>
-              <p>19319</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="cebox3">
-          <p>Smart Devices</p>
-          <hr />
-          <div class="box3one">
-            <img
-              src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/W/PAS0296W/PAS0296W-1-377b-kvb9.jpg"
-              alt=""
-            />
-            <div>
-              <p>Xiaomi Mi Smart Weight Scale Mi</p>
-              <p>4193</p>
-              <hr />
-            </div>
-          </div>
-
-          <div>
-            <div class="box3one">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/J/R/J4533B-DGR/J4533B-DGR-1-3af9-9POH.jpg"
-                alt=""
-              />
-              <div>
-                <p>Kospet MAGIC 2 Smart Watch with</p>
-                <p>2659</p>
-                <hr />
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="box3one">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/tomtopsite/C/C3224/C3224-15235038503801.jpg"
-                alt=""
-              />
-              <div>
-                <p>USB 3.0 Portable Ultra Slim Externa</p>
-                <p>1994</p>
-                <hr />
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="box3one">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/C/C1783/C1783-3-6bc4.jpg"
-                alt=""
-              />
-              <div>
-                <p>Rii mini X1 Handheld 2.4G Wireles</p>
-                <p>1881</p>
-                <hr />
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="box3one">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/tt/d/1/d1088-3-602d.jpg"
-                alt=""
-              />
-              <div>
-                <p>Yongnuo RF-603C II Wireless Rem</p>
-                <p>2517</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Smart Life -->
     <div id="smartlifecontainer">
-      <h3>Smart Life</h3>
-      <p>Make Life Easier</p>
-      <div id="smartlife">
-        <div>
-          <img
-            src="https://img.tttcdn.com/home/page/2022/1/27/ytTwIz-1859063012.jpg"
-            alt=""
-          />
-          <h2>Xiaomi Mijia Vacuum Cleaner MJX..</h2>
-          <p>Flash Sale:8819</p>
-        </div>
-        <div>
-          <div id="smartbox1">
-            <div class="boxs">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/1/PAA3719W-1/PAA3719W-1-1-e7ea-PUyh.jpg"
-                alt=""
-              />
-              <div>
-                <h3>SOTHING Smart Toothbrush Sanitizer</h3>
-                <p>Perforated-Free Wall-Mou</p>
-                <h2>3081.54</h2>
-                <p class="line">5539.76</p>
+        <h3>Smart Life</h3>
+        <p>Make Life Easier</p>
+        <div id="smartlife">
+           <div>
+               <img src="https://img.tttcdn.com/home/page/2022/1/27/ytTwIz-1859063012.jpg" alt="">
+               <h2>Xiaomi Mijia Vacuum Cleaner MJX..</h2>
+               <p>Flash Sale:8819</p>
+           </div>
+           <div>
+               <div id="smartbox1">
+                   <div class="boxs">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/P/1/PAA3719W-1/PAA3719W-1-1-e7ea-PUyh.jpg" alt="">
+                        <div>
+                            <h3>SOTHING Smart Toothbrush Sanitizer</h3>
+                            <p >Perforated-Free Wall-Mou</p>
+                            <h2>3081.54</h2>
+                            <p class="line">5539.76</p>
+                        </div>
+                    
+                   </div>
+                   <div class="boxs">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/H/6/H19086/H19086-1-4cf9-7Awj.jpg" alt="">
+                        <div>
+                            <h3>Homgeek Kitchen Knives Set with 7 inch Santoku</h3>
+                            <p>Professional 8-inch Chef'</p>
+                            <h2>2904.67</h2>
+                            <p class="line">5784.41</p>
+                       </div>
+                   </div>
+               </div>
+               <div id="smartbox2">
+                    <div class="smartbox3">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/tt/h/9/h9456-7-efd1.jpg" alt="">
+                        <p>AC 110V/220V to DC 12V 15A 180W Vo..</p>
+                        <h3>1322</h3>
+                        <p class="line">2017.22</p>
+                    </div>
+                    <div  class="smartbox3">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/H/B/H40907B/H40907B-1-29f3-SmOn.jpg" alt="">
+                        <p>Pet Microchip Scanner Portable Handh..</p>
+                        <h3>676.233</h3>
+                        <p class="line">4206.63</p>
+                    </div>
+                    <div  class="smartbox3">
+                        <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/O/8/OS4968/OS4968-1-60bb-XXEV.jpgg" alt="">
+                        <p>Original Creality CR-SCAN01 Portable 3..</p>
+                        <h3>50956.41</h3>
+                        <p class="line">70045.59</p>
+                    </div>
               </div>
-            </div>
-            <div class="boxs">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/H/6/H19086/H19086-1-4cf9-7Awj.jpg"
-                alt=""
-              />
-              <div>
-                <h3>Homgeek Kitchen Knives Set with 7 inch Santoku</h3>
-                <p>Professional 8-inch Chef'</p>
-                <h2>2904.67</h2>
-                <p class="line">5784.41</p>
-              </div>
-            </div>
-          </div>
-          <div id="smartbox2">
-            <div class="smartbox3">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/tt/h/9/h9456-7-efd1.jpg"
-                alt=""
-              />
-              <p>AC 110V/220V to DC 12V 15A 180W Vo..</p>
-              <h3>1322</h3>
-              <p class="line">2017.22</p>
-            </div>
-            <div class="smartbox3">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/H/B/H40907B/H40907B-1-29f3-SmOn.jpg"
-                alt=""
-              />
-              <p>Pet Microchip Scanner Portable Handh..</p>
-              <h3>676.233</h3>
-              <p class="line">4206.63</p>
-            </div>
-            <div class="smartbox3">
-              <img
-                src="https://img.tttcdn.com/product/xy/220/220/p/gu1/O/8/OS4968/OS4968-1-60bb-XXEV.jpgg"
-                alt=""
-              />
-              <p>Original Creality CR-SCAN01 Portable 3..</p>
-              <h3>50956.41</h3>
-              <p class="line">70045.59</p>
-            </div>
-          </div>
-        </div>
-      </div>
+           </div>
+     </div>
     </div>
-
-    <!-- Featured Brand -->
-    <div id="Featured">
-      <h3>Featured Brand</h3>
-      <p>High-quality</p>
-      <div id="brand">
+   
+<!-- Featured Brand -->
+<div id="Featured">
+    <h3 >Featured Brand </h3>
+    <p > High-quality</p>
+    <div id="brand">
         <div>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAjisEx73HmqXvZ8MWCZYAGWLNJLhUw88fQ&usqp=CAU"
-            alt=""
-          />
-          <a href="" class="feutbra"><p>Lenovo</p></a>
-          <p class="aftrfeut">View More>></p>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAjisEx73HmqXvZ8MWCZYAGWLNJLhUw88fQ&usqp=CAU" alt="">
+           <a href="" class="feutbra"><p>Lenovo</p></a>
+           <p class="aftrfeut">View More>></p>
         </div>
         <div>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDOQg3SjnKfnPpErAOd7EdiEku1XMpDjZ1uQ&usqp=CAU"
-            alt=""
-          />
-          <a href="" class="feutbra"><p>Creality</p> </a>
-          <p class="aftrfeut">View More>></p>
-        </div>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDOQg3SjnKfnPpErAOd7EdiEku1XMpDjZ1uQ&usqp=CAU" alt="">
+           <a href="" class="feutbra"><p>Creality</p> </a>
+           <p class="aftrfeut">View More>></p>
+       </div>
         <div>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE-9oHqz0XDjJmEx8UQjbLfoRjdGNwvracQ&usqp=CAU"
-            alt=""
-          />
-          <a href="" class="feutbra"><p>BEZIOR</p></a>
-          <p class="aftrfeut">View More>></p>
-        </div>
-      </div>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE-9oHqz0XDjJmEx8UQjbLfoRjdGNwvracQ&usqp=CAU" alt="">
+         <a href="" class="feutbra"><p>BEZIOR</p></a>
+         <p class="aftrfeut">View More>></p>
+       </div>
     </div>
+ </div>
 
     <!-- Slash Price -->
     <div class="SocialSavingContainer">
-      <p class="paraHeading">Slash Price</p>
-      <p class="smallparaHeading">Slash To Get Super Discount</p>
-      <div class="SocialSaving">
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/6/D6226/D6226-1-90eb-TDb7.jpg"
-            alt=""
-          />
-          <p>Andoer Mini Tabletop Tripod Phon...</p>
-          <p>Target Price:</p>
-          <h3 id="nextotarget">2169</h3>
-          <p></p>
-          <p>0 Slashed</p>
+        <p class="paraHeading">Slash Price</p>
+        <p class="smallparaHeading">Slash To Get Super Discount</p>
+        <div class="SocialSaving">
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/6/D6226/D6226-1-90eb-TDb7.jpg" alt="">
+                <p>Andoer Mini Tabletop Tripod Phon...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">2169</h3>
+                <p></p>
+                <p>0 Slashed</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/9/D10769/D10769-1-13eb-d5gl.jpg" alt="">
+                <p>Smart Tracking Phone Holder 360"...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">2239</h3>
+                <p>2996</p>
+                <p>168 Slashed</p>
+                
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/E/0/E20300/E20300-1-746c-Zt64.jpg" alt="">
+                <p>Electronic Digital Vernier Caliper M...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">761</h3>
+                <p>1050</p>
+                <p>80 Slashed</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/3/K19753/K19753-1-b073-PtbW.jpg" alt="">
+                <p>USB Dash Camera Car DVR HD720...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">1329</h3>
+                <p>1539</p>
+                <p>81 Slashed</p>
+            </div>
+            <div>
+                <img src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/B/K19758B/K19758B-1-6db1-AQtx.jpg" alt="">
+                <p>65W Car Charger Adapter Alluminu...</p>
+                <p>Target Price: </p>
+                <h3 id ="nextotarget">1259</h3>
+                <p>1377</p>
+                <p>80 Slashed</p>
+            </div>
         </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/D/9/D10769/D10769-1-13eb-d5gl.jpg"
-            alt=""
-          />
-          <p>Smart Tracking Phone Holder 360"...</p>
-          <p>Target Price:</p>
-          <h3 id="nextotarget">2239</h3>
-          <p>2996</p>
-          <p>168 Slashed</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/E/0/E20300/E20300-1-746c-Zt64.jpg"
-            alt=""
-          />
-          <p>Electronic Digital Vernier Caliper M...</p>
-          <p>Target Price:</p>
-          <h3 id="nextotarget">761</h3>
-          <p>1050</p>
-          <p>80 Slashed</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/3/K19753/K19753-1-b073-PtbW.jpg"
-            alt=""
-          />
-          <p>USB Dash Camera Car DVR HD720...</p>
-          <p>Target Price:</p>
-          <h3 id="nextotarget">1329</h3>
-          <p>1539</p>
-          <p>81 Slashed</p>
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/xy/220/220/p/gu1/K/B/K19758B/K19758B-1-6db1-AQtx.jpg"
-            alt=""
-          />
-          <p>65W Car Charger Adapter Alluminu...</p>
-          <p>Target Price:</p>
-          <h3 id="nextotarget">1259</h3>
-          <p>1377</p>
-          <p>80 Slashed</p>
-        </div>
-      </div>
     </div>
 
     <!-- Top Brands  -->
     <div id="TopBrandContainer">
-      <p class="paraHeading">Top Brands</p>
-      <div id="TopBrands">
-        <div>
-          <img
-            src="https://img.tttcdn.com/file/attach/2018/0/8/CNF814-Zeblaze.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2020/11/23/5Eh0lK46728356.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/Gm0toG548617673.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/9/19/v7G4af46728356.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2020/6/3/X0MPuW1068267905.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/d703Jf-1834503252.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2020/5/30/SVhmcT-1529418360.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/qpLeD31431755671.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/Epa2dc-932118670.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/zdYTSR346553119.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2020/5/30/prP3Ss-290551226.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/x1fyZm-717839356.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/FgnmpU-1635887911.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.tttcdn.com/product/brand/2019/2/11/Woa2e51079989138.jpg"
-            alt=""
-          />
-        </div>
-      </div>
+        <p class="paraHeading">Top Brands</p>
+    <div id="TopBrands">
+       <div><img src="https://img.tttcdn.com/file/attach/2018/0/8/CNF814-Zeblaze.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/11/23/5Eh0lK46728356.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/Gm0toG548617673.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/9/19/v7G4af46728356.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/6/3/X0MPuW1068267905.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/d703Jf-1834503252.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/5/30/SVhmcT-1529418360.png" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/qpLeD31431755671.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/Epa2dc-932118670.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/zdYTSR346553119.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2020/5/30/prP3Ss-290551226.png" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/x1fyZm-717839356.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/FgnmpU-1635887911.jpg" alt=""></div>
+       <div><img src="https://img.tttcdn.com/product/brand/2019/2/11/Woa2e51079989138.jpg" alt=""></div>
+    </div>
     </div>
 
     <!-- Products You May Like -->
     <div id="ProductULikeContainer">
-      <p id="prodLike">Products You Might Like</p>
-      <div id="ProdYouLike"></div>
+        <p id="prodLike">Products You Might Like</p>
+    <div id="ProdYouLike"></div>
     </div>
 
     <!-- end BIG Box -->
     <div id="endBIGBox">
-      <div id="followus">
-        <div>
-          <p>Follow Us</p>
-          <div id="follownext">
+        <div id="followus">
             <div>
-              <a href=""
-                ><img
-                  class="folloimg"
-                  src="data:image/png;base64,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"
-                  alt=""
-              /></a>
+                <p>Follow Us</p>
+                <div id="follownext">
+                    <div><a href=""><img class="folloimg" src="data:image/png;base64,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" alt=""></a></div>
+                    <div><a href=""><img class="folloimg" src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37de3263964.jpg" alt=""></a></div>
+                   <div><a href=""><img class="folloimg" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt=""></a></div>
+                    <div><a href=""><img class="folloimg" src="data:image/png;base64,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" alt=""></a></div>
+                    <div><a href=""><img class="folloimg" src="https://img.tttcdn.com/banner/2018/5/22/Forum_850x360.jpg" alt=""></a></div>
+                    <div><a href=""><img class="folloimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAaVBMVEX///9Rgbj7/P1Lf7fx9PlLfbZFerWQrM+Vr9BBeLRGe7WNqs5VhLrU3uv3+fw+drPp7vVbiLyGpctijL6pvtm/zuJ2msV+n8ictdTM2Ohkjr/j6vO0xt7d5fDs8ffG0+VvlcMycLCjuteiqaAhAAAGuUlEQVR4nO2d7YKiOgyGhVq0lRFBkfGbM/d/kQedEaFNAZ2VpLt5/i7jmtc2TdOkTCYMwzAMwzAMwzAMwzAMwzAMwzAMwzAMw6ARPgX2t/3DLA+7fDPPiu0+TdNYSDEYKeLqT/bbIptv8o/DEtuS37C6fG5TpSIt5dWw4CVE9cdSRpFSafGZnzwcKcvdPFVay9fsh5E6UkGWT7Fte4pdoaM/qsIDoXWxw7ZvMPlavTgbBqqh4qMXE+XjzULc0KkHI2M+ghBX1Azb0h6mez2KEBV6f8a2totVPM6QuCGCA7a9bqbxm5YNhxZihW2xi3A/4pi4aZFSXUgWo/mJOzLDthlmp8ZWolpHLthWg6QjT48bJKfIcfTpcUUfse22CWMMJYIgxjbc5hLhSBHR8xYlhqeokFtsy03OSIOiGhbU4u8jnhQ5tu0GxaghdxNZYNveJsQS4gqt0OKEEGneUSds61vgxFffEIuyFmiuonIWC2zrW4y9PW8i9tjWN1niCXGF0sHZGdFrVn6TUpD1gRZgXYk+sO1vkONKQSnexFxLq9V0g21/gzniWlqtpnNs+xtkiGtptZpSSvZucaWglLLAytv8SFFi299gjalEEKyx7X8QprhSEDoBwMp234npSIG8BaG0CVk6wgr5QNiOVUgD8DOaT7mcs6AjxRS0QujtrCbbm7G5zGZtCiB6F6pcPJ4oHfG9pFO0N4XibrFuf0EjJy7s7eSHtb+V+3YFxQUO8DVxKbS5SWpluuQn8DlWAkiaIx9eqshLYZ7grZrDAgyWzbSg/DKfgJcqSlJAc9jOvrbCcyhPbe7qItPEA5wisp7DA5TC/t3z1uAB3L4hhZ2/3cCrDHUpgtR8bNmSAjjVMqRQVtWZI5QjL4VtSdYyNbGmSFsKYWnlSpaRl8J2Fu3V0h7/bSmUVZbp2uqQlwLYO7dtkeY/t6Swq++cp/XkpQCS8m3HmZgWtKSw5lfoTIrQl0Ja6dewPQNMZ9GUwo7BPp25ZPpS2GvI5KuphXV+0ZRCmxvvlfvYyQMplNW00XqyS4rI8rmFO2nogRRAydi8Mco7pBBWjs7eq3klBRBaTBsWdUhhxxxdiTIfpABKHxrDwi2Ftg555l3nbz5IESjrSy4fzzqlEFaJ7inpUMIPKeyfd7Kpf1+nFPb06C6l90IKYFhMekeFslaPr+6Tej+kAIbF5e45HVLYW9ZD5/TwRQpgEZmUsksKaQdmfZ0mnkgB9DTdy5VAKaSw7HJH3H5JAfjAyVHBUlRhuU6t5Fb36uGTFNA593dFuCXF4b8EKNjuP4X0RQqo1S28HZbZ5WRnoHF01l/R440UUD367SBADamsW/VOD5+k0MDxz0mJIBnSPPw1oMzLHymCBGgeX6WJvWoC5AOqYz2Swt5yXxnYXF/+Vb7iV5WVy/7bD3ySAoo5h3960KeFV1LAU2Tox/fdBeGVFEEEFREM/vyeOeKXFEHym/L8njnimRS/qx07/1VSDOiYDhfrcgMXHh66/gvfpBjgLo5KCG2fgNzYdQTg3kkRJH0tLN9ZrKgEp1JH2OmfFL2u8ye3KeFbnrw+M7W/c7cWdfIffm7rCi98lAI4RW3SOB2DLugIXeGFl1J0+4vG8TGohavz3U8pgqRjZ9YsKkig8eOou6EkxTMNhapwtiy0q24gfwG3I1EqYX2qt1IGLufZLkuLgCJXeIp4K0U1+GdwEG7UbUbAmgoWnFCS4tk2Uy3AkNKQQgDdATvIWxBqgnC1xnSJAV2vuzB+cmk3hU2hGUKoNealhiktPs0JYD0j96aRsLOgI8WLbXRapfPLYw4cgOVBpG0XG4IRJ6E2utebK6VOgjJbVBRpAi6UqlzUzAq4fYxQc+XvWm6FcDfRBUa3HfwIoZZbbsR+wO35NXxpQw1f5VHDF7zU8LU/NXwZVA1fEVbDF8c94OsEa1AvmaQUVvDVow262pneDbELaTGvKSaUw7rhPMR7O+Sud8e70pyYq0C96J7cC4WwUhak8jbfoL0Ug9Je7Ad+VUoNv0DnAb9WqebCL9uqyUYPs4jtxB4sx54iwPEyFVbAVZJvhPDrGieTQzDiHHGUd1JhlY6mhUwppTQBwmykdURlxPbmAJd4hFjLi9dAVwPjmEbvfTl4lPrxcvAreanepYbUqiQaVzk454VQ2nnH8ksIoZXcHgmvoC7C03GxjZXSlSLQ5dWDBRBSaq0SUWbHkzcTA+B82h3n2bbcr9O4EuRJ4nS932bzTX45TX1WwSJ8HuyvzDAMwzAMwzAMwzAMwzAMwzAMwzAMwzD/LP8D5XVpyTfio4wAAAAASUVORK5CYII=" alt=""></a></div>
+                    <div><a href=""><img class="folloimg" src="data:image/png;base64,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" alt=""></a></div>
+                </div>
             </div>
-            <div>
-              <a href=""
-                ><img
-                  class="folloimg"
-                  src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37de3263964.jpg"
-                  alt=""
-              /></a>
+            <div id="tomtopline">
+                <p>TOMTOP Mobile
+                <div><img class="tomtopnext" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" alt=""></div>
+                <div><img class="tomtopnext" src="https://logos-world.net/wp-content/uploads/2021/08/Android-Logo-2008-2019.png" alt=""></div> 
             </div>
-            <div>
-              <a href=""
-                ><img
-                  class="folloimg"
-                  src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a href=""
-                ><img
-                  class="folloimg"
-                  src="data:image/png;base64,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"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a href=""
-                ><img
-                  class="folloimg"
-                  src="https://img.tttcdn.com/banner/2018/5/22/Forum_850x360.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a href=""
-                ><img
-                  class="folloimg"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAaVBMVEX///9Rgbj7/P1Lf7fx9PlLfbZFerWQrM+Vr9BBeLRGe7WNqs5VhLrU3uv3+fw+drPp7vVbiLyGpctijL6pvtm/zuJ2msV+n8ictdTM2Ohkjr/j6vO0xt7d5fDs8ffG0+VvlcMycLCjuteiqaAhAAAGuUlEQVR4nO2d7YKiOgyGhVq0lRFBkfGbM/d/kQedEaFNAZ2VpLt5/i7jmtc2TdOkTCYMwzAMwzAMwzAMwzAMwzAMwzAMwzAMw6ARPgX2t/3DLA+7fDPPiu0+TdNYSDEYKeLqT/bbIptv8o/DEtuS37C6fG5TpSIt5dWw4CVE9cdSRpFSafGZnzwcKcvdPFVay9fsh5E6UkGWT7Fte4pdoaM/qsIDoXWxw7ZvMPlavTgbBqqh4qMXE+XjzULc0KkHI2M+ghBX1Azb0h6mez2KEBV6f8a2totVPM6QuCGCA7a9bqbxm5YNhxZihW2xi3A/4pi4aZFSXUgWo/mJOzLDthlmp8ZWolpHLthWg6QjT48bJKfIcfTpcUUfse22CWMMJYIgxjbc5hLhSBHR8xYlhqeokFtsy03OSIOiGhbU4u8jnhQ5tu0GxaghdxNZYNveJsQS4gqt0OKEEGneUSds61vgxFffEIuyFmiuonIWC2zrW4y9PW8i9tjWN1niCXGF0sHZGdFrVn6TUpD1gRZgXYk+sO1vkONKQSnexFxLq9V0g21/gzniWlqtpnNs+xtkiGtptZpSSvZucaWglLLAytv8SFFi299gjalEEKyx7X8QprhSEDoBwMp234npSIG8BaG0CVk6wgr5QNiOVUgD8DOaT7mcs6AjxRS0QujtrCbbm7G5zGZtCiB6F6pcPJ4oHfG9pFO0N4XibrFuf0EjJy7s7eSHtb+V+3YFxQUO8DVxKbS5SWpluuQn8DlWAkiaIx9eqshLYZ7grZrDAgyWzbSg/DKfgJcqSlJAc9jOvrbCcyhPbe7qItPEA5wisp7DA5TC/t3z1uAB3L4hhZ2/3cCrDHUpgtR8bNmSAjjVMqRQVtWZI5QjL4VtSdYyNbGmSFsKYWnlSpaRl8J2Fu3V0h7/bSmUVZbp2uqQlwLYO7dtkeY/t6Swq++cp/XkpQCS8m3HmZgWtKSw5lfoTIrQl0Ja6dewPQNMZ9GUwo7BPp25ZPpS2GvI5KuphXV+0ZRCmxvvlfvYyQMplNW00XqyS4rI8rmFO2nogRRAydi8Mco7pBBWjs7eq3klBRBaTBsWdUhhxxxdiTIfpABKHxrDwi2Ftg555l3nbz5IESjrSy4fzzqlEFaJ7inpUMIPKeyfd7Kpf1+nFPb06C6l90IKYFhMekeFslaPr+6Tej+kAIbF5e45HVLYW9ZD5/TwRQpgEZmUsksKaQdmfZ0mnkgB9DTdy5VAKaSw7HJH3H5JAfjAyVHBUlRhuU6t5Fb36uGTFNA593dFuCXF4b8EKNjuP4X0RQqo1S28HZbZ5WRnoHF01l/R440UUD367SBADamsW/VOD5+k0MDxz0mJIBnSPPw1oMzLHymCBGgeX6WJvWoC5AOqYz2Swt5yXxnYXF/+Vb7iV5WVy/7bD3ySAoo5h3960KeFV1LAU2Tox/fdBeGVFEEEFREM/vyeOeKXFEHym/L8njnimRS/qx07/1VSDOiYDhfrcgMXHh66/gvfpBjgLo5KCG2fgNzYdQTg3kkRJH0tLN9ZrKgEp1JH2OmfFL2u8ye3KeFbnrw+M7W/c7cWdfIffm7rCi98lAI4RW3SOB2DLugIXeGFl1J0+4vG8TGohavz3U8pgqRjZ9YsKkig8eOou6EkxTMNhapwtiy0q24gfwG3I1EqYX2qt1IGLufZLkuLgCJXeIp4K0U1+GdwEG7UbUbAmgoWnFCS4tk2Uy3AkNKQQgDdATvIWxBqgnC1xnSJAV2vuzB+cmk3hU2hGUKoNealhiktPs0JYD0j96aRsLOgI8WLbXRapfPLYw4cgOVBpG0XG4IRJ6E2utebK6VOgjJbVBRpAi6UqlzUzAq4fYxQc+XvWm6FcDfRBUa3HfwIoZZbbsR+wO35NXxpQw1f5VHDF7zU8LU/NXwZVA1fEVbDF8c94OsEa1AvmaQUVvDVow262pneDbELaTGvKSaUw7rhPMR7O+Sud8e70pyYq0C96J7cC4WwUhak8jbfoL0Ug9Je7Ad+VUoNv0DnAb9WqebCL9uqyUYPs4jtxB4sx54iwPEyFVbAVZJvhPDrGieTQzDiHHGUd1JhlY6mhUwppTQBwmykdURlxPbmAJd4hFjLi9dAVwPjmEbvfTl4lPrxcvAreanepYbUqiQaVzk454VQ2nnH8ksIoZXcHgmvoC7C03GxjZXSlSLQ5dWDBRBSaq0SUWbHkzcTA+B82h3n2bbcr9O4EuRJ4nS932bzTX45TX1WwSJ8HuyvzDAMwzAMwzAMwzAMwzAMwzAMwzAMwzD/LP8D5XVpyTfio4wAAAAASUVORK5CYII="
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a href=""
-                ><img
-                  class="folloimg"
-                  src="data:image/png;base64,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"
-                  alt=""
-              /></a>
-            </div>
-          </div>
         </div>
-        <div id="tomtopline">
-          <p>TOMTOP Mobile</p>
-          <div>
-            <img
-              class="tomtopnext"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="tomtopnext"
-              src="https://logos-world.net/wp-content/uploads/2021/08/Android-Logo-2008-2019.png"
-              alt=""
-            />
-          </div>
+        <div id="endcontainer"> 
+            <div id="endcompconta">
+                <div id="endcompanydetail">
+                    <p>Company Info</p>
+                    <a href=""><p>About TOPTOP</p></a>
+                    <a href=""><p>Site Map</p></a>
+                    <a href=""><p>Legal Window</p></a>
+                    <a href=""><p>Forum</p></a>
+                    <a href=""><p>Blog</p></a>
+                </div>
+                <div id="endcompanydetail">
+                    <p>Payment & Shipping</p>
+                    <a href=""><p>How To Pay</p></a>
+                    <a href=""><p>Shipping FAQ</p></a>
+                    <a href=""><p>Ordering FAQ</p></a>
+                </div>
+                <div id="endcompanydetail">
+                    <p>Policies & Service</p>
+                    <a href=""><p>Terms & Conditions</p></a>
+                    <a href=""><p>Return Policies & Guarantess</p></a>
+                    <a href=""><p>Support FAQ</p></a>
+                    <a href=""><p>Privacy Policy</p></a>
+                    <a href=""><p>Reseller Ratings</p></a>
+                    <a href=""><p>Second-Hand Rules</p></a>
+                    <a href=""><p>Intellectual Property Rights</p></a>
+                </div>
+                <div id="endcompanydetail">
+                    <p>Partner Program</p>
+                    <a href=""><p>Get It Free</p></a>
+                    <a href=""><p>Affilliate Program</p></a>
+                    <a href=""><p>Wholesale Program</p></a>
+                    <a href=""><p>Dropship program</p></a>
+                    <a href=""><p>Super User Program</p></a>
+                    <a href=""><p>Studemts Exclusive</p></a>
+                    <a href=""><p>See all</p></a>
+                </div>
+                <div id="endcompanydetail">
+                    <p>Subscribe To Our Newsletter</p>
+                    <input type="email" name="" id="rewardcash" placeholder="Enter E-mail to Get $50 Cash Coupon">
+                    <p id="endpara">You will receive our latest updates,news,and promotions from TompTop.</p>
+                    <button class="btnend">Subscribe</button><br><br><span><a class="endprivacy" href="">Privacy Policy</a></span>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="imgendbox">
+            <div id="imgendbox">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZpiwwd1IOpjqPXLBVxJ-lI-fBPAzenfBzXw&usqp=CAU" alt="">
+            </div>
         </div>
-      </div>
-      <div id="endcontainer">
-        <div id="endcompconta">
-          <div id="endcompanydetail">
-            <p>Company Info</p>
-            <a href=""><p>About TOPTOP</p></a>
-            <a href=""><p>Site Map</p></a>
-            <a href=""><p>Legal Window</p></a>
-            <a href=""><p>Forum</p></a>
-            <a href=""><p>Blog</p></a>
-          </div>
-          <div id="endcompanydetail">
-            <p>Payment & Shipping</p>
-            <a href=""><p>How To Pay</p></a>
-            <a href=""><p>Shipping FAQ</p></a>
-            <a href=""><p>Ordering FAQ</p></a>
-          </div>
-          <div id="endcompanydetail">
-            <p>Policies & Service</p>
-            <a href=""><p>Terms & Conditions</p></a>
-            <a href=""><p>Return Policies & Guarantess</p></a>
-            <a href=""><p>Support FAQ</p></a>
-            <a href=""><p>Privacy Policy</p></a>
-            <a href=""><p>Reseller Ratings</p></a>
-            <a href=""><p>Second-Hand Rules</p></a>
-            <a href=""><p>Intellectual Property Rights</p></a>
-          </div>
-          <div id="endcompanydetail">
-            <p>Partner Program</p>
-            <a href=""><p>Get It Free</p></a>
-            <a href=""><p>Affilliate Program</p></a>
-            <a href=""><p>Wholesale Program</p></a>
-            <a href=""><p>Dropship program</p></a>
-            <a href=""><p>Super User Program</p></a>
-            <a href=""><p>Studemts Exclusive</p></a>
-            <a href=""><p>See all</p></a>
-          </div>
-          <div id="endcompanydetail">
-            <p>Subscribe To Our Newsletter</p>
-            <input
-              type="email"
-              name=""
-              id="rewardcash"
-              placeholder="Enter E-mail to Get $50 Cash Coupon"
-            />
-            <p id="endpara">
-              You will receive our latest updates,news,and promotions from
-              TompTop.
-            </p>
-            <button class="btnend">Subscribe</button><br /><br /><span
-              ><a class="endprivacy" href="">Privacy Policy</a></span
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="imgendbox">
-        <div id="imgendbox">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZpiwwd1IOpjqPXLBVxJ-lI-fBPAzenfBzXw&usqp=CAU"
-            alt=""
-          />
-        </div>
-      </div>
     </div>
-  </body>
+
+</body>
 </html>
 
 <script>
-  var TomTopData = [
-    {
-      image_url:
-        "https://img.tttcdn.com/advertising/2019/4/3/Vh3wae-930368998.jpg",
-      name: "",
-      price: "",
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
-      name: "Fingertip Pulse Oximeter Mini SpO2 Monitor ",
-      price: 593,
-      strikeofprice: 1540,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-      name: "Head Mount Magnifier with LED",
-      price: 1190,
-      strikeofprice: 3216,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/4/E15564/E15564-1-0a75-u57H.jpg",
-      name: "FNIRSI-1014D 7 Inch TFT LCD Display",
-      price: 11830,
-      strikeofprice: 19950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/8/E17798/E17798-1-97bf-OuXX.jpg",
-      name: "DIY Mini Spot Welder 5 Gears Adjustable",
-      price: 2660,
-      strikeofprice: "US$59.99",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/F/R/F2067R/F2067R-1-a010-EK9A.jpg",
-      name: "Flip Handheld Console with 16G ",
-      price: 2940,
-      strikeofprice: 4199,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/1/K19773-1/K19773-1-1-2fe9-eFm5.jpg",
-      name: "AUKEY Wireless Audio Receiver ",
-      price: 1610,
-      strikeofprice: 3423,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/9/C12159/C12159-1-f944-itGm.jpg",
-      name: "WiFi+BT 2-in-1 Wireless Network C",
-      price: 1190,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/4/Y24854/Y24854-1-904d-lFMK.jpg",
-      name: "CYCPLUS M2 Wireless Bike Compus",
-      price: 3080,
-      strikeofprice: 4830,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/advertising/2019/4/3/9ZNuad-30622548.jpg",
-      name: "",
-      price: "",
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/1/Y25285B1/Y25285B1-1-f39f-ZJvg.jpg",
-      name: "Cycling Neck Gaiter Face Mask ",
-      price: 770,
-      strikeofprice: 1295,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/advertising/2019/8/28/t9F0r3-1971777204.jpg",
-      name: "",
-      price: "",
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/K1288/K1288-4-befc.JPG",
-      name: "Auto Car USB Aux-in Adapter MP3",
-      price: 1680,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/tt/h/1/h10633-5-3f9d.jpg",
-      name: "BoGeer YT-813 Imported Sensors ",
-      price: 840,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/tt/i/1/i196-1-4403.jpg",
-      name: "Piezo Contact Microphone Pickup",
-      price: 4380,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/1/Y12181/Y12181-1-6de1-eto8.jpg",
-      name: "Smart Fishing Bait Boat Wireless",
-      price: 2289,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/H/Y/H18642GY/H18642GY-1-24d9-0oQU.jpg",
-      name: "iKayaa Height Adjustable Kid's Study table",
-      price: 3500,
-      strikeofprice: 7899,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/G/L/G9781GR-2XL/G9781GR-2XL-1-4273-UEVp.jpg",
-      name: "Vintage Women Retro Floral Print",
-      price: 2257,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/advertising/2019/4/3/Ua1MfV-1973759942.jpg",
-      name: "",
-      price: "",
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/advertising/2019/4/3/38ACcd-973287783.jpg",
-      name: "",
-      price: "",
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/G/B/G9524B/G9524B-1-f3a6-q6xM.jpg",
-      name: "Women Loose Two-Piece Top Wide",
-      price: 2996,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/G/L/G7350CA-L/G7350CA-L-1-fa60-LmrL.jpg",
-      name: "New Fashion Women Down Jacket",
-      price: 1630,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/G/S/G9148BL-S/G9148BL-S-1-5f72-IWbu.jpg",
-      name: "New Women Ripped Denim Coat ",
-      price: 1660,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/H/3/H29023/H29023-1-ba9c-DRY0.jpg",
-      name: "LED Digital Shower Temperature",
-      price: 1189,
-      strikeofprice: 2362,
-    },
+
+var TomTopData=[
+         {      image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/R/RM5683GR/RM5683GR-1-9d3c-pI16.jpg",
+                name : "Original Wltoys 12428 1/12 2.4G 4WD 50km/",
+                price : 7980,
+                strikeofprice : 13930,
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
+          name:"Fingertip Pulse Oximeter Mini SpO2 Monitor ",
+          price: 593,
+          strikeofprice: 1540
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
+          name:"Head Mount Magnifier with LED",
+          price:1190 ,
+          strikeofprice: 3216
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/4/E15564/E15564-1-0a75-u57H.jpg",
+          name:"FNIRSI-1014D 7 Inch TFT LCD Display",
+          price: 11830,
+          strikeofprice: 19950
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/8/E17798/E17798-1-97bf-OuXX.jpg",
+          name:"DIY Mini Spot Welder 5 Gears Adjustable",
+          price: 2660,
+          strikeofprice: 4199
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/F/R/F2067R/F2067R-1-a010-EK9A.jpg",
+          name:"Flip Handheld Console with 16G ",
+          price: 2940,
+          strikeofprice: 4199
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/K/1/K19773-1/K19773-1-1-2fe9-eFm5.jpg",
+          name:"AUKEY Wireless Audio Receiver ",
+          price:1610,
+          strikeofprice: 3423
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/C/9/C12159/C12159-1-f944-itGm.jpg",
+          name:"WiFi+BT 2-in-1 Wireless Network C",
+          price: 1190,
+          strikeofprice: 5467
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/4/Y24854/Y24854-1-904d-lFMK.jpg",
+          name:"CYCPLUS M2 Wireless Bike Compus",
+          price: 3080,
+          strikeofprice: 4830,
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTOYZZZ-A5-EU/RTOYZZZ-A5-EU-1-7531-2rp7.jpg",
+            name:"ATOMSTACK A5 20W Laser Engraver",
+                           
+            price:2730,
+            strikeofprice:5695,
+
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/1/Y25285B1/Y25285B1-1-f39f-ZJvg.jpg",
+          name:"Cycling Neck Gaiter Face Mask ",
+          price: 770,
+          strikeofprice: 1295
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTOYZZZ-A5-EU/RTOYZZZ-A5-EU-1-7531-2rp7.jpg",
+            name:"ATOMSTACK A5 20W Laser Engraver",              
+            price:2730,
+            strikeofprice:5695,
+
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/K/K1288/K1288-4-befc.JPG",
+          name:"Auto Car USB Aux-in Adapter MP3",
+          price: 1680,
+          strikeofprice: 2348
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/tt/h/1/h10633-5-3f9d.jpg",
+          name:"BoGeer YT-813 Imported Sensors ",
+          price: 840,
+          strikeofprice: 1548
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/tt/i/1/i196-1-4403.jpg",
+          name:"Piezo Contact Microphone Pickup",
+          price: 4380,
+          strikeofprice: 7584
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/1/Y12181/Y12181-1-6de1-eto8.jpg",
+          name:"Smart Fishing Bait Boat Wireless",
+          price: 2289,
+          strikeofprice: 8912
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/H/Y/H18642GY/H18642GY-1-24d9-0oQU.jpg",
+          name:"iKayaa Height Adjustable Kid's Study table",
+          price: 3500,
+          strikeofprice: 7899
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/G/L/G9781GR-2XL/G9781GR-2XL-1-4273-UEVp.jpg",
+          name:"Vintage Women Retro Floral Print",
+          price: 2257,
+          strikeofprice: 5897
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/P/3/PW0263/PW0263-1-d38d-SLWd.jpg",
+            name:"P80 Smart Bracelet Fashion Sports Watch 1.3'' ",
+                           
+            price:2100,
+            strikeofprice:5950,
+
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/I/I519/I519-1-e968-EtAY.jpg",
+            name:"Studio Wireless Mic Remote Microphone System Kit",                       
+            price:1750,
+            strikeofprice:2450,
+
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/G/B/G9524B/G9524B-1-f3a6-q6xM.jpg",
+          name:"Women Loose Two-Piece Top Wide",
+          price: 2996,
+          strikeofprice: 3784
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/G/L/G7350CA-L/G7350CA-L-1-fa60-LmrL.jpg",
+          name:"New Fashion Women Down Jacket",
+          price: 1630,
+          strikeofprice: 4094
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/G/S/G9148BL-S/G9148BL-S-1-5f72-IWbu.jpg",
+          name:"New Women Ripped Denim Coat ",
+          price: 1660,
+          strikeofprice: 3456
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/H/3/H29023/H29023-1-ba9c-DRY0.jpg",
+          name:"LED Digital Shower Temperature",
+          price: 1189,
+          strikeofprice: 2362
+        },
 
     // anubhav data end
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/8/E17798/E17798-1-97bf-OuXX.jpg",
-      name: "DIY Mini Spot Welder 5 Gears Adjustable ",
-      price: 2660,
-      strikeofprice: 4130,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/2/RM12920-2/RM12920-2-1-4bde-OtKv.jpg",
-      name: "4PCS Propeller for MJX B20 EIS RC Drone",
-      price: 612,
-      strikeofprice: 1098,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E4416AU/E4416AU-1-d0eb-1Em6.jpg",
-      name: "ATLINK WS6906 3.5in LCD Display Data",
-      price: 4480,
-      strikeofprice: 6370,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/1/K19391/K19391-1-d971-p4xu.jpg",
-      name: "165V-260V 28W 1500LM 6500-7000K E27/E26",
-      price: 599,
-      strikeofprice: 1260,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/R/YB17809GR/YB17809GR-1-a005-aZCB.jpg",
-      name: "Outdoor Gaiters Sleeve Leg Protector",
-      price: 873,
-      strikeofprice: 1570,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTYSY-XF800BL-EU/RTYSY-XF800BL-EU-1-5e0a-WRIB.jpg",
-      name: "BEZIOR XF800 26inch 500W Electric Bike",
-      price: 150430,
-      strikeofprice: 257950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D3099/D3099-8-f214.jpg",
-      name: "GODOX X1R-C 32 Channels TTL 1/8000s Wireless",
-      price: 2660,
-      strikeofprice: 5320,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/V/9/V9159/V9159-1-5fad-LKUT.jpg",
-      name: "Rzosom Wireless Microphone System Transmitters",
-      price: 1890,
-      strikeofprice: 2893,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/F/5/F2105/F2105-1-281e-kDQS.jpg",
-      name: "Retro Video Game Console 2.4G Wireless Games Player",
-      price: 1400,
-      strikeofprice: 3710,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E2736EU/E2736EU-1-8c6e-iIQP.jpg",
-      name: "Meterk 14 in 1 Soldering Iron Kit 60W Adjustable",
-      price: 1540,
-      strikeofprice: 2730,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/1/C9690-1/C9690-1-1-7218-ALDS.jpg",
-      name: "2 Million Pixels High Definition USB Camera Fixed",
-      price: 700,
-      strikeofprice: 2520,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTADS-C26MAX-GY-EU/RTADS-C26MAX-GY-EU-1-1cac-VmuV.jpg",
-      name: "HIMO C26MAX 26inch Electric Mountain Bike with",
-      price: 119630,
-      strikeofprice: 139930,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/I1087/I1087-6-8e36.jpg",
-      name: "Portable 61-Key Keyboard Electric Piano Padded",
-      price: 1680,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E6512EU/E6512EU-1-b92a-7mrr.jpg",
-      name: "110-220V Tri Band Amplifier 900 1800 2100 GSM DCS",
-      price: 8050,
-      strikeofprice: 13160,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/V/4/V7384/V7384-1-aec4-QjN8.jpg",
-      name: "WB11 Bluetooth 5.0 Receiver Wireless Audio Receiver",
-      price: 840,
-      strikeofprice: 1190,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/J/4/J2184/J2184-1-5330-VZEW.jpg",
-      name: "9Pcs Goggles Mirror Bulletproof Daisy C5 Field",
-      price: 1540,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/9/C12229/C12229-1-34c0-PdIG.jpg",
-      name: "Lenovo X4 Wireless BT Headphone Bone Conduction",
-      price: 2240,
-      strikeofprice: 3920,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/P/C10158-1080P/C10158-1080P-1-b9a4-Rwvv.jpg",
-      name: "1080P 2MP Webcam 30fps Camera Noise-reduction",
-      price: 1120,
-      strikeofprice: 3920,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/1/RM9901/RM9901-1-2de3-qXCK.jpg",
-      name: "FlySky FS-GT5 2.4G 6CH Transmitter Remote",
-      price: 79.99,
-      strikeofprice: 109.99,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/5/RM10315/RM10315-1-5439-bjqa.jpg",
-      name: "11.1V 1600mAh 20C 3S Powerful Rechargeable",
-      price: 1820,
-      strikeofprice: 3220,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/P/R/PAA4556GR/PAA4556GR-1-bb50-rhbJ.jpg",
-      name: "GOGOBEST GF700 Electric Mountain Bike for",
-      price: 125230,
-      strikeofprice: 224630,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E4160EU/E4160EU-1-fa28-9He9.jpg",
-      name: "Meterk Electric Jig Saw 400W Multi-functional",
-      price: 1890,
-      strikeofprice: 3790,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/6/RM10596/RM10596-1-7a06-R2wx.jpg",
-      name: "7.4V 5200mAh Battery for Flytec 2011-5 1.5kg",
-      price: 2100,
-      strikeofprice: 3430,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/J/B/J5184B/J5184B-1-9e9a-LEci.jpg",
-      name: "D18 1.3in Intelligent Watch Sports Waterproof",
-      price: 699,
-      strikeofprice: 1400,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/6/I6681-6/I6681-6-1-c793-p4ef.jpg",
-      name: "6C Tenor Saxophone Mouthpiece Musical Instrument",
-      price: 2240,
-      strikeofprice: 4130,
-    },
-    // ak data ends
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/U/Y16779EU/Y16779EU-1-3a55-JeHn.jpg",
-      name: "Fishing bait nesting boat intelligence ",
-      price: 6299,
-      strikeofprice: 11340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/6/K7226/K7226-1-d716-h2gU.jpg",
-      name: "Car GPS Blocker anti signal tracking",
-      price: 699,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/5/I6685/I6685-1-5bed-I1RF.jpg",
-      name: "CUVAVE Cube Turner Wireless Page Turner Pedal",
-      price: 1539,
-      strikeofprice: 3049,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/tt/d/1/d1090-13-9485.jpg",
-      name: "Yongnuo RF-603N II Wireless",
-      price: 6230,
-      strikeofprice: 11340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/5/E17735/E17735-1-4b3a-PMxg.jpg",
-      name: "High Power Recharger Emergency ",
-      price: 6230,
-      strikeofprice: 11340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA4487B/PAA4487B-1-f5a2-CmZu.jpg",
-      name: "Original Xiaomi Stylus Pen for Mi P ",
-      price: 5039,
-      strikeofprice: 11060,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/6/Y13025B-316/Y13025B-316-1-8c9a-kTJg.jpg",
-      name: "Suspension Bike Seatpost Shock A ",
-      price: 6230,
-      strikeofprice: 11340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D1253/D1253-8-e991.jpg",
-      name: "2 * 3m / 6.6 * 9.8ft Adjustable Back",
-      price: 6579,
-      strikeofprice: 11402,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/H/3/H29023/H29023-1-ba9c-DRY0.jpg",
-      name: "LED Digital Shower Temperature D",
-      price: 1189,
-      strikeofprice: 2240,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/0/E18121-10/E18121-10-1-c8a8-gWom.jpg",
-      name: "30W Polycrystal Solar Panel Flexibl",
-      price: 2449,
-      strikeofprice: 3688,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/5/Y10712-15/Y10712-15-1-f552-LUiz.jpg",
-      name: "1200TVL Underwater Fishing Camera",
-      price: 6696,
-      strikeofprice: 11340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/0/C-MD760/C-MD760-1-9c95-RYXZ.jpg",
-      name: "Digital Forehead Thermometer N",
-      price: "US$12.89",
-      strikeofprice: "US$35.99",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/B/Y24668B/Y24668B-1-3409-3Xi2.jpg",
-      name: "CYCLINGBOX Bike Bell 125dB Loud",
-      price: 902,
-      strikeofprice: 1661,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/U/Y16779EU/Y16779EU-1-3a55-JeHn.jpg",
-      name: "Yeelight YLXD76YL Smart LED Ceil ",
-      price: 6230,
-      strikeofprice: 1661,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/3/K19753/K19753-1-b073-PtbW.jpg",
-      name: "USB Dash Camera Car DVR HD720 ",
-      price: 1329,
-      strikeofprice: 1539,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA4638B/PAA4638B-1-3ecc-tEqA.jpg",
-      name: "Xiaomi Game Mouse Lite YXSB01Y",
-      price: 2029,
-      strikeofprice: 2240,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0144/L0144-8-af20.JPG",
-      name: "AC 110V/220V to DC 24V 20A 480",
-      price: 1552,
-      strikeofprice: 5340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/I232/I232-2-3e51.JPG",
-      name: "Joyo JF-08 Guitar Digital Delay Effec",
-      price: 2730,
-      strikeofprice: 5340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/tt/1/2/12364069830.jpg",
-      name: "Network Cable Tester",
-      price: 693,
-      strikeofprice: 1120,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/3/K12773/K12773-1-cb5e-Q1hq.jpg",
-      name: "Car AUX USB Cable Charging Wire ",
-      price: 1027,
-      strikeofprice: 1134,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/P/2/PAA1202/PAA1202-1-69ca-iCsI.jpg",
-      name: "DUKA Laser Rangefinder LS-P Ra",
-      price: 980,
-      strikeofprice: 3150,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/G/L/G17387BU-XL/G17387BU-XL-1-ab95-LprJ.jpg",
-      name: "Women Nightgown Chemises Plus",
-      price: 1399,
-      strikeofprice: 1445,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/H/9/H45249/H45249-1-20ed-382l.jpg",
-      name: "2Pack Sunflower LED Solar Light ",
-      price: 1523,
-      strikeofprice: 2099,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D1163/D1163-6-9d2f.jpg",
-      name: "WLtoys WL912-A RC Boat 2.4G 35K ",
-      price: 2347,
-      strikeofprice: 8340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/0/RM12130/RM12130-1-2cf3-DTaX.jpg",
-      name: "PRO Godox S-Type Bracket Bowens  ",
-      price: 6230,
-      strikeofprice: 11340,
-    },
-    // manish data ends
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/0/I8290/I8290-1-09ae-cOno.jpg",
-      name: "13-Note Glockenspiel Portable Aluminum Piano",
-      price: 6277,
-      strikeofprice: 8255,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/R/C11770R/C11770R-1-fb02-FpVR.jpg",
-      name: "PCI-E Riser Board VER009 1X to 16X GPU",
-      price: 1222,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/R/C11770R/C11770R-1-fb02-FpVR.jpg",
-      name: "Lankeleisi X2000PLUS 20Inch Electric",
-      price: 97930,
-      strikeofprice: 108430,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/2/E21176-2/E21176-2-1-b233-BBbc.jpg",
-      name: "TL631 PRO Universal Laptop PCI Diagnose",
-      price: 5161,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E4695EU/E4695EU-1-56c1-4yi0.jpg",
-      name: "Meterk 1/2 Impact Drill 13mm Electric",
-      price: 18889,
-      strikeofprice: 5250,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/images/tomtopsite/O/O1US-1/O1US-1-15203884089341.jpg",
-      name: "Koogeek Wi-Fi Enabled Smart Outlet",
-      price: 2029,
-      strikeofprice: 5320,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/U/K19160EU/K19160EU-1-581d-wO2n.jpg",
-      name: "70W Hot Stapler Plastic Welding",
-      price: 1749,
-      strikeofprice: 4690,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/7/K12947/K12947-1-4a4e-kVXf.jpg",
-      name: "Cars Child Safety Seat Mount Bracket Universal",
-      price: 2250,
-      strikeofprice: 3290,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/0/C-MD760/C-MD760-1-9c95-RYXZ.jpg",
-      name: "Digital Forehead Thermometer Non-contact",
-      price: 902,
-      strikeofprice: 2450,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/0/E18121-10/E18121-10-1-c8a8-gWom.jpg",
-      name: "30W Polycrystal Solar Panel Flexible Solar",
-      price: 2449,
-      strikeofprice: 3640,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/P/C10158-1080P/C10158-1080P-1-b9a4-Rwvv.jpg",
-      name: "1080P 2MP Webcam 30fps Camera Noise-red",
-      price: 1189,
-      strikeofprice: 1680,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/L/RM12539BL/RM12539BL-1-7ac4-WSWu.jpg",
-      name: "Mini Drone UFO Hand Operated Helicopter",
-      price: 970,
-      strikeofprice: 1540,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/V/7/V4657/V4657-1-2eab-d4aK.jpg",
-      name: "A7 TWS True Wireless Bluetooth Headphones",
-      price: 693,
-      strikeofprice: 2099,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/O/0/OS5190/OS5190-1-6608-U0jf.jpg",
-      name: "Aibecy Portable Mini Thermal Printer",
-      price: 1960,
-      strikeofprice: 2310,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/R/RM5683GR/RM5683GR-1-9d3c-pI16.jpg",
-      name: "Original Wltoys 12428 1/12 2.4G 4WD 50km/",
-      price: 7980,
-      strikeofprice: 13930,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E16220EU/E16220EU-1-4d55-PFGp.jpg",
-      name: "KKmoon 800W 30000r/min Multifunctional",
-      price: 2099,
-      strikeofprice: 3920,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/U/D11577EU/D11577EU-1-3d85-UtCm.jpg",
-      name: "Andoer LM60W Portable LED Photography ",
-      price: 5290,
-      strikeofprice: 9730,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/O/5/OS6025/OS6025-1-aca4-noc5.jpg",
-      name: "Motherboard Engraveing Machine Control",
-      price: 2590,
-      strikeofprice: 3080,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/4/Y24854/Y24854-1-904d-lFMK.jpg",
-      name: "CYCPLUS M2 Wireless Bike Computer GPS",
-      price: 3010,
-      strikeofprice: 4830,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/1/E15086EU-1/E15086EU-1-1-da13-lvg9.jpg",
-      name: "Multifunctional 3D 12 Lines Laser Level",
-      price: 4760,
-      strikeofprice: 6930,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/2/K18182/K18182-1-3d59-SHJ7.jpg",
-      name: "GM Rear View Mirror Auto Dimming Replac",
-      price: 4340,
-      strikeofprice: "",
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/1/C10801/C10801-1-bfb4-DkuC.jpg",
-      name: "BT 5.0 Earphone DSP Noise Cancelling Au",
-      price: 909,
-      strikeofprice: 2240,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/U/Y16779EU/Y16779EU-1-3a55-JeHn.jpg",
-      name: "Fishing Bait Nesting Boat Intelligent R",
-      price: 6230,
-      strikeofprice: 11340,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/B/C12457-128GB/C12457-128GB-1-6d8b-Tr6E.jpg",
-      name: "thinkplus MU242 16GB USB3.0 USB Flash ",
-      price: 1890,
-      strikeofprice: 3360,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/5/D11285/D11285-1-9e0e-iNpk.jpg",
-      name: "Ulanzi GP-16 3-in-1 Sports Camera Magnet",
-      price: 1330,
-      strikeofprice: 2870,
-    },
-    // data end by prachita
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
-      name: "SMART SENSOR AR884A Sound Level Meter with",
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/8/E17798/E17798-1-97bf-OuXX.jpg",
+            name:  "DIY Mini Spot Welder 5 Gears Adjustable ",
+            price: 2660,
+            strikeofprice: 4130,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/2/RM12920-2/RM12920-2-1-4bde-OtKv.jpg",
+            name:  "4PCS Propeller for MJX B20 EIS RC Drone",
+            price: 612,
+            strikeofprice: 1098,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E4416AU/E4416AU-1-d0eb-1Em6.jpg",
+            name:  "ATLINK WS6906 3.5in LCD Display Data",
+            price: 4480,
+            strikeofprice: 6370,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/1/K19391/K19391-1-d971-p4xu.jpg",
+            name:  "165V-260V 28W 1500LM 6500-7000K E27/E26",
+            price:599,
+            strikeofprice: 1260,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/R/YB17809GR/YB17809GR-1-a005-aZCB.jpg",
+            name:  "Outdoor Gaiters Sleeve Leg Protector",
+            price:873,
+            strikeofprice: 1570,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTYSY-XF800BL-EU/RTYSY-XF800BL-EU-1-5e0a-WRIB.jpg",
+            name:  "BEZIOR XF800 26inch 500W Electric Bike",
+            price:150430,
+            strikeofprice: 257950,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D3099/D3099-8-f214.jpg",
+            name:  "GODOX X1R-C 32 Channels TTL 1/8000s Wireless",
+            price:2660,
+            strikeofprice: 5320,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/V/9/V9159/V9159-1-5fad-LKUT.jpg",
+            name:  "Rzosom Wireless Microphone System Transmitters",
+            price:1890,
+            strikeofprice: 2893,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/F/5/F2105/F2105-1-281e-kDQS.jpg",
+            name:  "Retro Video Game Console 2.4G Wireless Games Player",
+            price:1400,
+            strikeofprice: 3710,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E2736EU/E2736EU-1-8c6e-iIQP.jpg",
+            name:  "Meterk 14 in 1 Soldering Iron Kit 60W Adjustable",
+            price:1540,
+            strikeofprice: 2730,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/1/C9690-1/C9690-1-1-7218-ALDS.jpg",
+            name:  "2 Million Pixels High Definition USB Camera Fixed",
+            price:700,
+            strikeofprice: 2520,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTADS-C26MAX-GY-EU/RTADS-C26MAX-GY-EU-1-1cac-VmuV.jpg",
+            name:  "HIMO C26MAX 26inch Electric Mountain Bike with",
+            price:119630,
+            strikeofprice: 139930,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/I1087/I1087-6-8e36.jpg",
+            name:  "Portable 61-Key Keyboard Electric Piano Padded",
+            price:1680,
+            strikeofprice: 4356,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E6512EU/E6512EU-1-b92a-7mrr.jpg",
+            name:  "110-220V Tri Band Amplifier 900 1800 2100 GSM DCS",
+            price:8050,
+            strikeofprice: 13160,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/V/4/V7384/V7384-1-aec4-QjN8.jpg",
+            name:  "WB11 Bluetooth 5.0 Receiver Wireless Audio Receiver",
+            price:840,
+            strikeofprice: 1190,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/J/4/J2184/J2184-1-5330-VZEW.jpg",
+            name:  "9Pcs Goggles Mirror Bulletproof Daisy C5 Field",
+            price: 1540,
+            strikeofprice: 4574,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/9/C12229/C12229-1-34c0-PdIG.jpg",
+            name:  "Lenovo X4 Wireless BT Headphone Bone Conduction",
+            price: 2240,
+            strikeofprice: 3920,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/P/C10158-1080P/C10158-1080P-1-b9a4-Rwvv.jpg",
+            name:  "1080P 2MP Webcam 30fps Camera Noise-reduction",
+            price: 1120,
+            strikeofprice: 3920,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/1/RM9901/RM9901-1-2de3-qXCK.jpg",
+            name:  "FlySky FS-GT5 2.4G 6CH Transmitter Remote",
+            price: 79.99,
+            strikeofprice: 109.99,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/5/RM10315/RM10315-1-5439-bjqa.jpg",
+            name:  "11.1V 1600mAh 20C 3S Powerful Rechargeable",
+            price: 1820,
+            strikeofprice:3220,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/P/R/PAA4556GR/PAA4556GR-1-bb50-rhbJ.jpg",
+            name:  "GOGOBEST GF700 Electric Mountain Bike for",
+            price: 125230,
+            strikeofprice: 224630,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E4160EU/E4160EU-1-fa28-9He9.jpg",
+            name:  "Meterk Electric Jig Saw 400W Multi-functional",
+            price: 1890,
+            strikeofprice: 3790,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/6/RM10596/RM10596-1-7a06-R2wx.jpg",
+            name:  "7.4V 5200mAh Battery for Flytec 2011-5 1.5kg",
+            price: 2100,
+            strikeofprice: 3430,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/J/B/J5184B/J5184B-1-9e9a-LEci.jpg",
+            name:  "D18 1.3in Intelligent Watch Sports Waterproof",
+            price: 699,
+            strikeofprice: 1400,
+        },
+        {
+            image_url: "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/6/I6681-6/I6681-6-1-c793-p4ef.jpg",
+            name:  "6C Tenor Saxophone Mouthpiece Musical Instrument",
+            price: 2240,
+            strikeofprice: 4130,
+        },
+        // ak data ends
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/U/Y16779EU/Y16779EU-1-3a55-JeHn.jpg",
+          name:"Fishing bait nesting boat intelligence ",
+          price: 6299,
+          strikeofprice:11340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/K/6/K7226/K7226-1-d716-h2gU.jpg",
+          name:"Car GPS Blocker anti signal tracking",
+          price: 699,
+          strikeofprice: 1784
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/I/5/I6685/I6685-1-5bed-I1RF.jpg",
+          name:"CUVAVE Cube Turner Wireless Page Turner Pedal",
+          price: 1539,
+          strikeofprice: 3049
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/tt/d/1/d1090-13-9485.jpg",
+          name:"Yongnuo RF-603N II Wireless",
+          price: 6230,
+          strikeofprice: 11340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/5/E17735/E17735-1-4b3a-PMxg.jpg",
+          name:"High Power Recharger Emergency ",
+          price: 6230,
+          strikeofprice: 11340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA4487B/PAA4487B-1-f5a2-CmZu.jpg",
+          name:"Original Xiaomi Stylus Pen for Mi P ",
+          price: 5039,
+          strikeofprice: 11060
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/6/Y13025B-316/Y13025B-316-1-8c9a-kTJg.jpg",
+          name:"Suspension Bike Seatpost Shock A ",
+          price: 6230,
+          strikeofprice:11340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D1253/D1253-8-e991.jpg",
+          name:"2 * 3m / 6.6 * 9.8ft Adjustable Back",
+          price: 6579,
+          strikeofprice: 11402
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/H/3/H29023/H29023-1-ba9c-DRY0.jpg",
+          name:"LED Digital Shower Temperature D",
+          price: 1189,
+          strikeofprice: 2240
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/0/E18121-10/E18121-10-1-c8a8-gWom.jpg",
+          name:"30W Polycrystal Solar Panel Flexibl",
+          price: 2449,
+          strikeofprice: 3688
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/5/Y10712-15/Y10712-15-1-f552-LUiz.jpg",
+          name:"1200TVL Underwater Fishing Camera",
+          price: 6696,
+          strikeofprice: 11340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/C/0/C-MD760/C-MD760-1-9c95-RYXZ.jpg",
+          name:"Digital Forehead Thermometer N",
+          price: 902,
+          strikeofprice: 2519
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/B/Y24668B/Y24668B-1-3409-3Xi2.jpg",
+          name:"CYCLINGBOX Bike Bell 125dB Loud",
+          price: 902,
+          strikeofprice: 1661
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/U/Y16779EU/Y16779EU-1-3a55-JeHn.jpg",
+          name:"Yeelight YLXD76YL Smart LED Ceil ",
+          price: 6230,
+          strikeofprice: 1661
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/K/3/K19753/K19753-1-b073-PtbW.jpg",
+          name:"USB Dash Camera Car DVR HD720 ",
+          price: 1329,
+          strikeofprice: 1539
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/P/B/PAA4638B/PAA4638B-1-3ecc-tEqA.jpg",
+          name:"Xiaomi Game Mouse Lite YXSB01Y",
+          price: 2029,
+          strikeofprice: 2240
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/L/L0144/L0144-8-af20.JPG",
+          name:"AC 110V/220V to DC 24V 20A 480",
+          price: 1552,
+          strikeofprice: 5340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/I/I232/I232-2-3e51.JPG",
+          name:"Joyo JF-08 Guitar Digital Delay Effec",
+          price:2730 ,
+          strikeofprice: 5340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/tt/1/2/12364069830.jpg",
+          name:"Network Cable Tester",
+          price: 693,
+          strikeofprice: 1120
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/K/3/K12773/K12773-1-cb5e-Q1hq.jpg",
+          name:"Car AUX USB Cable Charging Wire ",
+          price: 1027,
+          strikeofprice: 1134
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/P/2/PAA1202/PAA1202-1-69ca-iCsI.jpg",
+          name:"DUKA Laser Rangefinder LS-P Ra",
+          price: 980,
+          strikeofprice: 3150
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/G/L/G17387BU-XL/G17387BU-XL-1-ab95-LprJ.jpg",
+          name:"Women Nightgown Chemises Plus",
+          price:1399 ,
+          strikeofprice: 1445
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/H/9/H45249/H45249-1-20ed-382l.jpg",
+          name:"2Pack Sunflower LED Solar Light ",
+          price: 1523,
+          strikeofprice: 2099
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D1163/D1163-6-9d2f.jpg",
+          name:"WLtoys WL912-A RC Boat 2.4G 35K ",
+          price: 2347,
+          strikeofprice: 8340
+        },
+        { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/R/0/RM12130/RM12130-1-2cf3-DTaX.jpg",
+          name:"PRO Godox S-Type Bracket Bowens  ",
+          price:6230,
+          strikeofprice: 11340
+        },
+        // manish data ends
+        {
+            image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/0/I8290/I8290-1-09ae-cOno.jpg",
+            name :"13-Note Glockenspiel Portable Aluminum Piano",
+            price :6277,
+            strikeofprice : 8255,
 
-      price: 4619,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/A/6/ALPA3695306/ALPA3695306-1-0633-WRII.jpg",
-      name: "FLSUN QQ-S-Pro Delta 3D Printer Φ255",
+                    },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/R/C11770R/C11770R-1-fb02-FpVR.jpg",
+                name : "PCI-E Riser Board VER009 1X to 16X GPU",
+                price : 1222,
+                strikeofprice:4957
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/R/C11770R/C11770R-1-fb02-FpVR.jpg",
+                name : "Lankeleisi X2000PLUS 20Inch Electric",
+                price :97930,
+                strikeofprice : 108430,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/2/E21176-2/E21176-2-1-b233-BBbc.jpg",
+                name : "TL631 PRO Universal Laptop PCI Diagnose",
+                price :5161,
+                strikeofprice :8705
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E4695EU/E4695EU-1-56c1-4yi0.jpg",
+                name : "Meterk 1/2 Impact Drill 13mm Electric",
+                price :18889,
+                strikeofprice :5250,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/images/tomtopsite/O/O1US-1/O1US-1-15203884089341.jpg",
+                name : "Koogeek Wi-Fi Enabled Smart Outlet",
+                price : 2029,
+                strikeofprice : 5320,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/U/K19160EU/K19160EU-1-581d-wO2n.jpg",
+                name : "70W Hot Stapler Plastic Welding",
+                price : 1749,
+                strikeofprice :4690,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/7/K12947/K12947-1-4a4e-kVXf.jpg",
+                name : "Cars Child Safety Seat Mount Bracket Universal",
+                price :2250,
+                strikeofprice : 3290,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/0/C-MD760/C-MD760-1-9c95-RYXZ.jpg",
+                name : "Digital Forehead Thermometer Non-contact",
+                price :902,
+                strikeofprice : 2450,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/0/E18121-10/E18121-10-1-c8a8-gWom.jpg",
+                name : "30W Polycrystal Solar Panel Flexible Solar",
+                price :2449,
+                strikeofprice : 3640,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/P/C10158-1080P/C10158-1080P-1-b9a4-Rwvv.jpg",
+                name : "1080P 2MP Webcam 30fps Camera Noise-red",
+                price : 1189,
+                strikeofprice : 1680,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/L/RM12539BL/RM12539BL-1-7ac4-WSWu.jpg",
+                name : "Mini Drone UFO Hand Operated Helicopter",
+                price :970,
+                strikeofprice : 1540 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/V/7/V4657/V4657-1-2eab-d4aK.jpg",
+                name : "A7 TWS True Wireless Bluetooth Headphones",
+                price : 693,
+                strikeofprice : 2099 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/O/0/OS5190/OS5190-1-6608-U0jf.jpg",
+                name : "Aibecy Portable Mini Thermal Printer",
+                price : 1960,
+                strikeofprice :2310 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/R/RM5683GR/RM5683GR-1-9d3c-pI16.jpg",
+                name : "Original Wltoys 12428 1/12 2.4G 4WD 50km/",
+                price : 7980,
+                strikeofprice : 13930,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/U/E16220EU/E16220EU-1-4d55-PFGp.jpg",
+                name : "KKmoon 800W 30000r/min Multifunctional",
+                price : 2099,
+                strikeofprice : 3920 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/U/D11577EU/D11577EU-1-3d85-UtCm.jpg",
+                name : "Andoer LM60W Portable LED Photography ",
+                price : 5290,
+                strikeofprice : 9730,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/O/5/OS6025/OS6025-1-aca4-noc5.jpg",
+                name : "Motherboard Engraveing Machine Control",
+                price :2590,
+                strikeofprice : 3080,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/4/Y24854/Y24854-1-904d-lFMK.jpg",
+                name : "CYCPLUS M2 Wireless Bike Computer GPS",
+                price :3010,
+                strikeofprice : 4830 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/1/E15086EU-1/E15086EU-1-1-da13-lvg9.jpg",
+                name : "Multifunctional 3D 12 Lines Laser Level",
+                price :4760,
+                strikeofprice : 6930 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/K/2/K18182/K18182-1-3d59-SHJ7.jpg",
+                name : "GM Rear View Mirror Auto Dimming Replac",
+                price : 4340,
+                strikeofprice :5897,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/1/C10801/C10801-1-bfb4-DkuC.jpg",
+                name : "BT 5.0 Earphone DSP Noise Cancelling Au",
+                price :909,
+                strikeofprice :2240,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/U/Y16779EU/Y16779EU-1-3a55-JeHn.jpg",
+                name : "Fishing Bait Nesting Boat Intelligent R",
+                price : 6230,
+                strikeofprice : 11340 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/B/C12457-128GB/C12457-128GB-1-6d8b-Tr6E.jpg",
+                name : "thinkplus MU242 16GB USB3.0 USB Flash ",
+                price :1890,
+                strikeofprice :3360 ,
+            },
+            {
+                image_url : "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/5/D11285/D11285-1-9e0e-iNpk.jpg",
+                name : "Ulanzi GP-16 3-in-1 Sports Camera Magnet",
+                price : 1330,
+                strikeofprice : 2870 ,
+            },
+            // data end by prachita
+            {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
+                name:"SMART SENSOR AR884A Sound Level Meter with",
+                                    
+                price:4619,
+                strikeofprice:5950,
 
-      price: 4550,
-      strikeofprice: 8780,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/V/6/V6566/V6566-1-032b-RnDk.jpg",
-      name: "Mirascreen G5 Plus 2.4G/5G WiFi Displ",
+            },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/A/6/ALPA3695306/ALPA3695306-1-0633-WRII.jpg",
+            name:"FLSUN QQ-S-Pro Delta 3D Printer Φ255",
+                           
+            price:4550,
+            strikeofprice:8780,
 
-      price: 1819,
-      strikeofprice: 2520,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/P/3/PW0263/PW0263-1-d38d-SLWd.jpg",
-      name: "P80 Smart Bracelet Fashion Sports Watch 1.3'' ",
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/V/6/V6566/V6566-1-032b-RnDk.jpg",
+            name:"Mirascreen G5 Plus 2.4G/5G WiFi Displ",
+                           
+            price:1819,
+            strikeofprice:2520,
 
-      price: 2100,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/1/E19368-1/E19368-1-1-1824-RqPY.jpg",
-      name: "NR-750 Handheld Portable Nuclear Radiation Det",
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/P/3/PW0263/PW0263-1-d38d-SLWd.jpg",
+            name:"P80 Smart Bracelet Fashion Sports Watch 1.3'' ",
+                           
+            price:2100,
+            strikeofprice:5950,
 
-      price: 4340,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/5/E21205/E21205-1-b83c-DfpP.jpg",
-      name: "Portable Water Quality Detector 6 In 1 PH EC ",
-      price: 3150,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/H/7/H14737/H14737-1-001f-oo5Y.jpg",
-      name: "AC110-240V Mini LED Red & Green Laser Projector Stage Light",
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/1/E19368-1/E19368-1-1-1824-RqPY.jpg",
+            name:"NR-750 Handheld Portable Nuclear Radiation Det",
+                           
+            price:4340,
+            strikeofprice:5950,
 
-      price: 1750,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/L/RM12539BL/RM12539BL-1-7ac4-WSWu.jpg",
-      name: "Mini Drone UFO Hand Operated Helicopter Quadr",
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/5/E21205/E21205-1-b83c-DfpP.jpg",
+            name:"Portable Water Quality Detector 6 In 1 PH EC ",           
+            price:3150,
+            strikeofprice:5950,
 
-      price: 910,
-      strikeofprice: 1540,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/2/E9952/E9952-1-a0b3-J6Ru.jpg",
-      name: "Doweling Jig Pocket Hole Jig Kit Wood Vertica",
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/H/7/H14737/H14737-1-001f-oo5Y.jpg",
+            name:"AC110-240V Mini LED Red & Green Laser Projector Stage Light",
+                           
+            price:1750,
+            strikeofprice:5950,
 
-      price: 2239,
-      strikeofprice: 4034,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D1253/D1253-8-e991.jpg",
-      name: "2 * 3m / 6.6 * 9.8ft Adjustable Background Su",
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/R/L/RM12539BL/RM12539BL-1-7ac4-WSWu.jpg",
+            name:"Mini Drone UFO Hand Operated Helicopter Quadr",
+                           
+            price:910,
+            strikeofprice:1540,
 
-      price: 2170,
-      strikeofprice: 9030,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/8/E21168/E21168-1-dbf7-EnXb.jpg",
-      name: "Intelligent Single-phase Wifi Electricity Met",
+        }, 
+    {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/2/E9952/E9952-1-a0b3-J6Ru.jpg",
+            name:"Doweling Jig Pocket Hole Jig Kit Wood Vertica",
+                           
+            price:2239,
+            strikeofprice:4034,
 
-      price: 2800,
-      strikeofprice: 4620,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTYSY-C20GY-EU/RTYSY-C20GY-EU-1-a992-0q0Z.jpg",
-      name: "HIMO C20 20 Inch Folding 80KM Range Power Ass",
-      price: 46650,
-      strikeofprice: 54950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
-      name: "SMART SENSOR AR884A Sound Level Meter with La",
-      price: 4550,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
-      name: "SMART SENSOR AR884A Sound Level Meter with Lar",
-      price: 4550,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
-      name: "SMART SENSOR AR884A Sound Level Meter with Large",
+        },
+     {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/D/D1253/D1253-8-e991.jpg",
+            name:"2 * 3m / 6.6 * 9.8ft Adjustable Background Su",
+                           
+            price:2170,
+            strikeofprice:9030,
 
-      price: 4550,
-      strikeofprice: 5950,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTOYZZZ-A5-EU/RTOYZZZ-A5-EU-1-7531-2rp7.jpg",
-      name: "ATOMSTACK A5 20W Laser Engraver",
+        },
+       {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/8/E21168/E21168-1-dbf7-EnXb.jpg",
+            name:"Intelligent Single-phase Wifi Electricity Met",
+                           
+            price:2800,
+            strikeofprice:4620,
 
-      price: 2730,
-      strikeofprice: 5695,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/P/YB20278CP/YB20278CP-1-2ab7-6ONM.jpg",
-      name: "Soft Shrimp Fishing Lure Artificial Soft Shrimp ",
+        }, 
+         {   
+           image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTYSY-C20GY-EU/RTYSY-C20GY-EU-1-a992-0q0Z.jpg",
+            name:"HIMO C20 20 Inch Folding 80KM Range Power Ass",           
+            price:46650,
+            strikeofprice:54950,
+        },
+         {  
+            image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
+            name:"SMART SENSOR AR884A Sound Level Meter with La",             
+            price:4550,
+            strikeofprice:5950,
+        }, 
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
+            name:"SMART SENSOR AR884A Sound Level Meter with Lar",                       
+            price:4550,
+            strikeofprice:5950,
 
-      price: 559,
-      strikeofprice: 1050,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/C/C1783/C1783-3-6bc4.jpg",
-      name: "Rii mini X1 Handheld 2.4G Wireless Air Mouse Tou",
+        },
+       {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/9/E19709/E19709-1-e506-x2lI.jpg",
+            name:"SMART SENSOR AR884A Sound Level Meter with Large",
+                           
+            price:4550,
+            strikeofprice:5950,
 
-      price: 1820,
-      strikeofprice: 2450,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/I/I519/I519-1-e968-EtAY.jpg",
-      name: "Studio Wireless Mic Remote Microphone System Kit",
-      price: 1750,
-      strikeofprice: 2450,
-    },
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/W/B/W15470B/W15470B-1-e4c6-Jepq.jpg",
-      name: "Hair Dryer Diffuser Blow Dryers Diffuser",
-      price: 838,
-      strikeofprice: 1260,
-    },
-    //data end by abhishek;
-    {
-      image_url:
-        "https://img.tttcdn.com/product/xy/220/220/p/gu1/D/8/D10478/D10478-1-8989-rg1N.jpg",
-      name: "Andoer Q160SA Camera Tripod Complete Tripods",
-      price: 4050,
-      strikeofprice: 8865,
-    },
-  ];
+        },
+       {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/R/U/RTOYZZZ-A5-EU/RTOYZZZ-A5-EU-1-7531-2rp7.jpg",
+            name:"ATOMSTACK A5 20W Laser Engraver",
+                           
+            price:2730,
+            strikeofprice:5695,
 
-  TomTopData.map(function (elem) {
-    var box = document.createElement("div");
+        },
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/Y/P/YB20278CP/YB20278CP-1-2ab7-6ONM.jpg",
+            name:"Soft Shrimp Fishing Lure Artificial Soft Shrimp ",
+                           
+            price:559,
+            strikeofprice:1050,
 
-    var img = document.createElement("img");
-    img.src = elem.image_url;
-    img.setAttribute("class", "img");
+        }, 
+        {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/C/C1783/C1783-3-6bc4.jpg",
+            name:"Rii mini X1 Handheld 2.4G Wireless Air Mouse Tou",
+                           
+            price:1820,
+            strikeofprice:2450,
 
-    var name = document.createElement("p");
-    name.innerText = elem.name;
-    name.setAttribute("class", "name");
+        },
+       {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/I/I519/I519-1-e968-EtAY.jpg",
+            name:"Studio Wireless Mic Remote Microphone System Kit",                       
+            price:1750,
+            strikeofprice:2450,
 
-    var box2 = document.createElement("div");
-    box2.setAttribute("class", "box2");
+        },
+       {   image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/W/B/W15470B/W15470B-1-e4c6-Jepq.jpg",
+            name:"Hair Dryer Diffuser Blow Dryers Diffuser",           
+            price:838,
+            strikeofprice:1260,
 
-    var price = document.createElement("p");
-    price.innerText = elem.price;
-    price.setAttribute("class", "price");
+        },
+        //data end by abhishek;
+        {  image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/D/8/D10478/D10478-1-8989-rg1N.jpg",
+            name:"Andoer Q160SA Camera Tripod Complete Tripods",           
+            price:4050,
+            strikeofprice:8865,
 
-    var strkprice = document.createElement("p");
-    strkprice.innerText = elem.strikeofprice;
-    strkprice.setAttribute("class", "strkprice");
+        }
+    ]
 
-    var pprice = document.createElement("p");
-    pprice.innerText = "Price:";
-    pprice.setAttribute("class", "pprice");
 
-    var sprice = document.createElement("p");
-    sprice.innerText = "Price:";
-    sprice.setAttribute("class", "sprice");
 
-    var pricebox = document.createElement("div");
-    pricebox.setAttribute("id", "priceBox");
+    TomTopData.map(function(elem){
+        var box = document.createElement("div");
+    
+        var img = document.createElement("img");
+        img.src = elem.image_url;
+        img.setAttribute("class","img");
 
-    box.addEventListener("click", function () {
-      databyanu(elem);
-    });
+        var name = document.createElement("p");
+        name.innerText = elem.name;
+        name.setAttribute("class","name");
 
-    spricebox = document.createElement("div");
-    spricebox.setAttribute("id", "priceBox");
+        var box2 = document.createElement("div");
+        box2.setAttribute("class","box2");
 
-    pricebox.append(pprice, price);
-    spricebox.append(sprice, strkprice);
+        var price = document.createElement("p");
+        price.innerText ="Rs"+elem.price;
+        price.setAttribute("class","price");
 
-    box.append(img, name, pricebox, spricebox);
-    document.querySelector("#ProdYouLike").append(box);
-  });
-  var ak = [];
-  function databyanu(elem) {
-    ak.push(elem);
-    localStorage.setItem("databyak", JSON.stringify(ak));
-    window.location.href = "signinpage.html";
-    ak = [];
-  }
+        var strkprice = document.createElement("p");
+        strkprice.innerText = elem.strikeofprice;
+        strkprice.setAttribute("class","strkprice")
+
+        var pprice = document.createElement("p");
+        pprice.innerText = "Price:";
+        pprice.setAttribute("class", "pprice")
+
+        var sprice = document.createElement("p");
+        sprice.innerText= "StrikePrice:";
+        sprice.setAttribute("class","sprice")
+
+        var pricebox = document.createElement("div");
+        pricebox.setAttribute("id","priceBox");
+          
+        box.addEventListener("click",function (){
+            databyanu(elem)
+        })
+
+        spricebox = document.createElement("div");
+        spricebox.setAttribute("id","priceBox");
+
+        pricebox.append(pprice,price);
+        spricebox.append(sprice,strkprice);
+
+        box.append(img,name,pricebox,spricebox);
+        document.querySelector("#ProdYouLike").append(box);
+        });
+        var ak=[]
+        function databyanu(elem)
+        {
+            ak.push(elem)
+            localStorage.setItem("databyak",JSON.stringify(ak))
+            window.location.href="signinpage.html"
+            ak=[];
+        }
 </script>
