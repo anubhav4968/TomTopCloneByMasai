@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Place Order - tomtop</title>
+    <link rel="icon" href="https://static.tomtop.com/tomtop/favicon.ico?4.1.31"/>
+    <style>
+        #box{
+            /* border: 1px solid red; */
+            width: 100%;
+            height:100%;
+            
+        }
+        #container1{
+            width: 90%;
+            height:80px;
+            margin: auto;
+            /* border: 1px solid red; */
+        }
+        a{
+            cursor: pointer;
+         }
+        #container2{
+            width: 90%;
+            height: 70px;
+            /* border: 1px solid black; */
+            margin: auto;
+        }
+        
+        #flex{
+            display: flex;
+
+
+        }
+        #container3{
+            /* border:1px solid black; */
+            width:36%;
+            height:750px;
+            margin-left: 66px;
+        }
+        #payment{
+            width: 35%;
+            height: 750px;
+            /* border: 1px solid blue; */
+            margin-left: 252px;
+        }
+        #me{
+            margin-left: -1px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight: bold;
+         font-style: normal;
+        }
+        #input{
+            width: 98%;
+            height: 30px;
+        }
+        #input1{
+            width: 40%;
+            height: 30px;
+        }
+        #input2{
+            width: 40%;
+            height: 30px;
+            margin-left: 75px;
+            
+        }
+        #input3{
+            width: 98%;
+            height: 30px;
+            margin-left: -0px;
+        }
+        #input4{
+            width: 40%;
+            height: 30px;
+        }
+        #input5{
+            width: 40%;
+            height: 30px;
+            margin-left: 74px;
+        }
+        #input6{
+            width: 40%;
+            height: 30px;
+        }
+        #input7{
+            width: 40%;
+            height: 30px;
+            margin-left: 74px;
+        }
+        #h{
+         margin-left: 200px;
+        }
+        #s{
+            margin-left: 245px;
+        }
+        #p{
+            margin-left: 160px;
+        }
+        select{
+            /* overflow: scroll;
+            overflow-x: hidden; */
+            /* height: auto; */
+            width: 43%;
+            height: 42px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400px;
+            font-size: 15px;
+            
+        }
+
+        #btn1{
+           margin-left: 8px;
+           border: 0cm;
+           border-radius: 2px;
+           background-color: #ffc439;
+           cursor: pointer;
+           font-size: 15px;
+           width: 199px;
+           height: 56px;
+           
+        }
+        #h2{
+            font-family:Segoe UI;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            color: #666666;
+            
+        }
+        h4{
+            margin-bottom: 4px;
+            font-family:Segoe UI;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            color: #666666;
+            font-size: 14px;
+            
+        }
+        #lbl{
+            font-family:Segoe UI;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            color: #666666;
+
+        }
+        #btn2{
+            height: 35px;
+            width: 45%;
+            margin-top: 25px;
+            font-family: Segoe UI;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            background-color:#ff9900;
+            border: 0px;
+            cursor: pointer;
+
+        }
+        #lbl{
+            font-family: Segoe UI;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 15px;
+            
+        }
+        #txt{
+            margin-left: 22px;
+            color: green;
+        }
+    
+        .req{
+            color: red;
+        }
+        #ship{
+            margin-left: 400px;
+            margin-bottom: 150px;
+            /* border:1px solid blue; */
+            margin-top: -60px;
+        }
+        nav li{
+            display: inline-block;
+            margin-right: 4px;
+        }
+        nav a{
+            color: #968c84;
+            display: inline-block;
+            padding:6px 70px 6px 70px;
+            background-color: #f5f5f5;
+            text-decoration: none;
+            margin-left: px;
+            font-size:12px;
+            font-family: sans-serif;
+
+        }
+        .current{
+            background-color: #ffad33;
+            color: white;
+            border-radius: 14px;
+        } 
+        /* #order{
+            border-top-right-radius: 14px; 
+            border-bottom-right-radius: 14px; 
+            
+        } */
+        #order>a{
+             border-radius: 14px;
+            background-color:#ff9900;
+            color:white;
+           
+        }
+        #pe>a{
+           border-radius: 14px;
+            }
+        
+        #make{
+            display: inline-block;
+            width: 60%;
+            height: 655px;
+            margin-left: 185px;
+            margin-top: 35px;
+            background-color: #fafafa;
+            /* border: 1px solid black; */
+            
+        }
+        #btn3{
+            background-color: #ffc439;
+            margin-left: 5px;
+            width: 95%;
+            height: 55px;
+            border: 0;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: -38px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             font-weight: 400;
+             font-size: 15px;
+        }
+        #btn4{
+            width: 95%;
+            height: 50px;
+            border: 0;
+            background-color: #2c2e2f;
+            color: #ffffff;
+            margin-left: 5px;
+            margin-top: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .icon{
+            color: #ffffff;
+            size: 15px;
+        }
+        h5{
+            font-family:sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            color: #666666;
+        }
+       
+        h3{
+            font-size:18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: #666666;
+            margin-left:12px;
+        }
+        #subtotal{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin-top: -25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #666666;
+        }
+        #shipping{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin-top: -35px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #666666;
+        }
+        #discount{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin-top: -35px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #666666;
+
+        }
+        #total{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin-top: -35px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #666666;
+        }
+        #promo{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin-top: -35px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            color: #666666;
+        }
+        #points{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin-top: -45px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            color: #666666;
+
+        }
+        #deals{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin-top: -48px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: #666666;
+        }
+        #paypal{
+            align-content: center;
+            margin-left: 50px;
+        
+        }
+        /* #plus{
+            cursor: pointer;
+        }
+        #promobox{
+            width: 110px;
+            height: 20px ;
+        } */
+        #img1{
+            height: 20px;
+            width: 90px;
+            margin-top: px;
+        }
+        .ul{
+            list-style: square;
+            font-size:13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: #666666;
+            margin-left:12px;
+        }
+        #b{
+            margin-left: 55px;
+        }
+        
+        
+       
+         
+       
+    </style>
+</head>
+<body>
+    <div id="box">
+    <div id="container1">
+        
+           <img id="logo" src="https://static.tomtop.com/tomtop/cart/images/logo.png?4.1.31" alt=""/>
+        </a>
+        
+        <div id="ship">
+            <nav>
+                <ul>
+                    <li><a class="current">SHOPPING CART</a></li>
+                    <li id="order"><a>SHIPPING & PLACE ORDER</a></li>
+                    <li id="pe"><a>PAYMENT</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    
+    <div id="container2">
+        <span> <h2 id="h2">Checking out as a guest. or
+        <button id="btn1">
+            <img id="pay"src="paypal_PNG4.png" 
+            width="95px" height="45px" alt=""/>
+            checkout
+        </button> </h2></span>
+            </a> 
+    </div>
+    <div id="flex">
+<div id="container3">
+        <form >
+            <h3 id="me">Shipping Address</h3>
+            
+            <h4 class="h4"><i class="req">*</i>Email Address</h4>
+            <input type="email" id="input"/>
+        
+        
+            <h4><i class="req">*</i>First Name
+                <span 
+                <h4 id="h"><i class="req">*</i>Last Name</h4>
+                </h4>
+                <input type="text" id="input1"/>
+        
+            
+            <input type="text" id="input2"/>
+            
+            <h4><i class="req">*</i>Country/Region</h4>
+            
+            <select id="place">
+                <option> --Please Select--</option>
+                <option value="India">India</option>
+                <option value="France">France</option>
+                <option value="China">China</option>
+                <option value="Spain">Spain</option>
+                <option value="United States">United States</option>
+                <option value="Germany">Germany</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Albania">Albania</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Canada">Canada</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Nepal">Nepal</option>
+                <option value="SriLanka">Sri Lanka</option>
+            </select>
+            
+                <h4><i class="req">*</i>Street Address
+                    <span  <h4 id="txt">(Please fill in the house number in the address)
+               </h4>
+        </h4>
+    </span>
+            <input type="text" id="input3" placeholder="   Your package will be sent to this address">
+
+            <h4><i class="req">*</i>City
+                <span
+            
+            <h4 id="s">State /Province/Region</h4></h4>
+            <input type="text" id="input4"/>
+
+            
+            <input type="text" id="input5"/>
+
+            <h4><i class="req">*</i>Postal Code / ZIP
+                <span
+            
+            <h4 id="p"><i class="req">*</i>Phone Number</h4></h4>
+            <input type="number" id="input6" />
+
+          
+            <input type="number" id="input7"/><br>
+
+            <input type="checkbox" id="chek"/>
+            <label for="address" id="lbl">Set as default address</label><br>
+            <button id="btn2">save and ship to this address</button>
+         
+        </form>
+    </div>
+    <div id="payment">
+     <div id="make">
+         <div id="summary">
+        <h3>Order Summary</h3>
+        <div id="subtotal">
+          <p> Subtotal:</p>
+          <p>00</p>
+          </div>
+          <div id="shipping">
+            <p>Shipping Cost:</p>
+            <p>00</p>
+        </div>
+        <div id="discount">
+            <p>Discount:</p>
+            <p>00</p>
+        </div>
+        <div id="total">
+            <p>Total:</p>
+            <p>00</p>
+        </div>
+         
+        <div id="promo">
+         <h5><i>+</i>Apply a Promotion Code</h5>
+        <!-- <input type="text" placeholder="Promo Code" id="promobox">
+        <button id="btn5">Apply</button>  -->
+        </div> 
+        <div id="points">
+         <h5><i>+</i>Points</h5> 
+         <!-- <input type="text" placeholder="Points" id="pointsbox">
+        <button id="btn5">Apply</button> -->
+        </div>
+        <div id="deals">
+         <h5>Flash deals are not allowed with coupon and points</h5>
+        </div>
+         <span> 
+            <button id="btn3">
+               <img src="paypal_PNG4.png"
+                width="95px" height="25px" alt=""/>checkout
+            </button></span>
+          <a href="payment.html"><button id="btn4">Make a Payment
+                
+            </button> </a>
+            <div id="paypal">
+            <h5>Powered by
+                <img id="img1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAxcHgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxMDEgMzIiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHhtbG5zPSJodHRwOiYjeDJGOyYjeDJGO3d3dy53My5vcmcmI3gyRjsyMDAwJiN4MkY7c3ZnIj48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDEyLjIzNyAyLjggTCA0LjQzNyAyLjggQyAzLjkzNyAyLjggMy40MzcgMy4yIDMuMzM3IDMuNyBMIDAuMjM3IDIzLjcgQyAwLjEzNyAyNC4xIDAuNDM3IDI0LjQgMC44MzcgMjQuNCBMIDQuNTM3IDI0LjQgQyA1LjAzNyAyNC40IDUuNTM3IDI0IDUuNjM3IDIzLjUgTCA2LjQzNyAxOC4xIEMgNi41MzcgMTcuNiA2LjkzNyAxNy4yIDcuNTM3IDE3LjIgTCAxMC4wMzcgMTcuMiBDIDE1LjEzNyAxNy4yIDE4LjEzNyAxNC43IDE4LjkzNyA5LjggQyAxOS4yMzcgNy43IDE4LjkzNyA2IDE3LjkzNyA0LjggQyAxNi44MzcgMy41IDE0LjgzNyAyLjggMTIuMjM3IDIuOCBaIE0gMTMuMTM3IDEwLjEgQyAxMi43MzcgMTIuOSAxMC41MzcgMTIuOSA4LjUzNyAxMi45IEwgNy4zMzcgMTIuOSBMIDguMTM3IDcuNyBDIDguMTM3IDcuNCA4LjQzNyA3LjIgOC43MzcgNy4yIEwgOS4yMzcgNy4yIEMgMTAuNjM3IDcuMiAxMS45MzcgNy4yIDEyLjYzNyA4IEMgMTMuMTM3IDguNCAxMy4zMzcgOS4xIDEzLjEzNyAxMC4xIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDM1LjQzNyAxMCBMIDMxLjczNyAxMCBDIDMxLjQzNyAxMCAzMS4xMzcgMTAuMiAzMS4xMzcgMTAuNSBMIDMwLjkzNyAxMS41IEwgMzAuNjM3IDExLjEgQyAyOS44MzcgOS45IDI4LjAzNyA5LjUgMjYuMjM3IDkuNSBDIDIyLjEzNyA5LjUgMTguNjM3IDEyLjYgMTcuOTM3IDE3IEMgMTcuNTM3IDE5LjIgMTguMDM3IDIxLjMgMTkuMzM3IDIyLjcgQyAyMC40MzcgMjQgMjIuMTM3IDI0LjYgMjQuMDM3IDI0LjYgQyAyNy4zMzcgMjQuNiAyOS4yMzcgMjIuNSAyOS4yMzcgMjIuNSBMIDI5LjAzNyAyMy41IEMgMjguOTM3IDIzLjkgMjkuMjM3IDI0LjMgMjkuNjM3IDI0LjMgTCAzMy4wMzcgMjQuMyBDIDMzLjUzNyAyNC4zIDM0LjAzNyAyMy45IDM0LjEzNyAyMy40IEwgMzYuMTM3IDEwLjYgQyAzNi4yMzcgMTAuNCAzNS44MzcgMTAgMzUuNDM3IDEwIFogTSAzMC4zMzcgMTcuMiBDIDI5LjkzNyAxOS4zIDI4LjMzNyAyMC44IDI2LjEzNyAyMC44IEMgMjUuMDM3IDIwLjggMjQuMjM3IDIwLjUgMjMuNjM3IDE5LjggQyAyMy4wMzcgMTkuMSAyMi44MzcgMTguMiAyMy4wMzcgMTcuMiBDIDIzLjMzNyAxNS4xIDI1LjEzNyAxMy42IDI3LjIzNyAxMy42IEMgMjguMzM3IDEzLjYgMjkuMTM3IDE0IDI5LjczNyAxNC42IEMgMzAuMjM3IDE1LjMgMzAuNDM3IDE2LjIgMzAuMzM3IDE3LjIgWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDMwODciIGQ9Ik0gNTUuMzM3IDEwIEwgNTEuNjM3IDEwIEMgNTEuMjM3IDEwIDUwLjkzNyAxMC4yIDUwLjczNyAxMC41IEwgNDUuNTM3IDE4LjEgTCA0My4zMzcgMTAuOCBDIDQzLjIzNyAxMC4zIDQyLjczNyAxMCA0Mi4zMzcgMTAgTCAzOC42MzcgMTAgQyAzOC4yMzcgMTAgMzcuODM3IDEwLjQgMzguMDM3IDEwLjkgTCA0Mi4xMzcgMjMgTCAzOC4yMzcgMjguNCBDIDM3LjkzNyAyOC44IDM4LjIzNyAyOS40IDM4LjczNyAyOS40IEwgNDIuNDM3IDI5LjQgQyA0Mi44MzcgMjkuNCA0My4xMzcgMjkuMiA0My4zMzcgMjguOSBMIDU1LjgzNyAxMC45IEMgNTYuMTM3IDEwLjYgNTUuODM3IDEwIDU1LjMzNyAxMCBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny43MzcgMi44IEwgNTkuOTM3IDIuOCBDIDU5LjQzNyAyLjggNTguOTM3IDMuMiA1OC44MzcgMy43IEwgNTUuNzM3IDIzLjYgQyA1NS42MzcgMjQgNTUuOTM3IDI0LjMgNTYuMzM3IDI0LjMgTCA2MC4zMzcgMjQuMyBDIDYwLjczNyAyNC4zIDYxLjAzNyAyNCA2MS4wMzcgMjMuNyBMIDYxLjkzNyAxOCBDIDYyLjAzNyAxNy41IDYyLjQzNyAxNy4xIDYzLjAzNyAxNy4xIEwgNjUuNTM3IDE3LjEgQyA3MC42MzcgMTcuMSA3My42MzcgMTQuNiA3NC40MzcgOS43IEMgNzQuNzM3IDcuNiA3NC40MzcgNS45IDczLjQzNyA0LjcgQyA3Mi4yMzcgMy41IDcwLjMzNyAyLjggNjcuNzM3IDIuOCBaIE0gNjguNjM3IDEwLjEgQyA2OC4yMzcgMTIuOSA2Ni4wMzcgMTIuOSA2NC4wMzcgMTIuOSBMIDYyLjgzNyAxMi45IEwgNjMuNjM3IDcuNyBDIDYzLjYzNyA3LjQgNjMuOTM3IDcuMiA2NC4yMzcgNy4yIEwgNjQuNzM3IDcuMiBDIDY2LjEzNyA3LjIgNjcuNDM3IDcuMiA2OC4xMzcgOCBDIDY4LjYzNyA4LjQgNjguNzM3IDkuMSA2OC42MzcgMTAuMSBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5MC45MzcgMTAgTCA4Ny4yMzcgMTAgQyA4Ni45MzcgMTAgODYuNjM3IDEwLjIgODYuNjM3IDEwLjUgTCA4Ni40MzcgMTEuNSBMIDg2LjEzNyAxMS4xIEMgODUuMzM3IDkuOSA4My41MzcgOS41IDgxLjczNyA5LjUgQyA3Ny42MzcgOS41IDc0LjEzNyAxMi42IDczLjQzNyAxNyBDIDczLjAzNyAxOS4yIDczLjUzNyAyMS4zIDc0LjgzNyAyMi43IEMgNzUuOTM3IDI0IDc3LjYzNyAyNC42IDc5LjUzNyAyNC42IEMgODIuODM3IDI0LjYgODQuNzM3IDIyLjUgODQuNzM3IDIyLjUgTCA4NC41MzcgMjMuNSBDIDg0LjQzNyAyMy45IDg0LjczNyAyNC4zIDg1LjEzNyAyNC4zIEwgODguNTM3IDI0LjMgQyA4OS4wMzcgMjQuMyA4OS41MzcgMjMuOSA4OS42MzcgMjMuNCBMIDkxLjYzNyAxMC42IEMgOTEuNjM3IDEwLjQgOTEuMzM3IDEwIDkwLjkzNyAxMCBaIE0gODUuNzM3IDE3LjIgQyA4NS4zMzcgMTkuMyA4My43MzcgMjAuOCA4MS41MzcgMjAuOCBDIDgwLjQzNyAyMC44IDc5LjYzNyAyMC41IDc5LjAzNyAxOS44IEMgNzguNDM3IDE5LjEgNzguMjM3IDE4LjIgNzguNDM3IDE3LjIgQyA3OC43MzcgMTUuMSA4MC41MzcgMTMuNiA4Mi42MzcgMTMuNiBDIDgzLjczNyAxMy42IDg0LjUzNyAxNCA4NS4xMzcgMTQuNiBDIDg1LjczNyAxNS4zIDg1LjkzNyAxNi4yIDg1LjczNyAxNy4yIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDA5Y2RlIiBkPSJNIDk1LjMzNyAzLjMgTCA5Mi4xMzcgMjMuNiBDIDkyLjAzNyAyNCA5Mi4zMzcgMjQuMyA5Mi43MzcgMjQuMyBMIDk1LjkzNyAyNC4zIEMgOTYuNDM3IDI0LjMgOTYuOTM3IDIzLjkgOTcuMDM3IDIzLjQgTCAxMDAuMjM3IDMuNSBDIDEwMC4zMzcgMy4xIDEwMC4wMzcgMi44IDk5LjYzNyAyLjggTCA5Ni4wMzcgMi44IEMgOTUuNjM3IDIuOCA5NS40MzcgMyA5NS4zMzcgMy4zIFoiPjwvcGF0aD48L3N2Zz4" alt=""/>
+                    </h5>
+                </div>
+                <div id="protect">
+                    <h3 id="b">Buyer Protection</h3>
+                    <ul class="ul">
+                         <li>Full Refund if you don't receive your order</li>
+                        <li>Full or Partial Refund , If the item is not as described</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 
+</body>
+</html>
+
+
+
+<script>
+    document.querySelector("#btn2").addEventListener("click",address); 
+    function address(){
+        alert("your address is saved");
+       
+               
+}  
+</script>
