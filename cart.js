@@ -70,7 +70,8 @@ function discount()
     //  console.log(discount_price)
     //  localStorage.setItem("dis price",JSON.stringify(discount_price))
    var y= localStorage.setItem("total",JSON.stringify(+(discount_price.innerText)))
-   console.log(y)
+   var z=localStorage.setItem("discount",JSON.stringify(+(sum*30)/100))
+  //  console.log(y,z)
   }
 } 
 // promo code ends
