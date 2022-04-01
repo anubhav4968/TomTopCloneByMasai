@@ -438,10 +438,11 @@
         #box2>i{
             color: #ff791f;
         }
-        #sprice{
+        #stprice{
             margin-top: -34px;
             margin-left: 95px;
             text-decoration: line-through;
+            color: gray;
         }
         #price{
             margin-top: -40px;
@@ -457,7 +458,6 @@
         #div1{
             margin-left: 40px;
         }
-       
         .btn>button{
            
             font-size: 10px;
@@ -659,7 +659,7 @@
        <p id="cou">(Coustomer Review) | Ask Question</p>
        <hr>
        <p>Regular Price:</p>
-       <p id=""></p>
+       <p id="stprice"></p>
        <p>Price:</p>
        <p id="price"></p>
        <div class="div"><p class="p">Ship From:</p> 
@@ -791,11 +791,17 @@
         var image=document.createElement("img")
         image.src=ele.image_url
         image.setAttribute("id","boximg")
-        document.querySelector("#box1")
+        document.querySelector("#box1").append(image)
     })
     
-    document.querySelector("#name").innerText=data[0].Name
-    document.querySelector("#sprice").innerText=data[0].strikeofprice
+    document.querySelector("#name").innerText=data[0].name
+    if(data[0].strikeofprice=="")
+    {
+     document.querySelector("#stprice").innerText="None"
+    }
+    else{
+        document.querySelector("#stprice").innerText=data[0].strikeofprice
+    }
     document.querySelector("#price").innerText=data[0].price
     function addtofav(){
         alert("Added To Favorite")
