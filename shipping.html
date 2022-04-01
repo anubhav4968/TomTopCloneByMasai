@@ -473,19 +473,19 @@
         <h3>Order Summary</h3>
         <div id="subtotal">
           <p> Subtotal:</p>
-          <p>00</p>
+          <p id="sub">00</p>
           </div>
           <div id="shipping">
             <p>Shipping Cost:</p>
-            <p>00</p>
+            <p>30</p>
         </div>
         <div id="discount">
             <p>Discount:</p>
-            <p>00</p>
+            <p id="dis">00</p>
         </div>
         <div id="total">
             <p>Total:</p>
-            <p>00</p>
+            <p id="to">00</p>
         </div>
          
         <div id="promo">
@@ -537,4 +537,17 @@
        
                
 }  
+var sub=JSON.parse(localStorage.getItem("subtotal"))
+var tot=JSON.parse(localStorage.getItem("total"))
+if(tot==null)
+{
+    document.querySelector("#sub").innerText=sub
+    document.querySelector("#to").innerText=(sub+30)
+}
+else
+{
+    document.querySelector("#sub").innerText=sub
+    document.querySelector("#to").innerText=(tot+30)
+}
+console.log(sub,tot)
 </script>
