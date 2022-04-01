@@ -1,35 +1,4 @@
-let data = [
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
-      name:"Fingertip Pulse Oximeter Mini SpO2 Monitor ",
-      price: 593,
-      strikeofprice: 1540
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/M/6/MD2446/MD2446-1-cff4-anGm.jpg",
-      name:"Fingertip Pulse Oximeter Mini SpO2 Monitor ",
-      price: 593,
-      strikeofprice: 1540
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-      name:"Head Mount Magnifier with LED",
-      price:1190 ,
-      strikeofprice: 3216
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-      name:"Head Mount Magnifier with LED",
-      price:1190 ,
-      strikeofprice: 3216
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/S/9/S6469/S6469-1-c5b0-CKKX.jpg",
-      name:"Head Mount Magnifier with LED",
-      price:1190 ,
-      strikeofprice: 3216
-    },
-    { image_url:"https://img.tttcdn.com/product/xy/220/220/p/gu1/E/4/E15564/E15564-1-0a75-u57H.jpg",
-      name:"FNIRSI-1014D 7 Inch TFT LCD Display",
-      price: 11830,
-      strikeofprice: 19950
-    },
-]
+
 
   // localStorage.setItem("cart",JSON.stringify(data))
 
