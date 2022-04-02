@@ -527,7 +527,7 @@
         border: 2px solid #ff791f;
       }
 
-      #but > button {
+      #but > a>button {
         padding: 15px;
         padding-left: 40px;
         padding-right: 40px;
@@ -538,8 +538,23 @@
         border: none;
         border-radius: 5px;
       }
+      #but > a>button:hover{
+        cursor: pointer;
+      }
       #but > button:nth-child(2) {
         background-color: orange;
+        padding: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        /* background-color: #ff791f; */
+        border: none;
+        border-radius: 5px;
+      }
+      #but > button:nth-child(2):hover{
+        cursor: pointer;
       }
       #but > i {
         margin-left: 30px;
@@ -549,6 +564,7 @@
       }
       #but > i:hover {
         color: red;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -604,7 +620,7 @@
           <a href="homepage2.html"><i class="fa-regular fa-user"></i></a>
         </div>
         <a href="homepage2.html" class="usercont"
-          ><p class="signin">Sign In</p></a
+          ><p class="signin"></p></a
         >
         <div>
           <a href="Favorits.html"><i class="fa-regular fa-heart"></i></a>
@@ -723,7 +739,7 @@
           </div>
         </div>
         <div id="but">
-          <button>Buy Now</button>
+          <a href="cart.html " onclick="addedtocart()"><button >Buy Now</button></a>
           <button id="or" onclick="addtocart()">
             <i class="fa-solid fa-cart-shopping"></i> Add TO Cart
           </button>
@@ -880,6 +896,24 @@
   </body>
 </html>
 <script>
+ var sign = document.createElement("p");
+var nam= JSON.parse(localStorage.getItem("userhome"));
+var bag=""
+for(var i=0;i<nam.length;i++)
+{
+   if(nam[i]=="@")
+   {
+     break;
+   }
+   else
+   {
+     bag+=nam[i]
+   }
+}
+  sign.innerText = bag
+  document.querySelector(".signin").append(sign);
+  console.log(sign);
+
   var data = JSON.parse(localStorage.getItem("databyak"));
   var databyanu = JSON.parse(localStorage.getItem("favorite")) || [];
   var databyanubhav = JSON.parse(localStorage.getItem("cart")) || [];
@@ -904,6 +938,11 @@
   }
   function addtocart() {
     alert("Added To Cart");
+    databyanubhav.push(data[0]);
+    localStorage.setItem("cart", JSON.stringify(databyanubhav));
+  }
+  function addedtocart(){
+    alert("Buying a product")
     databyanubhav.push(data[0]);
     localStorage.setItem("cart", JSON.stringify(databyanubhav));
   }
