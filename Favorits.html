@@ -413,7 +413,10 @@ var check=document.querySelector("#checkall").value;
 
     
     function removeAll(){
-       localStorage.clear();
+        favoriteData=[]
+        localStorage.setItem("favorite",JSON.stringify(favoriteData))
+            
+        
     }
 
 function handlesortprice(){
