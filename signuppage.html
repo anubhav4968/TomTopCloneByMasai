@@ -1,221 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <script
-    src="https://kit.fontawesome.com/24c494a6b6.js"
-    crossorigin="anonymous"
-  ></script>
-  <style>
-    input {
-      display: block;
-      margin: auto;
-      width: 330px;
-      border-radius: 5px;
-      padding: 5px 5px;
-      height: 100%;
-      border: 1px solid white;
+</head>
+<script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+<style>
+input{
+      display:block; 
+      margin:auto;
+      width:330px; 
+      border-radius:5px;
+      padding:5px 5px;
+      height:100%;
+      border:1px solid white;
     }
-    input:focus {
-      outline: none;
+    input:focus{
+        outline:none;
     }
-    #button {
-      width: 100%;
-      border-radius: 10px;
-      background-color: orange;
-      color: white;
-      margin-top: 15px;
-      font-size: 20px;
+    #button{
+        width:100%;
+        border-radius:10px;
+        background-color:orange;
+        color:white;
+        margin-top:15px;
+        font-size:20px;
     }
-    form {
-      width: 350px;
-      margin: auto;
+    form{
+        width:350px;
+        margin:auto;
+       
+        height:auto;
+    }
+    #heading{
+       text-align: center;
+       font-size:20px;
+       padding-top:30px;
+        
+    }
+    #paragraph{
+        margin-top:-10px;display:inline-block
+    }
+    #front{
+        width:450px;
+        
+        height:auto;
+        margin:auto;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+    #front div{
+       display:flex;
+       height:auto;
+       border:0.5px solid rgb(226, 216, 216);
+       margin-top:10px;
+       border-radius:5px;
+       text-align:justify;
+       
+    }
+    #email{
+        color:rgb(134, 125, 125);
+        margin-left:5px;
+    }
+    #lock{
+        color:rgb(138, 125, 125);
+        margin-left:3px;
+    }
+    #checkbox{
+    margin-top:0px;
+    width:17px;
+    height:20px;
+    margin-right:5px;
+    }
+    #checkbox2{
+        width:40px;height:40px;
+        margin-top:-10px;
+        margin-right:5px;
+    }
+    a{
+        outline:none;
+        text-decoration:none;
+        color:rgb(235, 17, 17);
+    }
+    #signin{
+        text-align:center;
+        padding-bottom:20px;
+    }
+    img{
+        border-radius:5px;
+    }
+    #button:hover{
+       cursor:pointer;
+    }
+    #passerror{
+        color:red;
+        border:1px solid white;
+        padding-top:-10px;
+       
+    }
 
-      height: auto;
-    }
-    #heading {
-      text-align: center;
-      font-size: 20px;
-      padding-top: 30px;
-    }
-    #paragraph {
-      margin-top: -10px;
-      display: inline-block;
-    }
-    #front {
-      width: 450px;
-
-      height: auto;
-      margin: auto;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    }
-    #front div {
-      display: flex;
-      height: auto;
-      border: 0.5px solid rgb(226, 216, 216);
-      margin-top: 10px;
-      border-radius: 5px;
-      text-align: justify;
-    }
-    #email {
-      color: rgb(134, 125, 125);
-      margin-left: 5px;
-    }
-    #lock {
-      color: rgb(138, 125, 125);
-      margin-left: 3px;
-    }
-    #checkbox {
-      margin-top: 0px;
-      width: 17px;
-      height: 20px;
-      margin-right: 5px;
-    }
-    #checkbox2 {
-      width: 40px;
-      height: 40px;
-      margin-top: -10px;
-      margin-right: 5px;
-    }
-    a {
-      outline: none;
-      text-decoration: none;
-      color: rgb(235, 17, 17);
-    }
-    #signin {
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    img {
-      border-radius: 5px;
-    }
-  </style>
-  <body>
-    <img
-      style="display: block; margin: auto"
-      src="https://static.tomtop.com/tomtop/acount/icon/logo.png?v=3"
-    />
+   
+</style>
+<body>
+    <img style="display:block;margin:auto;"src="https://static.tomtop.com/tomtop/acount/icon/logo.png?v=3">
     <div id="front">
-      <form>
+    <form class="loginform" method="post" name="form" onsubmit="return
+    validated()">
         <h3 id="heading">Creat A New Account</h3>
         <div>
-          <svg
-            id="email"
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="46"
-            fill="currentColor"
-            class="bi bi-envelope-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-            />
-          </svg>
-          <input type="email" id="useremail" placeholder="Email adress" />
+            <svg id="email" xmlns="http://www.w3.org/2000/svg" width="30" height="46" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg>
+            <input  type="email" id="useremail" placeholder="Email adress">
+           
         </div>
         <div>
-          <svg
-            id="lock"
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="46"
-            fill="currentColor"
-            class="bi bi-lock-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
-            />
-          </svg>
-          <input
-            type="password"
-            id="password"
-            placeholder="6-20 characters ( letter or number only )"
-          />
+            <svg id="lock" xmlns="http://www.w3.org/2000/svg" width="30" height="46" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+              </svg>
+            <input autocomplete="off" type="password" id="password" name="password" placeholder="6-20 characters ( letter or number only )">
         </div>
+        <div id="passorg" style="border:1px solid white;color:red;margin-top:-5px;"> *Please enter strong password</div>
         <div>
-          <span><i class="bi bi-lock-fill"></i></span>
-          <svg
-            id="lock"
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="46"
-            fill="currentColor"
-            class="bi bi-lock-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
-            />
-          </svg>
-          <input
-            type="password"
-            id="repeat"
-            placeholder="Enter password again"
-          />
+            <span><i class="bi bi-lock-fill"></i></span>
+            <svg  id="lock" xmlns="http://www.w3.org/2000/svg" width="30" height="46" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+              </svg>
+            <input autocomplete="off" type="password" id="repeat" name="repeat" placeholder="Enter password again">
+            <!-- <div id="passerror">*Please enter correct password </div> -->
         </div>
+        <div id="passerror" style="border:1px solid white;margin-top:-5px;">*Please enter same password </div>
         <div>
-          <input type="text" id="capcha" placeholder="Enter the Capcha code" />
-          <img
-            src="https://my.tomtop.com/member/code"
-            alt="Click the refresh verification code"
-          />
+            <input type="text" id="capcha" placeholder="Enter the Capcha code">
+            <img src="https://my.tomtop.com/member/code" alt="Click the refresh verification code">
         </div>
-        <div style="border: 1px solid white">
-          <input id="checkbox" type="checkbox" /><label
-            >I agree to TOMTOP
-            <a href="https://www.tomtop.com/help/terms-conditions.html"
-              >Terms & Conditions</a
-            >,<a
-              href="https://www.tomtop.com/help/privacy-policy.html"
-              title="Privacy Policies"
-            >
-              Privacy Policy.</a
-            ></label
-          >
+        <div style="border:1px solid white">
+            <input id="checkbox"type="checkbox" ><label>I agree to TOMTOP
+            <a href="https://www.tomtop.com/help/terms-conditions.html">Terms & Conditions</a>,<a href="https://www.tomtop.com/help/privacy-policy.html" title="Privacy Policies">
+                Privacy Policy.</a></label> 
         </div>
-        <div style="border: 1px solid white">
-          <input id="checkbox2" type="checkbox" />
-          <label>
-            Yes,Sign up our newsletter,get a $50 coupon in your first email! You
-            will receive our latest updates,news,and promotions from
-            Tomtop.</label
-          >
+        <div style="border:1px solid white">
+           <input  id="checkbox2" type="checkbox"> <label>
+            Yes,Sign up our newsletter,get a $50 coupon in your first email! You will receive our latest updates,news,and promotions from Tomtop.</label>
         </div>
-        <input type="submit" id="button" value="Create My Account" />
+        <input type="submit" id="button" value="Create My Account">
         <p>
-          <em>>></em>
-          Register at tomtop.com and receive 10 points.
+            <em>>></em>
+            Register at tomtop.com and receive 10 points.
         </p>
-
-        <p id="signin">
-          Already have an account ?
-          <span> <a href="signinpage.html"> Sign in</a></span>
-        </p>
-      </form>
-    </div>
-  </body>
+      
+           <p id="signin">Already have an account ?   <span> <a href="signinpage.html">  Sign in</a></span></p>
+          
+       
+    </form>
+</div>
+</body>
 </html>
 <script>
-  document.querySelector("form").addEventListener("submit", myfunction);
-  var userdata = JSON.parse(localStorage.getItem("userdatastorage")) || [];
-  function myfunction() {
-    event.preventDefault();
-    var userobj = {
-      email: document.querySelector("#useremail").value,
-      password: document.querySelector("#password").value,
-      repeat: document.querySelector("#repeat").value,
-    };
-    userdata.push(userobj);
-    console.log(userdata);
-    localStorage.setItem("userdatastorage", JSON.stringify(userdata));
-    window.location.href = "signinpage.html";
-  }
+    document.querySelector("form").addEventListener("submit",myfunction);
+    var userdata=JSON.parse(localStorage.getItem("userdatastorage"))||[];
+    function myfunction(){
+        event.preventDefault();
+        var userobj={
+            email:document.querySelector("#useremail").value,
+            password:document.querySelector("#password").value,
+            repeat:document.querySelector("#repeat").value,
+
+
+        };
+        var capcha=document.querySelector("#capcha").value;
+        // if(capcha.length<4){
+        //     alert("Please enter valid capcha!")
+        
+        if(password.value==repeat.value&&capcha.length>=4){
+        userdata.push(userobj);
+        console.log(userdata);
+        localStorage.setItem("userdatastorage",JSON.stringify(userdata));
+        window.location.href="signinpage.html"
+          }
+        // if(capcha.length<4){
+        //     alert("Please enter valid capcha!")
+        // }
+          else{
+              alert("Please enter password and capcha correctly!")
+          }
+    }
+    password.addEventListener("textInput",passverify)
+    repeat.addEventListener("textInput",passwordverify)
+   password.addEventListener()
+   function validated(){
+       if(password.value.length<6){
+           passorg.style.display="block";
+           password.focus();
+           return false;
+       }
+      
+   }
+   function passverify(){
+      if(password.value.length>=6){
+          passorg.style.display="none";
+          password.focus();
+          return true;
+          window.location.reload();
+      }
+   }
+   function passwordverify(){
+       if(repeat.value==password.value){
+           passerror.style.display="block";
+           return true;
+           
+       }
+    //    else if(repeat.value!=password.value){
+    //        passerror.style.display="none";
+    //        return false;
+    //    }
+       else{
+           passerror.style.display="none";
+           return false;
+       }
+    }
+   
 </script>
