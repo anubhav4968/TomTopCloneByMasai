@@ -244,7 +244,12 @@ h3{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+#btnhover:hover{
+  background-color: red;
+  color: white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
     
     </style>
 
@@ -483,7 +488,8 @@ viwBtn.href=""
 viwBtn.innerText="View Details"
 
 var btn=document.createElement("button")
-btn.style="color:white;background-color:red;margin:auto;height:25px;border-radius:5px;    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+btn.style="box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;margin:auto;height:25px;border-radius:5px;    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+btn.setAttribute("id","btnhover")
 btn.innerText="Remove"
 btn.addEventListener("click",function(){
 removeItem(elem,index)
