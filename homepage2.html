@@ -761,12 +761,7 @@
         margin-left: -35px;
         margin-top: 30px;
       }
-      #signin {
-        overflow: hidden;
-        width: 60%;
-        margin-top: 16px;
-        /* border: 1px solid red; */
-      }
+      
       .fav {
         font-size: 15px;
         margin-left: -29px;
@@ -2519,9 +2514,22 @@
   ];
 
   var sign = document.createElement("p");
-  sign.innerText = JSON.parse(localStorage.getItem("userhome"));
+  var nam= JSON.parse(localStorage.getItem("userhome"));
+var bag=""
+for(var i=0;i<nam.length;i++)
+{
+   if(nam[i]=="@")
+   {
+     break;
+   }
+   else
+   {
+     bag+=nam[i]
+   }
+}
+sign.innerText = bag
   document.querySelector(".signin").append(sign);
-  console.log(sign);
+  console.log(bag);
 
   TomTopData.map(function (elem) {
     var box = document.createElement("div");
