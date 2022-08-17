@@ -1,43 +1,53 @@
 # TomTop Clone
 
-TomTop is a web application that was built with the basic web tech stack for my web development class. We wanted to build this web app to help people have a better experience and more functionalities while browsing the groceries product. I'm sure many people would agree with me that our public is in need of a major upgrade, and this web app is just a small example of what our website could be like.. Netlify Link: https://frolicking-sprite-ca94e3.netlify.app/
+# Masai School Construct Week Project
+
+Welcome, we're are team “TomTopClone”, and this Readme contains detail about our project. We‘ve built a cloned website of TomTop.com with some of its basic functionalities. This overall project was a part of our construct week at Masai School.
 
 
-## Authors
+## About Project
+TomTop is US based E-Commerce website which provids products like Technical,Non-Technical and all products like which E-commerce website to be have. Building this project has been a chellenging job and fun at the same time. This project is build using tech stacks like <br />
 
-- [Anubhv Mishra](https://github.com/anubhav4968)
-- [Akshay Hanumant Kanherkar](https://github.com/akshaykanherkar7)
-- [ABHISHEK KUMAR](https://github.com/abhishekadityaroy102)
-- [Manish Kumar Singh](https://github.com/ManishSingh64)
-- [Prachita Gajbhiye](https://github.com/prachita789)
-- Vikas Pawar
-
-## Features
-
-- All Pages are optimised for most of the screen sizes.
-- User can sign up and login into our website.
-- Users can add and remove products to cart.
-- Home Page , wishlist page, delivery address page and payment page.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![CodeSandbox](https://img.shields.io/badge/Codesandbox-040404?style=for-the-badge&logo=codesandbox&logoColor=DBDBDB)
 
 
-## Tech Stack
+## Pages & Features
 
-**Client:** HTML, CSS, JavaScript, Bootstrap
+- Homepage: Basic UI with search for Cars attached to the below of navbar.
+- Cars Page: Integrated search filter with category filterization and pagination.
+- Sign-up & Sign-in Modal
+- Car Details page for each fundraiser
+- Payment Page
+- FAQ 
+- How it works page
+
+## Deployment Link
+
+https://frolicking-sprite-ca94e3.netlify.app/
+
+## 🔗 Team Members
+    1. Akshay Kanherkar
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://akshay-kanherkar.netlify.app)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshay-kanherkar-0178531b1/)
+    
+    2. Anubhav Mishra - Leader
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anubhav-mishra-725b9322b/)
+    
+    3. Manish Singh
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manish-singh174013/)
+    
+    4. Prachita Gajhbiye
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prachita-gajbhiye-645698233/)
+    
+    5. Vikas Pawar
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vikas-pawar03/)
+
+## Feedback
+
+If you have any feedback, please reach out to us at our respective linkedin profiles mentioned above
 
 
+## Installation
 
-
-## Roles & Responsibilities:
-- The Landing Page is designed & functioned by Anubhav ans Akshay.
-- Sign up page & login page is designed & functioned by Abhishek.
-- Product Details section is designed & functioned by Anubhav.
-- Wishlist Page is designed and functioned by Vikas.
-- Cart pages are designed & functioned by Manish.
-- Payment page is designed & functioned by Prachita.
-- Github & project meetings are managed by Anubhav.
-- JavaScript parts are revised by Anubhav , Akshay and Manish.
-- CSS revision & Readme.md is done by Anubhav.
-## Screenshots
-
-![App Screenshot](https://anubhav4968.github.io/Portfolio/img/Tomtop.png)
-![App Screenshot](https://anubhav4968.github.io/Portfolio/img/tomtop2.png)
+- Clone my project
+- Just click on homepage.html
