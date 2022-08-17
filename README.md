@@ -6,10 +6,7 @@ Welcome, we're are team “TomTopClone”, and this Readme contains detail about
 
 
 ## About Project
-TomTop is US based E-Commerce website which provids products like Technical,Non-Technical and all products like which E-commerce website to be have. Building this project has been a chellenging job and fun at the same time. This project is build using tech stacks like <br />
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![CodeSandbox](https://img.shields.io/badge/Codesandbox-040404?style=for-the-badge&logo=codesandbox&logoColor=DBDBDB)
-
+TomTop is US based E-Commerce website which provids products like Technical,Non-Technical and all products like which E-commerce website to be have. Building this project has been a chellenging job and fun at the same time. <br />
 
 ## Pages & Features
 
