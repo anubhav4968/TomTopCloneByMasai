@@ -22,7 +22,7 @@ TomTop is US based E-Commerce website which provids products like Technical,Non-
 
 https://frolicking-sprite-ca94e3.netlify.app/
 
-##Tech-Stacks
+## <h2>Tech-Stacks</h2>
 -JavaScript HTML CSS
 
 ## 🔗 Team Members
