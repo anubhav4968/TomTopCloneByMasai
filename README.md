@@ -39,6 +39,48 @@ https://frolicking-sprite-ca94e3.netlify.app/
     5. Vikas Pawar
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vikas-pawar03/)
 
+
+
+<h2>Here are some screenshots of the clone website</h2>
+
+
+
+<h2> Homepage :- </h2>
+
+
+<img  src="./screen_shots/Homepage.PNG"/>
+
+
+
+
+<h2> Favorites Page :- </h2>
+
+
+<img  src="./screen_shots/favorites.PNG"/>
+
+
+<h2> Login Page :- </h2>
+
+
+<img  src="./screen_shots/login.PNG"/>
+
+<h2> Cart Page :- </h2>
+
+
+<img  src="./screen_shots/cart.PNG"/>
+
+<h2> single Product Page :- </h2>
+
+
+<img  src="./screen_shots/single_product.PNG"/>
+
+<h2> Payment Page :- </h2>
+
+
+<img  src="./screen_shots/payment.PNG"/>
+
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at our respective linkedin profiles mentioned above
