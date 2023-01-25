@@ -22,6 +22,9 @@ TomTop is US based E-Commerce website which provids products like Technical,Non-
 
 https://frolicking-sprite-ca94e3.netlify.app/
 
+##Tech-Stacks
+-JavaScript HTML CSS
+
 ## 🔗 Team Members
     1. Akshay Kanherkar
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://akshay-kanherkar.netlify.app)
@@ -48,7 +51,7 @@ https://frolicking-sprite-ca94e3.netlify.app/
 <h2> Homepage :- </h2>
 
 
-<img  src="./screen_shots/Homepage.PNG"/>
+<img  src="./screen_shots/homepage.PNG"/>
 
 
 
